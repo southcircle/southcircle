@@ -51,17 +51,17 @@ const works: SelectedWorks[] = [
 const SelectedWorks = () => {
   return (
     <section className="pt-32 mt-32 container mx-auto px-4">
-      <div className="container max-w-8xl w-full mx-auto">
+      <div className="container w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-tight uppercase">
+          <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
             Our work
           </span>
           <hr className="text-gray-400 bg-gray-400" />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-2xl font-normal mb-6">Selected Works</h2>
+            <h2 className="text-3xl font-normal mb-6 font-neuehaasroman">Selected Works</h2>
             <Button
               text="See all works"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap"
+              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
               variant="outline"
             />
           </div>
@@ -81,12 +81,12 @@ const SelectedWorks = () => {
                   />
                 </div>
                 <div className="flex items-center justify-between py-4">
-                  <h3 className="text-lg font-semibold">{work.title}</h3>
-                  <span className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block">
+                  <h3 className="text-lg font-semibold font-neuehaasroman">{work.title}</h3>
+                  <span className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight">
                     {work.category}
                   </span>
                 </div>
-                <p className="text-gray-600">{work.description}</p>
+                <p className="text-gray-600 font-neuehaaslight">{work.description}</p>
               </div>
             </Link>
           ))}

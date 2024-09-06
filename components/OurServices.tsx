@@ -48,7 +48,7 @@ const OurServices = () => {
   return (
     <section className="py-32 mt-32 container mx-auto px-4">
       <div className="container max-w-8xl w-full">
-        <div className="flex flex-col gap-4 w-full font-neuehasslight">
+        <div className="flex flex-col gap-4 w-full font-neuehaaslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase">
             Our Services
           </span>
@@ -57,28 +57,28 @@ const OurServices = () => {
         <div className="w-full flex align-top gap-28 mt-10">
           <div className="flex flex-col items-start gap-8">
             <div className="space-y-4 max-w-md">
-              <p className="text-[#0C0C0C] font-normal font-neuehasslight text-2xl text-start">
+              <p className="text-[#0C0C0C] font-normal font-neuehaasroman text-2xl text-start">
                 We&apos;re all about flipping the script and making brands that
                 don&apos;t just show up.
               </p>
-              <p className="text-[#0C0C0C] font-normal font-neuehasslight text-2xl text-start">
+              <p className="text-[#0C0C0C] font-normal font-neuehaasroman text-2xl text-start">
                 We mix strategy with creativity to make sure your brand hits
                 different and stays unforgettable.
               </p>
             </div>
             <Button
               text="See our services"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap tracking-tight"
+              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight"
               variant="outline"
             />
           </div>
           <div className="flex-1 grid grid-cols-2 gap-3">
             {services.map((service, idx) => (
               <div className={service.style} key={idx}>
-                <h4 className="font-medium font-neuehassroman text-lg tracking-tight">
+                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
                   {service.title}
                 </h4>
-                <p className="text-[#0C0C0CA3] text-base font-normal font-neuehasslight">
+                <p className="text-[#0C0C0CA3] text-base font-normal font-neuehaaslight">
                   {service.desc}
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">

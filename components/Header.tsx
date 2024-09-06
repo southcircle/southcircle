@@ -14,7 +14,7 @@ const Header = () => {
           className="w-32 h-auto md:w-40"
         />
       </Link>
-      <div className="flex flex-row items-center gap-6 relative font-neuehassroman">
+      <div className="flex flex-row items-center gap-6 relative font-neuehaasroman">
         <CustomLink href="/works" animate={true} text="Work" />
         <CustomLink href="/services" animate={true} text="Services" />
         <CustomLink href="/about" animate={true} text="About us" />

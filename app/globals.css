@@ -2,113 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
-  font-family: "baseNeue";
-  src: url("/public/fonts/BaseNeueTrial-SuperCondBold.ttf");
-}
-@font-face {
-  font-family: "neueHassLight";
-  src: url("/public/fonts/NeueHassDisplayLight.ttf");
-}
-@font-face {
-  font-family: "neueHassRoman";
-  src: url("/public/fonts/NeueHassDisplayRoman.ttf");
-} */
-
-/* .nav-link-hover {
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.nav-link-hover::before,
-.nav-link-hover::after {
-  content: "";
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: #005fea;
-  transition: width 0.3s ease-in-out;
-} */
-
-/* Show by default */
-/* .nav-link-hover::before {
-  width: 30%; 
-} */
-
-/* Hidden by default */
-/* .nav-link-hover::after {
-  width: 0; 
-} */
-
-/* Show on hover */
-/* .nav-link-hover:hover::after {
-  width: 100%; 
-} */
-
 
 @layer components {
   .container {
-    @apply md:px-16 px-5;
+    @apply px-4;
   }
 }
 
-@layer base {
-  :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
-
-    --primary: 240 5.9% 10%;
-    --primary-foreground: 0 0% 98%;
-
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-
-    --muted: 240 4.8% 95.9%;
-    --muted-foreground: 240 3.8% 46.1%;
-
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 240 10% 3.9%;
-
-    --radius: 0.5rem;
-  }
-}
 
 @layer base {
   * {
-    @apply border-border !scroll-smooth;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  button {
-    @apply active:outline-none;
+    @apply !scroll-smooth;
   }
 }
 
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
-  }
-
-  .black-gradient {
-    background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
 
   /* Hide scrollbar for Chrome, Safari and Opera */

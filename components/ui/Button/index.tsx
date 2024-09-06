@@ -29,7 +29,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       onClick={onClick}
       className={clsx(
-        'relative overflow-hidden transition-all duration-300 border font-neuehassroman group',
+        'relative overflow-hidden transition-all duration-300 border font-neuehaasroman group',
         size, // Predefined size classes
         baseClasses[variant], // Predefined variant classes
         className // Custom classes passed via the className prop

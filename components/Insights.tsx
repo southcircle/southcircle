@@ -1,7 +1,7 @@
-'use client';
-import React, { useEffect, useRef, useState } from 'react';
-import Button from './ui/Button';
-import Image from 'next/image';
+"use client";
+import React, { useEffect, useRef, useState } from "react";
+import Button from "./ui/Button";
+import Image from "next/image";
 
 // Define the Blog type
 interface Blog {
@@ -15,45 +15,51 @@ interface Blog {
 const blogs: Blog[] = [
   {
     id: 1,
-    title: 'Why South Circle',
-    date: 'August 28, 2024',
-    description: 'South Circle is redefining brands, beyond conformity from the south...',
-    imageSrc: '/assets/blogs/imagine-more.png',
+    title: "Why South Circle",
+    date: "August 28, 2024",
+    description:
+      "South Circle is redefining brands, beyond conformity from the south...",
+    imageSrc: "/assets/blogs/imagine-more.png",
   },
   {
     id: 2,
-    title: 'Turning businesses into brands',
-    date: 'August 14, 2024',
-    description: 'Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...',
-    imageSrc: '/assets/blogs/brain-stretched.png',
+    title: "Turning businesses into brands",
+    date: "August 14, 2024",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
+    imageSrc: "/assets/blogs/brain-stretched.png",
   },
   {
     id: 3,
-    title: 'The impact of social media on branding',
-    date: 'August 03, 2024',
-    description: 'Creating a consistent brand identity across all touchpoints...',
-    imageSrc: '/assets/blogs/cd-player.png',
+    title: "The impact of social media on branding",
+    date: "August 03, 2024",
+    description:
+      "Creating a consistent brand identity across all touchpoints...",
+    imageSrc: "/assets/blogs/cd-player.png",
   },
   {
     id: 4,
-    title: 'Turning businesses into brands',
-    date: 'August 14, 2024',
-    description: 'Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...',
-    imageSrc: '/assets/blogs/brain-stretched.png',
+    title: "Turning businesses into brands",
+    date: "August 14, 2024",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
+    imageSrc: "/assets/blogs/brain-stretched.png",
   },
   {
     id: 5,
-    title: 'Why South Circle',
-    date: 'August 28, 2024',
-    description: 'South Circle is redefining brands, beyond conformity from the south...',
-    imageSrc: '/assets/blogs/imagine-more.png',
+    title: "Why South Circle",
+    date: "August 28, 2024",
+    description:
+      "South Circle is redefining brands, beyond conformity from the south...",
+    imageSrc: "/assets/blogs/imagine-more.png",
   },
   {
     id: 6,
-    title: 'The impact of social media on branding',
-    date: 'August 03, 2024',
-    description: 'Creating a consistent brand identity across all touchpoints...',
-    imageSrc: '/assets/blogs/cd-player.png',
+    title: "The impact of social media on branding",
+    date: "August 03, 2024",
+    description:
+      "Creating a consistent brand identity across all touchpoints...",
+    imageSrc: "/assets/blogs/cd-player.png",
   },
 ];
 
@@ -67,11 +73,13 @@ const Insights: React.FC = () => {
 
   useEffect(() => {
     if (scrollRef.current) {
-      setMaxScroll(scrollRef.current.scrollWidth - scrollRef.current.clientWidth);
+      setMaxScroll(
+        scrollRef.current.scrollWidth - scrollRef.current.clientWidth
+      );
     }
-  }, [scrollRef]); 
+  }, [scrollRef]);
 
-  console.log(maxScroll)
+  //   console.log(maxScroll);
 
   const handleScrollRight = () => {
     if (scrollRef.current) {
@@ -79,26 +87,26 @@ const Insights: React.FC = () => {
       scrollRef.current.scrollLeft = newScrollPos;
       setScrollPos(newScrollPos);
     }
-    console.log('Right')
+    // console.log("Right");
   };
-  
+
   const handleScrollLeft = () => {
     if (scrollRef.current) {
       const newScrollPos = Math.max(scrollPos - 50, 0);
       scrollRef.current.scrollLeft = newScrollPos;
       setScrollPos(newScrollPos);
     }
-    console.log('Left')
+    // console.log("Left");
   };
 
-  console.log('Current Scroll Position:', scrollPos);
-console.log('Maximum Scroll Value:', maxScroll);
+  //   console.log("Current Scroll Position:", scrollPos);
+  //   console.log("Maximum Scroll Value:", maxScroll);
 
   return (
     <section className="py-32 mb-40 container mx-auto px-4">
       <div className="container max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-tight uppercase">
+          <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
             Insights
           </span>
           <hr />
@@ -120,7 +128,7 @@ console.log('Maximum Scroll Value:', maxScroll);
           <div
             className="flex items-center overflow-x-auto gap-4 no-visible-scrollbar py-4"
             ref={scrollRef}
-            style={{ scrollBehavior: 'smooth' }}
+            style={{ scrollBehavior: "smooth" }}
           >
             {blogs.map((blog) => (
               <div key={blog.id} className="w-[360px] max-w-md flex-shrink-0">
@@ -131,27 +139,39 @@ console.log('Maximum Scroll Value:', maxScroll);
                   height={240}
                   className="object-cover"
                 />
-                <div className="text-sm text-gray-500 mt-2">{blog.date}</div>
-                <h3 className="text-lg font-semibold truncate">{blog.title}</h3>
-                <p className="text-gray-600 w-full">{blog.description}</p>
-                <a href="#" className="text-blue-600 mt-2 inline-block">Read blog</a>
+                <div className="text-sm text-gray-500 my-2 font-neuehaaslight">{blog.date}</div>
+                <h3 className="text-lg font-semibold truncate font-neuehaasroman">{blog.title}</h3>
+                <p className="text-gray-600 w-full font-neuehaaslight">{blog.description}</p>
+                <a href="#" className="text-black underline mt-2 inline-block text-sm">
+                  Read blog
+                </a>
               </div>
             ))}
           </div>
         </div>
         {/* Scroll Buttons */}
-        <div className='flex items-center gap-4'>
-        <button
+        <div className="flex items-center justify-center gap-4 py-2">
+          <button
             className={`text-4xl z-10 p-2 text-black'}`}
             onClick={handleScrollLeft}
           >
-            <Image src="/assets/arrow-back.svg" width={24} height={24} alt='Arrow left' />
+            <Image
+              src="/assets/arrow-back.svg"
+              width={24}
+              height={24}
+              alt="Arrow left"
+            />
           </button>
           <button
             className={`text-4xl z-10 p-2 text-black'}`}
             onClick={handleScrollRight}
           >
-            <Image src="/assets/arrow-right.svg" width={24} height={24} alt='Arrow right' />
+            <Image
+              src="/assets/arrow-right.svg"
+              width={24}
+              height={24}
+              alt="Arrow right"
+            />
           </button>
         </div>
       </div>

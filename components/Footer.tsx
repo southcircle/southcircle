@@ -13,14 +13,14 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-6 align-top">
-          <h4 className="text-[#0C0C0CA3] text-lg font-neuehasslight">
+          <h4 className="text-[#0C0C0CA3] text-lg font-neuehaaslight">
             Contact
           </h4>
-          <div className="flex flex-col gap-5 items-start font-neuehassroman">
+          <div className="flex flex-col gap-5 items-start font-neuehaasroman">
             <div className="flex flex-col gap-2 items-start font-medium">
               <CustomLink
                 href="tel:+234905333432"
-                animate={true}
+                animate={false}
                 text="+23458-034-5353"
               />
               <CustomLink
@@ -29,7 +29,7 @@ const Footer = () => {
                 text="hello@southcircle.co"
               />
             </div>
-            <div className="max-w-sm text-start font-neuehassroman">
+            <div className="max-w-sm text-start font-neuehaasroman">
               <p>44 Okumagba Avenue, </p>
               <p>Opposite FCMB Bank, Estate,</p>
               <p>Warri, 332213, Delta State,</p>
@@ -38,9 +38,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-6 align-top">
-          <h4 className="text-[#0C0C0CA3] text-lg font-neuehasslight">Links</h4>
+          <h4 className="text-[#0C0C0CA3] text-lg font-neuehaaslight">Links</h4>
           <div className="flex flex-col gap-5 items-start">
-            <div className="flex flex-col gap-2 items-start font-neuehassroman">
+            <div className="flex flex-col gap-2 items-start font-neuehaasroman">
               <CustomLink
                 href="linkedin.com"
                 animate={true}
@@ -83,7 +83,7 @@ const Footer = () => {
       </div>
       <hr className="text-gray-400" />
       <div className="flex items-center justify-between w-full pt-8">
-        <div className="flex flex-col  md:flex-row items-center gap-5">
+        <div className="flex flex-col  md:flex-row items-center gap-5 text-gray-500">
           <p>&copy; 2024 South Circle LLC, All right reserved.</p>
         </div>
         <div className="">
@@ -91,7 +91,7 @@ const Footer = () => {
             <Image src="/assets/logo.png" width={32} height={32} alt="logo" />
           </Link>
         </div>
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-6 text-gray-500">
           <CustomLink href="/privacy" animate={true} text="Privacy" />
           <CustomLink href="/terms" animate={true} text="Terms of use" />
         </div>

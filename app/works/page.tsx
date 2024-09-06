@@ -76,7 +76,7 @@ const Page = () => {
             See how we turn bold ideas into impactful results and push the
             boundaries of design.
           </p>
-          <h1 className="text-4xl md:text-9xl font-baseneue font-bold flex flex-col items-start text-start">
+          <h1 className="text-4xl md:text-9xl font-baseneue font-bold flex flex-col items-start text-start uppercase">
             <span>A collection</span>
             <span> of our most</span>
             <span> inspiring work.</span>
@@ -85,7 +85,7 @@ const Page = () => {
       </div>
 
        {/* Filter Section */}
-       <div className="flex justify-center mb-8">
+       <div className="flex justify-center mb-10 mt-32">
         {categories.map((category, index) => (
           <button
             key={index}
@@ -98,7 +98,7 @@ const Page = () => {
       </div>
 
       {/* Works Section */}
-      <div className="container max-w-full mt-32">
+      <div className="container max-w-full">
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
             <Link key={index} href={`/works/${work.slug || "/"}`}>

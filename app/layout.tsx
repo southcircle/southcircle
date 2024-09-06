@@ -39,7 +39,7 @@ export default function RootLayout({
       <body className={`${baseNeue.variable} ${neueHaasLight.variable} ${neueHaasRoman.variable}`}>
         {/* <CustomCusor /> */}
         <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto">
-          <div className="container max-w-8xl w-full">
+          <div className="container px-6 w-full">
             <Header />
           </div>
           {children}
