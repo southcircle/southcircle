@@ -1,0 +1,102 @@
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
+import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
+import Button from "./ui/Button";
+
+const OurServices = () => {
+  const services = [
+    {
+      desc: "Craft clear, actionable strategies that drive brand success and resonate with your target audience.",
+      title: "Brand Strategy",
+      imageSrc: "/assets/services/brand.svg",
+      style: "p-12 flex flex-col items-start gap-3 bg-[#5975FF0D] rounded-sm",
+    },
+    {
+      desc: "Design compelling visual elements that represent your brand’s essence and stand out in the market.",
+      title: "Visual Identity",
+      imageSrc: "/assets/services/visual.svg",
+      style: "p-12 flex flex-col items-start gap-3 bg-[#FF4A4A0D] rounded-sm",
+    },
+    {
+      desc: "Develop integrated marketing strategies to enhance visibility, engage your audience, and drive growth.",
+      title: "Marketing",
+      imageSrc: "/assets/services/marketing.svg",
+      style: "p-12 flex flex-col items-start gap-3 bg-[#FFC02E0D] rounded-sm",
+    },
+    {
+      desc: "Build responsive, user-friendly websites that effectively showcase your brand and achieve your business goals.",
+      title: "Development",
+      imageSrc: "/assets/services/development.svg",
+      style: "p-12 flex flex-col items-start gap-3 bg-[#0ACC920D] rounded-sm",
+    },
+    // Add more testimonials here
+  ];
+
+  // const [currentSlide, setCurrentSlide] = useState(0);
+
+  // const handleNextSlide = () => {
+  //   setCurrentSlide((prevSlide) => (prevSlide + 1) % testimonials.length);
+  // };
+
+  // const handlePreviousSlide = () => {
+  //   setCurrentSlide(
+  //     (prevSlide) => (prevSlide - 1 + testimonials.length) % testimonials.length
+  //   );
+  // };
+
+  return (
+    <section className="py-32 mt-32 container mx-auto px-4">
+      <div className="container max-w-8xl w-full">
+        <div className="flex flex-col gap-4 w-full font-neuehasslight">
+          <span className="text-sm text-gray-400 tracking-tight uppercase">
+            Our Services
+          </span>
+          <hr className="text-gray-400 bg-gray-400" />
+        </div>
+        <div className="w-full flex align-top gap-28 mt-10">
+          <div className="flex flex-col items-start gap-8">
+            <div className="space-y-4 max-w-md">
+              <p className="text-[#0C0C0C] font-normal font-neuehasslight text-2xl text-start">
+                We&apos;re all about flipping the script and making brands that
+                don&apos;t just show up.
+              </p>
+              <p className="text-[#0C0C0C] font-normal font-neuehasslight text-2xl text-start">
+                We mix strategy with creativity to make sure your brand hits
+                different and stays unforgettable.
+              </p>
+            </div>
+            <Button
+              text="See our services"
+              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap tracking-tight"
+              variant="outline"
+            />
+          </div>
+          <div className="flex-1 grid grid-cols-2 gap-3">
+            {services.map((service, idx) => (
+              <div className={service.style} key={idx}>
+                <h4 className="font-medium font-neuehassroman text-lg tracking-tight">
+                  {service.title}
+                </h4>
+                <p className="text-[#0C0C0CA3] text-base font-normal font-neuehasslight">
+                  {service.desc}
+                </p>
+                <div className="w-full flex justify-end py-4 pt-6">
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.title}
+                    width={40}
+                    height={40}
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default OurServices;
