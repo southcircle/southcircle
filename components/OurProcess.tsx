@@ -1,37 +1,5 @@
 import React from "react";
 
-const processSteps = [
-  {
-    id: 1,
-    title: "Research",
-    description:
-      "We dive deep into understanding your market, audience, and challenges. This phase is all about gathering crucial insights that fuel our innovative strategies and set the foundation for a successful project.",
-  },
-  {
-    id: 2,
-    title: "Definition",
-    description:
-      "We take the insights from research and refine your vision. This involves setting clear goals, outlining project scope, and ensuring we’re aligned with your objectives. It’s about getting everything in focus before we start creating.",
-  },
-  {
-    id: 3,
-    title: "Conceptualization",
-    description:
-      "Here, we let creativity take the lead. Our team brainstorms and develops bold ideas, transforming your vision into actionable plans. This stage is where creative solutions are crafted, setting the stage for impactful results.",
-  },
-  {
-    id: 4,
-    title: "Delivery & follow-up",
-    description:
-      "We execute the plans with precision, turning concepts into reality. Once the project is live, we don’t just walk away; we follow up to ensure everything meets your expectations, and make any necessary adjustments to ensure flawless execution.",
-  },
-  {
-    id: 5,
-    title: "Continuous partnership",
-    description:
-      "Our relationship doesn’t end with delivery. We stay connected, providing ongoing support and collaboration. This stage is all about evolving together, keeping your brand ahead of the curve, and achieving sustained success.",
-  },
-];
 
 const OurProcess = () => {
   return (

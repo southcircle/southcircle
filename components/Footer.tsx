@@ -4,6 +4,7 @@ import CustomLink from "./ui/Link";
 import Image from "next/image";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="relative bottom-0 right-0 left-0 container space-y-8 py-20 bg-transparent w-full">
       <div className="flex items-center justify-between w-full">
@@ -84,7 +85,7 @@ const Footer = () => {
       <hr className="text-gray-400" />
       <div className="flex items-center justify-between w-full pt-8">
         <div className="flex flex-col  md:flex-row items-center gap-5 text-gray-500">
-          <p>&copy; 2024 South Circle LLC, All right reserved.</p>
+          <p>&copy; {year} South Circle LLC, All right reserved.</p>
         </div>
         <div className="">
           <Link className="" href="/">
