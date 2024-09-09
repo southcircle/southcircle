@@ -57,11 +57,11 @@ const OurServices = () => {
         <div className="w-full flex align-top gap-28 mt-10">
           <div className="flex flex-col items-start gap-8">
             <div className="space-y-4 max-w-md">
-              <p className="text-[#0C0C0C] font-normal font-neuehaasroman text-2xl text-start">
+              <p className="text-[#0C0C0C] font-normal font-neuehaaslight text-2xl text-start">
                 We&apos;re all about flipping the script and making brands that
                 don&apos;t just show up.
               </p>
-              <p className="text-[#0C0C0C] font-normal font-neuehaasroman text-2xl text-start">
+              <p className="text-[#0C0C0C] font-normal font-neuehaaslight text-2xl text-start">
                 We mix strategy with creativity to make sure your brand hits
                 different and stays unforgettable.
               </p>
