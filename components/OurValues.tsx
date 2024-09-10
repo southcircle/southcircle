@@ -3,7 +3,7 @@ import Button from "./ui/Button";
 
 const OurValues = () => {
   return (
-    <div className="pt-32 mt-32 container mx-auto px-4">
+    <section className="pt-32 mt-32 container mx-auto px-4">
       <div className="container w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
@@ -56,7 +56,7 @@ const OurValues = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

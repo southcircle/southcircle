@@ -1,5 +1,8 @@
 "use client";
+import Image from "next/image";
 import React, { useState, ChangeEvent, FormEvent } from "react";
+import CheckBox from "./ui/CheckBox";
+import Button from "./ui/Button";
 
 interface FormData {
   name: string;
@@ -43,152 +46,186 @@ const ContactForm: React.FC = () => {
     }, 2000);
   };
 
+  const handleCheck = (checked: boolean) => {
+    console.log("Checkbox state:", checked);
+  };
+
   return (
-    <div className="max-w-2xl mx-auto p-8 mb-32">
-      <form onSubmit={handleSubmit} className="space-y-6">
-        <div className="w-full">
-          <label
-            className="block text-gray-700 font-medium mb-2"
-            htmlFor="name"
-          >
-            What&apos;s your name?
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full px-5 py-5 border rounded-xl focus:outline-none focus:border-blue-500"
-            placeholder="Full name"
-            required
-          />
-        </div>
-        <div className="w-full">
-          <label
-            className="block text-gray-700 font-medium mb-2"
-            htmlFor="organization"
-          >
-            What&apos;s your church/organisation name?
-          </label>
-          <input
-            type="text"
-            id="organization"
-            name="organization"
-            value={formData.organization}
-            onChange={handleChange}
-            className="w-full px-5 py-5 border rounded-xl focus:outline-none focus:border-blue-500"
-            placeholder="Name of your church/org."
-            required
-          />
-        </div>
-        <div className="w-full">
-          <label
-            className="block text-gray-700 font-medium mb-2"
-            htmlFor="email"
-          >
-            What&apos;s your email?
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full px-5 py-5 border rounded-xl focus:outline-none focus:border-blue-500"
-            placeholder="Email Address"
-            required
-          />
-        </div>
-        <div className="w-full">
-          <label
-            className="block text-gray-700 font-medium mb-2"
-            htmlFor="contact"
-          >
-            What&apos;s your contact number?
-          </label>
-          <input
-            type="tel"
-            id="contact"
-            name="contact"
-            value={formData.contact}
-            onChange={handleChange}
-            className="w-full px-5 py-5 border rounded-xl focus:outline-none focus:border-blue-500"
-            placeholder="Contact no."
-            required
-          />
-        </div>
-        <div className="w-full">
-          <label
-            className="block text-gray-700 font-medium mb-2"
-            htmlFor="help"
-          >
-            How can we help you?
-          </label>
-          <textarea
-            id="help"
-            name="help"
-            value={formData.help}
-            onChange={handleChange}
-            className="w-full px-5 py-5 border rounded-xl focus:outline-none focus:border-blue-500"
-            placeholder="Tell us briefly you problem..."
-            required
-          />
-        </div>
-        <div className="w-full">
-          <label
-            className="block text-gray-700 font-medium mb-2"
-            htmlFor="budget"
-          >
-            Do you have a defined budget?
-          </label>
-          <input
-            type="text"
-            id="budget"
-            name="budget"
-            value={formData.budget}
-            onChange={handleChange}
-            className="w-full px-5 py-5 border rounded-xl focus:outline-none focus:border-blue-500"
-            placeholder="Enter your budget"
-            required
-          />
-        </div>
-        <div className="w-full mx-auto">
-          <button
-            type="submit"
-            className={`w-fit bg-blue-500 text-white px-8 py-5 rounded-full font-semibold hover:bg-blue-600 focus:outline-none focus:bg-blue-600 ${
-              isSubmitting ? "loading" : ""
-            }`}
-            disabled={isSubmitting}
-          >
-            {isSubmitting ? (
-              <svg
-                className="animate-spin h-5 w-5 mr-3 text-white inline-block"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
+    <section className="pt-32 mt-32 container mx-auto px-4">
+      <div className="container w-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="w-full">
+              <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl">
+                What are you looking to do?
+              </label>
+              <div className="grid grid-cols-2 gap-6">
+                <CheckBox
+                  name="service"
+                  value="Branding"
+                  title="Brand/Visual Identity"
+                  onCheck={handleCheck}
+                />
+                <CheckBox
+                  name="service"
+                  value="Web development"
+                  title="A website"
+                  onCheck={handleCheck}
+                />
+                <CheckBox
+                  name="service"
+                  value="Marketing"
+                  title="Marketing/PR"
+                  onCheck={handleCheck}
+                />
+                <CheckBox
+                  name="service"
+                  value="App development"
+                  title="Mobile app development"
+                  onCheck={handleCheck}
+                />
+              </div>
+            </div>
+            <div className="w-full">
+              <label
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                htmlFor="name"
               >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                ></circle>
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                ></path>
-              </svg>
-            ) : (
-              "Send Message"
-            )}
-          </button>
+                What&apos;s your name?
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                placeholder="Gold Nelson"
+                required
+              />
+            </div>
+            <div className="w-full">
+              <label
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                htmlFor="organization"
+              >
+                What&apos;s your company/organisation name?
+              </label>
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                value={formData.organization}
+                onChange={handleChange}
+                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                placeholder="South Circle Co."
+                required
+              />
+            </div>
+            <div className="w-full">
+              <label
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                htmlFor="email"
+              >
+                What&apos;s your email?
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                placeholder="nelson@southcircle.co"
+                required
+              />
+            </div>
+            <div className="w-full">
+              <label
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                htmlFor="contact"
+              >
+                How did you find us?
+              </label>
+              <input
+                type="text"
+                id="find"
+                name="find"
+                value={formData.contact}
+                onChange={handleChange}
+                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                placeholder="LinkedIn, Google, Instagram,..."
+                required
+              />
+            </div>
+            <div className="w-full">
+              <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl">
+              What&apos;s your estimated project budget? *
+              </label>
+              <div className="grid grid-cols-2 gap-6">
+                <CheckBox
+                  name="budget"
+                  value="Less than $50k"
+                  title="Less than $50k"
+                  onCheck={handleCheck}
+                />
+                <CheckBox
+                  name="budget"
+                  value="$50k - $100k"
+                  title="$50k - $100k"
+                  onCheck={handleCheck}
+                />
+                <CheckBox
+                  name="budget"
+                  value="$100k - $250k"
+                  title="$100k - $250k"
+                  onCheck={handleCheck}
+                />
+                <CheckBox
+                  name="budget"
+                  value="Greater than $250k"
+                  title="> $250k"
+                  onCheck={handleCheck}
+                />
+              </div>
+            </div>
+            <div className="w-full">
+              <label
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                htmlFor="help"
+              >
+                Describe your project
+              </label>
+              <textarea
+                id="help"
+                name="help"
+                value={formData.help}
+                onChange={handleChange}
+                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                placeholder="Tell us how we can help. It could be the project summary or brief."
+                required
+              />
+            </div>
+            <div className="w-full mx-auto mt-8">
+              <Button
+              text="Send the message"
+              className="px-8 py-8 text-lg font-medium rounded-full whitespace-nowrap font-neuehaaslight"
+              variant="outline"
+            />
+            </div>
+          </form>
+          <div className="p-4">
+            <Image
+              src="/assets/phone.svg"
+              alt="phone"
+              width={400}
+              height={400}
+              className="object-contain"
+            />
+          </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </section>
   );
 };
 

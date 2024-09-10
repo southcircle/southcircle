@@ -86,7 +86,6 @@ import React from "react";
 //   }
 // ];
 
-
 const page = () => {
   return (
     <section className="pt-10 mt-10 container mx-auto px-4 max-w-8xl ">
@@ -103,15 +102,20 @@ const page = () => {
             <span>big move.</span>
           </h1>
           <div className="p-5 rounded-full border-[1px] border-black w-fit mt-10">
-        <Image src="/assets/arrow-down.svg" width={32} height={32} alt="arrow-down" className="object-contain animate-bounce"/>
-        </div>
+            <Image
+              src="/assets/arrow-down.svg"
+              width={32}
+              height={32}
+              alt="arrow-down"
+              className="object-contain animate-bounce"
+            />
+          </div>
           <p className="absolute max-w-sm text-2xl text-start font-neuehaaslight right-4 bottom-16">
             From innovative strategies to striking designs, we turn your vision
             into a powerful reality. Explore how our expertise drives your
             brand&apos;s success.
           </p>
         </div>
-        
       </div>
       <WhatWeDo />
       <OurProcess />

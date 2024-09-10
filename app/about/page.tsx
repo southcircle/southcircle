@@ -9,7 +9,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="pt-10 mt-10 container mx-auto px-4 max-w-8xl ">
+    <main className="pt-10 mt-10 container mx-auto px-4 max-w-8xl ">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="w-full flex gap-20 items-center justify-center max-w-7xl">
@@ -39,7 +39,7 @@ const page = () => {
       <OurJourney />
       <OurTeams />
       <GetInTouch />
-    </section>
+    </main>
   );
 };
 
