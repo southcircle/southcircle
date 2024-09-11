@@ -1,4 +1,5 @@
 'use client'
+import clsx from 'clsx';
 import React, { useState } from 'react';
 
 interface CheckButtonProps {
@@ -6,9 +7,10 @@ interface CheckButtonProps {
   name: string;
   value: string;
   onCheck?: (checked: boolean) => void;
+  className?: string;
 }
 
-const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck }) => {
+const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck, className }) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   const handleCheck = () => {
@@ -20,9 +22,9 @@ const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck }) =
 
   return (
     <label
-      className={`flex items-center p-8 rounded-full border ${
+      className={clsx(className, `${
         isChecked ? 'border-black bg-transparent' : 'border-gray-200'
-      } transition-colors duration-300 ease-in-out cursor-pointer`}
+      } flex items-center p-4 md:p-8 rounded-full border transition-colors duration-300 ease-in-out cursor-pointer`)}
     >
       {/* Hidden checkbox input */}
       <input
@@ -42,7 +44,7 @@ const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck }) =
       ></div>
       
       {/* Title */}
-      <span className="text-gray-800 font-neuehaasroman">{title}</span>
+      <span className="text-gray-800 font-neuehaasroman text-start leading-5">{title}</span>
     </label>
   );
 };

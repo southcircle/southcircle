@@ -88,18 +88,18 @@ const WhatWeDo = () => {
   };
 
   return (
-    <section className="pt-32 mt-32 container mx-auto px-4">
-      <div className="container w-full mx-auto">
+    <section className="pt-32 mt-32 mx-auto px-4">
+      <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
             What We Do
           </span>
           <hr className="text-gray-400 bg-gray-400" />
         </div>
-        <div className="mt-10 w-full grid grid-cols-[500px,_1fr]">
+        <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[500px,_1fr]">
           {/* Left Column - Title and Button */}
-          <div className="p-3">
-            <h2 className="text-4xl font-semibold mb-4">
+          <div className="max-w-sm md:w-full">
+            <h2 className="text-4xl font-medium mb-4 font-neuehaasroman">
               Building a Strong Foundation
             </h2>
             <Button
@@ -112,7 +112,7 @@ const WhatWeDo = () => {
           {/* Services Grid */}
           <div className="gap-12">
             {services.map((service, idx) => (
-              <div key={idx}>
+              <div className="mt-6" key={idx}>
               <div className={`w-full flex items-center justify-center p-16 ${service.serviceStyle}`}>
                 <Image
                   src={service.serviceImg || ''}
@@ -121,9 +121,9 @@ const WhatWeDo = () => {
                   alt={service.title || 'Service image'}
                 />
               </div>
-              <div className="flex w-full items-start justify-between py-4">
-                <h3 className="text-base tracking-wide font-neuehaasroman uppercase">{service.title}</h3>
-                <div className="space-y-6 divide-y-[1px] divide-gray-300 max-w-2xl w-[620px]">
+              <div className="flex flex-col md:flex-row gap-8 mt-6 md:mt-0 w-full items-start justify-between py-4 md:pt-0">
+                <h3 className="text-base tracking-wide font-neuehaasroman uppercase md:pt-5">{service.title}</h3>
+                <div className="space-y-6 divide-y-[1px] divide-gray-300 w-full md:max-w-2xl md:w-[620px]">
                   {service?.services && service?.services.map((faq, index) => (
                     <div
                       key={index}

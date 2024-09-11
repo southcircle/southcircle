@@ -58,14 +58,14 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-32 mb-40 container mx-auto px-4">
-      <div className="container max-w-8xl w-full flex items-center justify-center mx-auto">
+    <section className="py-32 mb-40 mx-auto px-2">
+      <div className="max-w-8xl w-full flex items-center justify-center mx-auto">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 mx-auto">
           <div className="flex flex-col gap-5">
             <p className="font-neuehaasroman text-gray-400 tracking-wide text-lg">
               FAQ
             </p>
-            <h1 className="font-baseneue text-6xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-start uppercase">
+            <h1 className="font-baseneue text-8xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-start uppercase">
               Find the
               <br />
               Clarity you
@@ -81,7 +81,7 @@ const FAQ = () => {
                     onClick={() => toggleFAQ(index)}
                     className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-neuehaasroman"
                   >
-                    {faq.question}
+                    <p className="w-[280px] md:w-full">{faq.question}</p>
                     {activeIndex === index ? (
                       <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
                         <Image

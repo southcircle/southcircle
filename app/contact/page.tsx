@@ -6,7 +6,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <main className="pt-10 mt-10 container mx-auto px-4 max-w-8xl">
+    <main className="pt-10 mt-24 container mx-auto px-2 max-w-8xl">
       <ContactHero />
       <ContactForm />
       <CallUsNow />

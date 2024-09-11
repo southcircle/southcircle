@@ -103,7 +103,7 @@ const Insights: React.FC = () => {
   //   console.log("Maximum Scroll Value:", maxScroll);
 
   return (
-    <section className="py-32 mb-40 container mx-auto px-4">
+    <section className="pt-16 md:pt-32 md:mt-40 container mx-auto px-1">
       <div className="container max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
@@ -111,12 +111,12 @@ const Insights: React.FC = () => {
           </span>
           <hr />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-3xl font-normal mb-6 max-w-sm font-neuehaasroman">
+            <h2 className="text-2xl md:ext-3xl mb-6 w-full md:max-w-sm font-neuehaasroman">
               Read through the wonderful insights from our Journey.
             </h2>
             <Button
               text="See all blogs"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap"
+              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap hidden md:inline-block"
               variant="outline"
             />
           </div>
@@ -140,9 +140,9 @@ const Insights: React.FC = () => {
                   className="object-cover"
                 />
                 <div className="text-sm text-gray-500 my-2 font-neuehaaslight">{blog.date}</div>
-                <h3 className="text-lg font-semibold truncate font-neuehaasroman">{blog.title}</h3>
-                <p className="text-gray-600 w-full font-neuehaaslight">{blog.description}</p>
-                <a href="#" className="text-black underline mt-2 inline-block text-sm">
+                <h3 className="text-lg font-medium truncate font-neuehaasroman">{blog.title}</h3>
+                <p className="text-gray-600 max-w-[340px] font-neuehaaslight">{blog.description}</p>
+                <a href="#" className="text-black underline my-5 inline-block text-[15px] font-neuehaasroman">
                   Read blog
                 </a>
               </div>
@@ -173,6 +173,13 @@ const Insights: React.FC = () => {
               alt="Arrow right"
             />
           </button>
+        </div>
+        <div className="py-10 flex items-center justify-center">
+          <Button
+            text="See all blogs"
+            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            variant="outline"
+          />
         </div>
       </div>
     </section>

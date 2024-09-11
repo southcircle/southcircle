@@ -3,8 +3,8 @@ import React from "react";
 
 const OurProcess = () => {
   return (
-    <div className="pt-32 mt-32 container mx-auto px-4 mb-32">
-      <div className="container w-full mx-auto">
+    <div className="pt-32 mt-32 mx-auto px-4 mb-32">
+      <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
             Our Process
@@ -12,19 +12,19 @@ const OurProcess = () => {
           <hr className="text-gray-400 bg-gray-400" />
         </div>
         <div className="space-y-10 mt-24">
-          <div className="grid grid-cols-2 gap-10 align-text-bottom mb-20">
-            <h1 className="text-4xl md:text-[170px] gap-28 font-baseneue font-bold flex flex-col items-start text-start uppercase whitespace-nowrap">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 align-text-bottom mb-20">
+            <h1 className="text-8xl md:text-[170px] gap-3 md:gap-28 font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
               <span>How We Make</span>
               <span>it happen.</span>
             </h1>
-            <p className="max-w-xs text-2xl text-start font-neuehaaslight align-bottom ">
+            <p className="max-w-md md:max-w-xs text-3xl md:text-2xl text-start font-neuehaaslight align-bottom ">
               We approach every project with a collaborative process that drives
               alignment and lays the foundation for long-term success.
             </p>
           </div>
           {/* Process Grid */}
           <div className="w-full grid grid-cols-1 gap-6">
-            <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-12 flex flex-col items-start gap-3 bg-[#5975FF0D] rounded-sm">
                 <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
                   Research
@@ -69,7 +69,7 @@ const OurProcess = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full grid grid-cols-2 md:grid-cols-2 gap-6">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="p-12 flex flex-col items-start gap-3 bg-[#FFC02E0D] rounded-sm">
                 <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
                   Delivery & follow-up

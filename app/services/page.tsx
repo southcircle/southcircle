@@ -88,19 +88,24 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="pt-10 mt-10 container mx-auto px-4 max-w-8xl ">
+    <section className="pt-10 mt-24 mx-auto px-2 max-w-8xl">
       {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
-        <div className="relative w-full flex flex-col items-center gap-20 justify-center max-w-7xl">
-          <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight left-12 top-4">
+      <div className="flex flex-col items-center justify-center text-center mx-auto">
+        <div className="relative w-full flex flex-col items-center gap-10 md:gap-20 justify-center max-w-7xl">
+          <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight left-20 top-24 hidden md:inline-block">
             From innovative strategies to striking designs, we turn your vision
             into.
           </p>
-          <h1 className="text-4xl md:text-[170px] gap-28 font-baseneue font-bold flex flex-col items-center text-center uppercase whitespace-nowrap">
+          <h1 className="text-7xl md:text-[160px] font-baseneue flex flex-col items-center text-center uppercase whitespace-nowrap">
             <span>Empowering</span>
             <span>your brand&apos;s next</span>
             <span>big move.</span>
           </h1>
+          <p className="max-w-sm text-2xl text-center font-neuehaaslight md:hidden">
+            From innovative strategies to striking designs, we turn your vision
+            into a powerful reality. Explore how our expertise drives your
+            brand&apos;s success.
+          </p>
           <div className="p-5 rounded-full border-[1px] border-black w-fit mt-10">
             <Image
               src="/assets/arrow-down.svg"
@@ -110,10 +115,14 @@ const page = () => {
               className="object-contain animate-bounce"
             />
           </div>
-          <p className="absolute max-w-sm text-2xl text-start font-neuehaaslight right-4 bottom-16">
+          <p className="absolute max-w-sm text-2xl text-start font-neuehaaslight right-14 bottom-40 hidden md:inline-block">
             From innovative strategies to striking designs, we turn your vision
             into a powerful reality. Explore how our expertise drives your
             brand&apos;s success.
+          </p>
+          <p className="max-w-sm text-2xl text-center font-neuehaaslight md:hidden">
+            From innovative strategies to striking designs, we turn your vision
+            into.
           </p>
         </div>
       </div>

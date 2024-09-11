@@ -4,9 +4,9 @@ import CountUp from "./ui/CountUp";
 
 const OurJourney = () => {
   return (
-    <section className="py-32 container mx-auto px-4">
-      <div className="container max-w-8xl w-full mx-auto">
-        <div className="flex items-center justify-center gap-20 text-center">
+    <section className="py-32 mx-auto px-2">
+      <div className="max-w-8xl w-full mx-auto">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-20 text-center">
           <Image
             src="/assets/team/groupOne.png"
             alt="group team one"
@@ -31,20 +31,20 @@ const OurJourney = () => {
         </div>
         <div className="flex items-center justify-center w-full">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-32">
-            <div className="flex flex-col items-start gap-3 border-b-[1px] border-gray-400">
-              <p className="font-neuehaaslight text-xl">Members</p>
+            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+              <p className="font-neuehaaslight text-xl text-gray-400">Members</p>
               <CountUp amount={5} duration={2000} />
             </div>
-            <div className="flex flex-col items-start gap-3 border-b-[1px] border-gray-400">
-              <p className="font-neuehaaslight text-xl">Office</p>
+            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+              <p className="font-neuehaaslight text-xl text-gray-400">Office</p>
               <CountUp amount={1} duration={200} />
             </div>
-            <div className="flex flex-col items-start gap-3 border-b-[1px] border-gray-400">
-              <p className="font-neuehaaslight text-xl">Projects</p>
+            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+              <p className="font-neuehaaslight text-xl text-gray-400">Projects</p>
               <CountUp amount={20} duration={100} />
             </div>
-            <div className="flex flex-col items-start gap-3 border-b-[1px] border-gray-400">
-              <p className="font-neuehaaslight text-xl">Years</p>
+            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+              <p className="font-neuehaaslight text-xl text-gray-400">Years</p>
               <CountUp amount={2} duration={50} />
             </div>
           </div>

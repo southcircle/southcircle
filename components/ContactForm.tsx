@@ -51,15 +51,15 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="pt-32 mt-32 container mx-auto px-4">
-      <div className="container w-full mx-auto">
+    <section className="pt-32 md:mt-32 mx-auto px-2">
+      <div className="w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="w-full">
               <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl">
                 What are you looking to do?
               </label>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <CheckBox
                   name="service"
                   value="Branding"
@@ -162,11 +162,11 @@ const ContactForm: React.FC = () => {
               <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl">
               What&apos;s your estimated project budget? *
               </label>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <CheckBox
                   name="budget"
-                  value="Less than $50k"
-                  title="Less than $50k"
+                  value="< $50k"
+                  title="< $50k"
                   onCheck={handleCheck}
                 />
                 <CheckBox
@@ -201,7 +201,7 @@ const ContactForm: React.FC = () => {
                 name="help"
                 value={formData.help}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600 no-scrollbar"
                 placeholder="Tell us how we can help. It could be the project summary or brief."
                 required
               />

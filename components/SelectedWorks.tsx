@@ -5,63 +5,67 @@ import Image from "next/image";
 
 // Define the Selected Works type
 interface SelectedWorks {
-    id?: number;
-    title: string;
-    category?: string;
-    description?: string;
-    imageSrc: string;
-    slug?: string;
+  id?: number;
+  title: string;
+  category?: string;
+  description?: string;
+  imageSrc: string;
+  slug?: string;
 }
 
 const works: SelectedWorks[] = [
   {
     id: 1,
-    title: 'Inventorisk',
-    category: 'Branding',
-    description: 'Short body text and description of the brand',
-    imageSrc: '/assets/selected/inventorisk.png',
-    slug: '/',
+    title: "Inventorisk",
+    category: "Branding",
+    description: "Short body text and description of the brand",
+    imageSrc: "/assets/selected/inventorisk.png",
+    slug: "/",
   },
   {
     id: 2,
-    title: 'Mac not Donalds',
-    category: 'Marketing',
-    description: 'Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...',
-    imageSrc: '/assets/selected/mac.png',
-    slug: '/',
+    title: "Mac not Donalds",
+    category: "Marketing",
+    description:
+      "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
+    imageSrc: "/assets/selected/mac.png",
+    slug: "/",
   },
   {
     id: 3,
-    title: 'Vechia Wase',
-    category: 'Visual Identity',
-    description: 'Creating a consistent brand identity across all touchpoints...',
-    imageSrc: '/assets/selected/wase.png',
-    slug: '/',
+    title: "Vechia Wase",
+    category: "Visual Identity",
+    description:
+      "Creating a consistent brand identity across all touchpoints...",
+    imageSrc: "/assets/selected/wase.png",
+    slug: "/",
   },
   {
     id: 4,
-    title: 'Ciange Fiuim',
-    category: 'Product/UIUX Design',
-    description: 'Short body text and description of the brand',
-    imageSrc: '/assets/selected/ciange.png',
-    slug: '/',
+    title: "Ciange Fiuim",
+    category: "Product/UIUX Design",
+    description: "Short body text and description of the brand",
+    imageSrc: "/assets/selected/ciange.png",
+    slug: "/",
   },
 ];
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-32 mt-32 container mx-auto px-4">
+    <section className="pt-16 md:pt-32 md:mt-32 container mx-auto px-1">
       <div className="container w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
+          <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
             Our work
           </span>
           <hr className="text-gray-400 bg-gray-400" />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-3xl font-normal mb-6 font-neuehaasroman">Selected Works</h2>
+            <h2 className="text-2xl md:text-3xl font-normal mb-6 font-neuehaasroman">
+              Selected Works
+            </h2>
             <Button
               text="See all works"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
+              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
               variant="outline"
             />
           </div>
@@ -81,15 +85,26 @@ const SelectedWorks = () => {
                   />
                 </div>
                 <div className="flex items-center justify-between py-4">
-                  <h3 className="text-lg font-semibold font-neuehaasroman">{work.title}</h3>
+                  <h3 className="text-lg font-medium font-neuehaasroman">
+                    {work.title}
+                  </h3>
                   <span className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight">
                     {work.category}
                   </span>
                 </div>
-                <p className="text-gray-600 font-neuehaaslight">{work.description}</p>
+                <p className="text-gray-600 font-neuehaaslight">
+                  {work.description}
+                </p>
               </div>
             </Link>
           ))}
+        </div>
+        <div className="py-10 flex items-center justify-center">
+          <Button
+            text="See all works"
+            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            variant="outline"
+          />
         </div>
       </div>
     </section>
