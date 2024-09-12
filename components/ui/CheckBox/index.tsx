@@ -7,32 +7,40 @@ interface CheckButtonProps {
   name: string;
   value: string;
   onCheck?: (checked: boolean) => void;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // This will handle the form logic
   className?: string;
 }
 
-const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck, className }) => {
+const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck, onChange, className }) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
-  const handleCheck = () => {
-    setIsChecked(!isChecked);
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setIsChecked(e.target.checked); // Update the visual state based on input change
+
+    // Trigger the form logic
+    onChange(e);
+
+    // Call onCheck if provided (optional)
     if (onCheck) {
-      onCheck(!isChecked);
+      onCheck(e.target.checked);
     }
   };
 
   return (
     <label
-      className={clsx(className, `${
+      className={clsx(
+        className, 
+        `flex items-center p-4 md:p-8 rounded-full border transition-colors duration-300 ease-in-out cursor-pointer`,
         isChecked ? 'border-black bg-transparent' : 'border-gray-200'
-      } flex items-center p-4 md:p-8 rounded-full border transition-colors duration-300 ease-in-out cursor-pointer`)}
+      )}
     >
       {/* Hidden checkbox input */}
       <input
         type="checkbox"
         name={name}
         value={value}
-        checked={isChecked}
-        onChange={handleCheck}
+        checked={isChecked} // Controlled by state
+        onChange={handleChange} // Handle the form logic and visual state update
         className="hidden"
       />
 

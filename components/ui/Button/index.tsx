@@ -7,6 +7,7 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary' | 'outline';
   onClick?: () => void;
   className?: string; // New className prop
+  disabled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -14,6 +15,7 @@ const Button: React.FC<ButtonProps> = ({
   size,
   variant = 'primary',
   onClick,
+  disabled = false,
   className, // Accepting custom className
 }) => {
 
@@ -28,6 +30,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       onClick={onClick}
+      disabled={disabled}
       className={clsx(
         'relative overflow-hidden transition-all duration-300 border font-neuehaasroman group',
         size, // Predefined size classes

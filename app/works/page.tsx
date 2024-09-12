@@ -92,28 +92,27 @@ const Page = () => {
         </div>
       </div>
 
-{/* Filter Section */}
-<div className="container mx-auto mb-10 mt-32 px-2">
-  <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative">
-    {/* Full border line */}
-    <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
+      {/* Filter Section */}
+      <div className="container mx-auto mb-10 mt-32 px-2 flex items-center justify-center">
+        <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative">
+          {/* Full border line */}
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
 
-    {categories.map((category, index) => (
-      <button
-        key={index}
-        className={`relative px-6 py-2 text-sm uppercase whitespace-nowrap font-medium font-neuehaasroman ${
-          selectedCategory === category
-            ? "text-black after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-black"
-            : "text-gray-500"
-        }`}
-        onClick={() => setSelectedCategory(category)}
-      >
-        {category}
-      </button>
-    ))}
-  </div>
-</div>
-
+          {categories.map((category, index) => (
+            <button
+              key={index}
+              className={`relative px-6 py-2 text-sm uppercase whitespace-nowrap font-medium font-neuehaasroman ${
+                selectedCategory === category
+                  ? "text-black after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-black"
+                  : "text-gray-500"
+              }`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+      </div>
 
       {/* Works Section */}
       <div className="container max-w-full">
