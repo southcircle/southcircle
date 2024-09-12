@@ -1,5 +1,6 @@
 "use client";
 import GetInTouch from "@/components/GetInTouch";
+import Meta from "@/components/Meta";
 import Button from "@/components/ui/Button";
 // import WorkHero from "@/components/WorkHero";
 // import Works from "@/components/Works";
@@ -75,6 +76,8 @@ const Page = () => {
       ? works
       : works.filter((work) => work.category === selectedCategory);
   return (
+    <>
+    <Meta title="SouthCircle - Works" description="Imagine more than you see.." />
     <section className="pt-10 mt-28 container mx-auto px-2 max-w-8xl">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto px-2">
@@ -158,6 +161,7 @@ const Page = () => {
         <GetInTouch />
       </div>
     </section>
+    </>
   );
 };
 

@@ -22,10 +22,10 @@ const neueHaasRoman = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "SouthCircle - Home",
-  description: "Welcome to SouthCircle.",
+  title: "South Circle - Imagine more",
+  description: "Ambitious leaders turn to us to craft world-class identities and experiences. We push the boundaries of what&apos;s possible, blending creativity with strategy to shape brand perception.",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
 
