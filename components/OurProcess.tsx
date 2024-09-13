@@ -3,7 +3,7 @@ import React from "react";
 
 const OurProcess = () => {
   return (
-    <div className="pt-32 mt-32 mx-auto px-4 mb-32">
+    <section className="pt-32 mt-32 mx-auto px-4 mb-32">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
@@ -11,9 +11,9 @@ const OurProcess = () => {
           </span>
           <hr className="text-gray-400 bg-gray-400" />
         </div>
-        <div className="space-y-10 mt-24">
+        <div className="space-y-10 mt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 align-text-bottom mb-20">
-            <h1 className="text-8xl md:text-[170px] gap-3 md:gap-28 font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
+            <h1 className="text-8xl md:text-[170px] gap-3 md:gap-2 font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
               <span>How We Make</span>
               <span>it happen.</span>
             </h1>
@@ -103,7 +103,7 @@ const OurProcess = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

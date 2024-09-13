@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className="relative bottom-0 right-0 left-0 container space-y-8 py-20 bg-transparent w-full">
       <div className="flex flex-col md:flex-row gap-10 items-start md:items-center justify-between w-full">
         <div>
-          <div className="text-[88px] md:text-8xl font-bold uppercase tracking-wide text-center font-baseneue w-full leading-none">
+          <div className="text-[80px] md:text-8xl font-bold uppercase tracking-wide text-center font-baseneue w-full leading-none">
             Imagine More.
           </div>
         </div>
