@@ -31,7 +31,7 @@ const blogs: Blogs[] = [
     description:
       "Short body text and description of the brand from the south and risus duis leo ac nunc sapien sit",
     imageSrc: "/assets/blogs/imagine-more.png",
-    slug: "/",
+    slug: "/why-south-circle",
     date: "August 24, 2024",
   },
   {
@@ -41,7 +41,7 @@ const blogs: Blogs[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam text and description of the brand from the south and risus...",
     imageSrc: "/assets/blogs/brain-stretched.png",
-    slug: "/",
+    slug: "/turning-businesses-into-brands",
     date: "September 2, 2024",
   },
   {
@@ -51,7 +51,7 @@ const blogs: Blogs[] = [
     description:
       "Creating a consistent brand identity across all touchpoints...",
     imageSrc: "/assets/blogs/cd-player.png",
-    slug: "/",
+    slug: "/the-impact-of-social-media-on-branding",
     date: "August 14, 2024",
   },
   {
@@ -60,7 +60,7 @@ const blogs: Blogs[] = [
     category: "Product/UIUX Design",
     description: "Short body text and description of the brand",
     imageSrc: "/assets/blogs/headset.png",
-    slug: "/",
+    slug: "/why-designers-love-music",
     date: "August 24, 2024",
   },
   {
@@ -69,7 +69,7 @@ const blogs: Blogs[] = [
     category: "Branding",
     description: "Short body text and description of the brand",
     imageSrc: "/assets/blogs/medical.png",
-    slug: "/",
+    slug: "/build-up-a-tech-career",
     date: "August 24, 2024",
   },
   {
@@ -79,7 +79,7 @@ const blogs: Blogs[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
     imageSrc: "/assets/blogs/apple.png",
-    slug: "/",
+    slug: "/build-up-a-tech-career",
     date: "September 2, 2024",
   },
 ];

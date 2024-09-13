@@ -13,7 +13,7 @@ const RecentInsights = () => {
           <hr className="text-gray-400 bg-gray-400" />
           <div className="w-full flex flex-col md:flex-row align-top gap-28 mt-10">
             <div className="w-full">
-              <Link href="/">
+              <Link href="/blog/build-up-a-tech-career">
                 <div className="w-full flex flex-col md:flex-row gap-4 md:gap-20 items-center">
                   <div className="relative overflow-hidden">
                     <Image
@@ -39,7 +39,7 @@ const RecentInsights = () => {
                       </p>
                     </div>
                     <a
-                      href="/"
+                      href="/blog/build-up-a-tech-career"
                       className="text-sm underline font-neuehaasroman"
                     >
                       Read blog

@@ -121,7 +121,7 @@ const Page = () => {
       <div className="container max-w-full">
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
-            <Link key={index} href={`/works/${work.slug || "/"}`}>
+            <Link key={index} href="#">
               <div className="w-full">
                 <div className="relative w-full h-0 pb-[80%] md:pb-[40%] overflow-hidden">
                   <Image
