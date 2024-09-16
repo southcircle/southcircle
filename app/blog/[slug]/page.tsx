@@ -114,7 +114,7 @@ const WorkDetail = ({
                 Creating a memorable brand identity starts with understanding
                 your target audience and the unique value your brand offers. It
                 involves crafting a brand story that resonates with your
-                audience, effectively communicating your brand's personality,
+                audience, effectively communicating your brand&apos;s personality,
                 values, and purpose. Through strategic messaging, visual
                 elements, and consistent brand voice, you can create a brand
                 identity that captures the essence of your business and leaves a
