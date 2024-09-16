@@ -23,11 +23,11 @@ interface SelectedWorks {
 const works: SelectedWorks[] = [
   {
     id: 1,
-    title: "Inventorisk",
-    category: "Branding",
-    description: "Short body text and description of the brand",
-    imageSrc: "/assets/selected/inventorisk.png",
-    slug: "/",
+    title: "Vash Affairs",
+    category: "Visual Identity",
+    description: "Your go-to Brand for premium skincare solutions",
+    imageSrc: "/assets/selected/visha.jpg",
+    slug: "https://www.behance.net/gallery/168315499/Visual-Identity-Vash-Affairs",
   },
   {
     id: 2,

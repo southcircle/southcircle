@@ -16,11 +16,11 @@ interface SelectedWorks {
 const works: SelectedWorks[] = [
   {
     id: 1,
-    title: "Inventorisk",
-    category: "Branding",
-    description: "Short body text and description of the brand",
-    imageSrc: "/assets/selected/inventorisk.png",
-    slug: "/",
+    title: "Vash Affairs",
+    category: "Visual Identity",
+    description: "Your go-to Brand for premium skincare solutions",
+    imageSrc: "/assets/selected/visha.jpg",
+    slug: "https://www.behance.net/gallery/168315499/Visual-Identity-Vash-Affairs",
   },
   {
     id: 2,
@@ -73,7 +73,7 @@ const SelectedWorks = () => {
         {/* Grid layout for work items */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-20 gap-6 w-full mt-10">
           {works.map((work, index) => (
-            <Link key={index} href={`/works/${work.slug || "/"}`}>
+            <Link key={index} href={`${work.slug || "/"}`}>
               <div className="w-full">
                 <div className="relative w-full aspect-w-16 aspect-h-9 overflow-hidden">
                   <Image
