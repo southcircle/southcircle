@@ -74,7 +74,7 @@ const Header = () => {
         <CustomLink
           href="/works"
           animate={true}
-          text="Work"
+          text="Works"
           className={isActive("/works") ? "text-gray-400" : ""}
         />
         <CustomLink

@@ -14,7 +14,7 @@ import React, { useState } from "react";
 interface SelectedWorks {
   id?: number;
   title: string;
-  category?: string;
+  category?: string[];
   description?: string;
   imageSrc: string;
   slug?: string;
@@ -24,24 +24,23 @@ const works: SelectedWorks[] = [
   {
     id: 1,
     title: "Vash Affairs",
-    category: "Visual Identity",
+    category: ["Visual Identity"],
     description: "Your go-to Brand for premium skincare solutions",
     imageSrc: "/assets/selected/visha.jpg",
     slug: "https://www.behance.net/gallery/168315499/Visual-Identity-Vash-Affairs",
   },
   {
     id: 2,
-    title: "Mac not Donalds",
-    category: "Marketing",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
-    imageSrc: "/assets/selected/mac.png",
-    slug: "/",
+    title: "Xuse Gold",
+    category: ["Visual Identity", "Brand Identity"],
+    description: "Building Trust Through Stability with Gold.",
+    imageSrc: "/assets/selected/xuse.webp",
+    slug: "https://www.behance.net/gallery/184814461/Xuse-Brand-Strategy-Visual-Identity",
   },
   {
     id: 3,
     title: "Vechia Wase",
-    category: "Visual Identity",
+    category: ["Visual Identity"],
     description:
       "Creating a consistent brand identity across all touchpoints...",
     imageSrc: "/assets/selected/wase.png",
@@ -50,7 +49,7 @@ const works: SelectedWorks[] = [
   {
     id: 4,
     title: "Ciange Fiuim",
-    category: "Product/UIUX Design",
+    category: ["Product/UIUX Design"],
     description: "Short body text and description of the brand",
     imageSrc: "/assets/selected/ciange.png",
     slug: "/",
@@ -72,9 +71,9 @@ const Page = () => {
 
   // Filter works based on selected category
   const filteredWorks =
-    selectedCategory === "All"
-      ? works
-      : works.filter((work) => work.category === selectedCategory);
+  selectedCategory === "All"
+    ? works
+    : works.filter((work) => work.category?.includes(selectedCategory));
   return (
     <>
     <Meta title="SouthCircle - Works" description="Imagine more than you see.." />
@@ -118,7 +117,7 @@ const Page = () => {
       </div>
 
       {/* Works Section */}
-      <div className="w-full">
+      <div className="w-[100vw]">
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
             <Link key={index} href="#">
@@ -136,9 +135,17 @@ const Page = () => {
                   <h3 className="text-lg font-semibold font-neuehaaslight">
                     {work.title}
                   </h3>
-                  <span className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight">
-                    {work.category}
-                  </span>
+                  <div className="flex items-center gap-1">
+                    {work?.category &&
+                      work?.category.map((cat, index) => (
+                        <span
+                          key={index}
+                          className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                        >
+                          {cat}
+                        </span>
+                      ))}
+                  </div>
                 </div>
                 <p className="text-gray-600 font-neuehaasroman">
                   {work.description}
