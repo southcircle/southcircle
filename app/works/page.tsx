@@ -2,10 +2,6 @@
 import GetInTouch from "@/components/GetInTouch";
 import Meta from "@/components/Meta";
 import Button from "@/components/ui/Button";
-// import WorkHero from "@/components/WorkHero";
-// import Works from "@/components/Works";
-// import { Post, getPosts } from "@/sanity/queries/posts";
-// import { Recent, getRecents } from "@/sanity/queries/recents";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -71,13 +67,11 @@ const Page = () => {
 
   // Filter works based on selected category
   const filteredWorks =
-  selectedCategory === "All"
-    ? works
-    : works.filter((work) => work.category?.includes(selectedCategory));
+    selectedCategory === "All"
+      ? works
+      : works.filter((work) => work.category?.includes(selectedCategory));
   return (
-    <>
-    <Meta title="SouthCircle - Works" description="Imagine more than you see.." />
-    <section className="pt-10 mt-28 mx-auto px-6 md:px-10">
+    <section className="pt-10 mt-28 mx-auto px-6 md:px-10 max-w-8xl w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto px-2">
         <div className="w-full flex flex-col-reverse md:flex-row gap-10 md:gap-20 justify-center max-w-7xl">
@@ -117,7 +111,7 @@ const Page = () => {
       </div>
 
       {/* Works Section */}
-      <div className="w-[100vw]">
+      <div className="max-w-full w-full mx-auto">
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
             <Link key={index} href="#">
@@ -168,7 +162,6 @@ const Page = () => {
         <GetInTouch />
       </div>
     </section>
-    </>
   );
 };
 
