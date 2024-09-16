@@ -28,19 +28,18 @@ const works: SelectedWorks[] = [
   {
     id: 2,
     title: "Xuse Gold",
-    category: ["Visual Identity", "Brand Identity"],
+    category: ["Visual Identity", "Brand Strategy"],
     description: "Building Trust Through Stability with Gold.",
     imageSrc: "/assets/selected/xuse.webp",
     slug: "https://www.behance.net/gallery/184814461/Xuse-Brand-Strategy-Visual-Identity",
   },
   {
     id: 3,
-    title: "Vechia Wase",
-    category: ["Visual Identity"],
-    description:
-      "Creating a consistent brand identity across all touchpoints...",
-    imageSrc: "/assets/selected/wase.png",
-    slug: "/",
+    title: "GameBox",
+    category: ["Visual Identity", "Brand Strategy"],
+    description: "Your Ultimate Gaming Destination.",
+    imageSrc: "/assets/selected/gamebox.webp",
+    slug: "https://www.behance.net/southcircle",
   },
   {
     id: 4,
@@ -55,7 +54,7 @@ const works: SelectedWorks[] = [
 // Categories to filter by
 const categories = [
   "All",
-  "Branding",
+  "Brand Strategy",
   "Marketing",
   "Visual Identity",
   "Product/UIUX Design",
