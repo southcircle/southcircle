@@ -103,8 +103,8 @@ const Insights: React.FC = () => {
   //   console.log("Maximum Scroll Value:", maxScroll);
 
   return (
-    <section className="pt-16 md:pt-32 md:mt-40 container mx-auto px-1">
-      <div className="container max-w-8xl w-full">
+    <section className="pt-16 md:pt-32 md:mt-40 mx-auto px-6 md:px-10">
+      <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
             Insights
@@ -139,10 +139,19 @@ const Insights: React.FC = () => {
                   height={240}
                   className="object-cover"
                 />
-                <div className="text-sm text-gray-500 my-2 font-neuehaaslight">{blog.date}</div>
-                <h3 className="text-lg font-medium truncate font-neuehaasroman">{blog.title}</h3>
-                <p className="text-gray-600 max-w-[340px] font-neuehaaslight">{blog.description}</p>
-                <a href="#" className="text-black underline my-5 inline-block text-[15px] font-neuehaasroman">
+                <div className="text-sm text-gray-500 my-2 font-neuehaaslight">
+                  {blog.date}
+                </div>
+                <h3 className="text-lg font-medium truncate font-neuehaasroman">
+                  {blog.title}
+                </h3>
+                <p className="text-gray-600 max-w-[340px] font-neuehaaslight">
+                  {blog.description}
+                </p>
+                <a
+                  href="#"
+                  className="text-black underline my-5 inline-block text-[15px] font-neuehaasroman"
+                >
                   Read blog
                 </a>
               </div>
@@ -150,7 +159,7 @@ const Insights: React.FC = () => {
           </div>
         </div>
         {/* Scroll Buttons */}
-        <div className="flex items-center justify-center gap-4 py-2">
+        <div className="flex items-center justify-center gap-4 py-2 mx-auto text-center">
           <button
             className={`text-4xl z-10 p-2 text-black'}`}
             onClick={handleScrollLeft}

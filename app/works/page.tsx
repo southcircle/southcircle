@@ -78,7 +78,7 @@ const Page = () => {
   return (
     <>
     <Meta title="SouthCircle - Works" description="Imagine more than you see.." />
-    <section className="pt-10 mt-28 container mx-auto px-2 max-w-8xl">
+    <section className="pt-10 mt-28 mx-auto px-6 md:px-10">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto px-2">
         <div className="w-full flex flex-col-reverse md:flex-row gap-10 md:gap-20 justify-center max-w-7xl">
@@ -96,7 +96,7 @@ const Page = () => {
       </div>
 
       {/* Filter Section */}
-      <div className="container mx-auto mb-10 mt-32 px-2 flex items-center justify-center">
+      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full container px-10">
         <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
@@ -118,7 +118,7 @@ const Page = () => {
       </div>
 
       {/* Works Section */}
-      <div className="container max-w-full">
+      <div className="w-full">
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
             <Link key={index} href="#">
@@ -128,8 +128,8 @@ const Page = () => {
                     src={work.imageSrc}
                     alt={work.title}
                     className="absolute inset-0 w-full h-full object-cover rounded-sm hover:scale-105 transition-transform duration-500 ease-in-out"
-                    width={1000}
-                    height={300}
+                    width={2800}
+                    height={400}
                   />
                 </div>
                 <div className="flex items-center justify-between py-4">
@@ -157,7 +157,7 @@ const Page = () => {
       </div>
 
       {/* Get In Touch Section */}
-      <div className="container mx-auto px-4 mt-16">
+      <div className="mx-auto px-6 md:px-10 mt-16">
         <GetInTouch />
       </div>
     </section>

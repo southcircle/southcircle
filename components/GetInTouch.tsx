@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const GetInTouch = () => {
   return (
-    <section className="py-32 mb-40 mt-40 mx-auto px-4">
+    <section className="py-32 mb-40 mt-40 mx-auto px-10">
       <div className="max-w-8xl w-full flex items-center justify-center">
         <div className="flex flex-col gap-8 md:gap-16 items-center">
           <p className="flex flex-col text-center gap-1 items-center font-neuehaasroman font-normal text-4xl md:text-7xl">

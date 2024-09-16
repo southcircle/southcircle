@@ -3,7 +3,7 @@ import React from "react";
 
 const OurProcess = () => {
   return (
-    <section className="pt-32 mt-32 mx-auto px-4 mb-32">
+    <section className="pt-32 mt-32 mx-auto mb-32">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
@@ -17,7 +17,7 @@ const OurProcess = () => {
               <span>How We Make</span>
               <span>it happen.</span>
             </h1>
-            <p className="max-w-md md:max-w-xs text-3xl md:text-2xl text-start font-neuehaaslight align-bottom ">
+            <p className="max-w-md md:max-w-xs text-3xl md:text-2xl text-start font-neuehaaslight align-bottom">
               We approach every project with a collaborative process that drives
               alignment and lays the foundation for long-term success.
             </p>

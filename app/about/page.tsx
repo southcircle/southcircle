@@ -9,7 +9,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <main className="pt-10 mt-28 container mx-auto px-2 max-w-8xl">
+    <main className="pt-10 mt-32 mx-auto px-6 md:px-10 max-w-8xl">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center max-w-7xl px-4 md:px-0">

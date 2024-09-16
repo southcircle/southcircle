@@ -52,7 +52,7 @@ const works: SelectedWorks[] = [
 
 const SelectedWorks = () => {
   return (
-    <section className="container pt-16 md:pt-32 md:mt-28 mx-auto px-2">
+    <section className="pt-16 md:pt-32 md:mt-28 mx-auto px-6 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">

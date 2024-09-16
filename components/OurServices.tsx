@@ -10,25 +10,25 @@ const OurServices = () => {
       desc: "Craft clear, actionable strategies that drive brand success and resonate with your target audience.",
       title: "Brand Strategy",
       imageSrc: "/assets/services/brand.svg",
-      style: "p-8 md:p-12 flex flex-col items-start gap-3 bg-[#5975FF0D] rounded-sm",
+      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#5975FF0D] rounded-sm",
     },
     {
       desc: "Design compelling visual elements that represent your brand’s essence and stand out in the market.",
       title: "Visual Identity",
       imageSrc: "/assets/services/visual.svg",
-      style: "p-8 md:p-12 flex flex-col items-start gap-3 bg-[#FF4A4A0D] rounded-sm",
+      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#FF4A4A0D] rounded-sm",
     },
     {
       desc: "Develop integrated marketing strategies to enhance visibility, engage your audience, and drive growth.",
       title: "Marketing",
       imageSrc: "/assets/services/marketing.svg",
-      style: "p-8 md:p-12 flex flex-col items-start gap-3 bg-[#FFC02E0D] rounded-sm",
+      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#FFC02E0D] rounded-sm",
     },
     {
       desc: "Build responsive, user-friendly websites that effectively showcase your brand and achieve your business goals.",
       title: "Development",
       imageSrc: "/assets/services/development.svg",
-      style: "p-8 md:p-12 flex flex-col items-start gap-3 bg-[#0ACC920D] rounded-sm",
+      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#0ACC920D] rounded-sm",
     },
     // Add more testimonials here
   ];
@@ -46,8 +46,8 @@ const OurServices = () => {
   // };
 
   return (
-    <section className="pt-16 md:pt-32 md:mt-32 container mx-auto px-1">
-      <div className="container max-w-8xl w-full">
+    <section className="pt-16 md:pt-32 md:mt-32 mx-auto px-6 md:px-10">
+      <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehaaslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase">
             Our Services
@@ -72,7 +72,7 @@ const OurServices = () => {
               variant="outline"
             />
           </div>
-          <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-3">
+          <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, idx) => (
               <div className={service.style} key={idx}>
                 <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">

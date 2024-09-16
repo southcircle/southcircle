@@ -6,14 +6,14 @@ import Image from "next/image";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="relative bottom-0 right-0 left-0 container space-y-8 py-20 bg-transparent w-full">
+    <footer className="relative bottom-0 right-0 left-0 space-y-8 py-20 bg-transparent w-full px-6 md:px-10">
       <div className="flex flex-col md:flex-row gap-10 items-start md:items-center justify-between w-full">
         <div>
           <div className="text-[80px] md:text-8xl font-bold uppercase tracking-wide text-center font-baseneue w-full leading-none">
             Imagine More.
           </div>
         </div>
-        <div className="flex gap-10 align-top">
+        <div className="flex gap-10 align-top items-start">
           <h4 className="text-[#0C0C0CA3] text-lg font-neuehaaslight">
             Contact
           </h4>
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-14 align-top">
+        <div className="flex gap-14 align-top items-start">
           <h4 className="text-[#0C0C0CA3] text-lg font-neuehaaslight">Links</h4>
           <div className="flex flex-col gap-5 items-start">
             <div className="flex flex-col gap-2 items-start font-neuehaasroman">

@@ -110,7 +110,7 @@ const Page = () => {
         title="SouthCircle - Blogs"
         description="Imagine more than you see.."
       />
-      <section className="pt-10 mt-28 container mx-auto px-2 max-w-8xl">
+      <section className="pt-10 mt-32 mx-auto px-10 max-w-8xl">
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center text-center mx-auto">
           <div className="relative w-full flex flex-col items-center gap-8 md:gap-10 justify-center max-w-7xl mt-4">

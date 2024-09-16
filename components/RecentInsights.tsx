@@ -4,7 +4,7 @@ import React from "react";
 
 const RecentInsights = () => {
   return (
-    <section className="pt-16 md:pt-32 md:mt-32 container mx-auto px-2">
+    <section className="pt-16 md:pt-32 md:mt-32 mx-auto px-2">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehaaslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase">
@@ -32,7 +32,7 @@ const RecentInsights = () => {
                       <h3 className="text-xl font-medium font-neuehaasroman">
                         Why South Circle
                       </h3>
-                      <p className="text-gray-600 font-neuehaaslight">
+                      <p className="text-lg text-gray-600 font-neuehaaslight max-w-2xl">
                         South Circle is redefining brands, beyond conformity
                         from the south and risus duis leo ac nunc sapien sit
                         vestibulum. Convallis amet aliquam odio qraesen cursus.

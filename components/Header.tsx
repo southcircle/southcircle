@@ -54,7 +54,7 @@ const Header = () => {
   }, [toggle]);
 
   return (
-    <div className="container flex justify-between items-center py-6 bg-transparent w-full px-4 bg-white fixed left-0 right-0 z-[999]">
+    <div className="flex justify-between items-center py-6 bg-transparent w-full px-6 md:px-10 bg-white fixed left-0 right-0 z-[999]">
       <Link href="/" className="hidden md:inline-block">
         <img
           src="/logo.svg"

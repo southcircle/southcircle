@@ -79,7 +79,6 @@ const services: Service[] = [
   },
 ];
 
-
 const WhatWeDo = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
@@ -88,7 +87,7 @@ const WhatWeDo = () => {
   };
 
   return (
-    <section className="pt-32 mt-32 mx-auto px-4">
+    <section className="pt-32 mt-32 mx-auto">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
@@ -113,55 +112,59 @@ const WhatWeDo = () => {
           <div className="gap-12">
             {services.map((service, idx) => (
               <div className="mt-6" key={idx}>
-              <div className={`w-full flex items-center justify-center p-16 ${service.serviceStyle}`}>
-                <Image
-                  src={service.serviceImg || ''}
-                  width={160}
-                  height={160}
-                  alt={service.title || 'Service image'}
-                />
-              </div>
-              <div className="flex flex-col md:flex-row gap-8 mt-6 md:mt-0 w-full items-start justify-between py-4 md:pt-0">
-                <h3 className="text-base tracking-wide font-neuehaasroman uppercase md:pt-5">{service.title}</h3>
-                <div className="space-y-6 divide-y-[1px] divide-gray-300 w-full md:max-w-2xl md:w-[620px]">
-                  {service?.services && service?.services.map((faq, index) => (
-                    <div
-                      key={index}
-                      className=""
-                    >
-                      <button
-                        onClick={() => toggleFAQ(index)}
-                        className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-neuehaasroman"
-                      >
-                        {faq.question}
-                        {activeIndex === index ? (
-                          <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
-                            <Image
-                            src="/assets/minus.svg"
-                            width={20}
-                            height={20}
-                            alt="plus"
-                          />
-                         </div>
-                        ) : (
-                          <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
-                          <Image
-                            src="/assets/plus.svg"
-                            width={20}
-                            height={20}
-                            alt="minus"
-                          />
-                          </div>
-                        )}
-                      </button>
-                      {activeIndex === index && (
-                        <p className="mt-2 text-gray-600 font-neuehaaslight">{faq.answer}</p>
-                      )}
-                    </div>
-                  ))}
+                <div
+                  className={`w-full flex items-center justify-center p-20 ${service.serviceStyle}`}
+                >
+                  <Image
+                    src={service.serviceImg || ""}
+                    width={160}
+                    height={160}
+                    alt={service.title || "Service image"}
+                  />
+                </div>
+                <div className="flex flex-col md:flex-row gap-8 mt-6 md:mt-0 w-full items-start justify-between py-4 md:pt-0">
+                  <h3 className="text-lg tracking-wide font-neuehaasroman uppercase md:mt-6">
+                    {service.title}
+                  </h3>
+                  <div className="space-y-6 divide-y-[1px] divide-gray-300 w-full md:max-w-2xl md:w-[620px]">
+                    {service?.services &&
+                      service?.services.map((faq, index) => (
+                        <div key={index} className="">
+                          <button
+                            onClick={() => toggleFAQ(index)}
+                            className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-neuehaasroman"
+                          >
+                            {faq.question}
+                            {activeIndex === index ? (
+                              <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
+                                <Image
+                                  src="/assets/minus.svg"
+                                  width={20}
+                                  height={20}
+                                  alt="plus"
+                                />
+                              </div>
+                            ) : (
+                              <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
+                                <Image
+                                  src="/assets/plus.svg"
+                                  width={20}
+                                  height={20}
+                                  alt="minus"
+                                />
+                              </div>
+                            )}
+                          </button>
+                          {activeIndex === index && (
+                            <p className="mt-2 text-gray-600 font-neuehaaslight">
+                              {faq.answer}
+                            </p>
+                          )}
+                        </div>
+                      ))}
+                  </div>
                 </div>
               </div>
-            </div>
             ))}
           </div>
         </div>
