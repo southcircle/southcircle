@@ -105,119 +105,118 @@ const Page = () => {
       ? blogs
       : blogs.filter((blog) => blog.category === selectedCategory);
   return (
-    
-      <section className="pt-10 mt-32 mx-auto px-10 max-w-8xl">
-        {/* Hero Section */}
-        <div className="flex flex-col items-center justify-center text-center mx-auto">
-          <div className="relative w-full flex flex-col items-center gap-8 md:gap-10 justify-center max-w-7xl mt-4">
-            <h1 className="text-6xl sm:text-7xl scale-125 sm:scale-95 md:text-[160px] font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
-              <span>Insights for your</span>
-              <span>journey.</span>
-            </h1>
-            <p className="max-w-xs text-xl sm:text-2xl text-start font-neuehaaslight md:hidden">
-              Explore the narratives that shape our work and reveal the
-              inspiration behind our projects.
-            </p>
-            <div className="max-w-3xl w-full px-2">
-              <div>
-                <label className="flex items-center justify-between w-full p-4 md:p-6 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
-                  <input
-                    type="text"
-                    name="subscribe"
-                    className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-xl"
-                    placeholder="Enter email here"
-                  />
-                  <Button
-                    text="Subscribe"
-                    className="px-10 py-5 rounded-full font-normal text-base sm:text-lg md:text-[18px] flex justify-center"
-                    variant="outline"
-                  />
-                </label>
-              </div>
+    <section className="pt-10 mt-32 mx-auto px-2 md:px-10 w-full">
+      {/* Hero Section */}
+      <div className="flex flex-col items-center justify-center text-center mx-auto">
+        <div className="relative w-full flex flex-col items-center gap-8 md:gap-10 justify-center max-w-7xl mt-4">
+          <h1 className="text-6xl sm:text-7xl scale-125 sm:scale-95 md:text-[160px] font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
+            <span>Insights for your</span>
+            <span>journey.</span>
+          </h1>
+          <p className="max-w-xs text-xl sm:text-2xl text-start font-neuehaaslight md:hidden">
+            Explore the narratives that shape our work and reveal the
+            inspiration behind our projects.
+          </p>
+          <div className="max-w-3xl w-full px-2">
+            <div>
+              <label className="flex items-center justify-between w-full p-4 md:p-6 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
+                <input
+                  type="text"
+                  name="subscribe"
+                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-xl"
+                  placeholder="Enter email here"
+                />
+                <Button
+                  text="Subscribe"
+                  className="px-10 py-5 rounded-full font-normal text-base sm:text-lg md:text-[18px] flex justify-center"
+                  variant="outline"
+                />
+              </label>
             </div>
-            <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight right-32 sm:right-24 md:right-32 lg:right-64 bottom-48 hidden md:inline-block">
-              Explore the narratives that shape our work and reveal the
-              inspiration behind our projects
-            </p>
           </div>
+          <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight right-32 sm:right-24 md:right-32 lg:right-64 bottom-48 hidden md:inline-block">
+            Explore the narratives that shape our work and reveal the
+            inspiration behind our projects
+          </p>
         </div>
+      </div>
 
-        {/* RECENT INSIGHTS */}
-        <RecentInsights />
+      {/* RECENT INSIGHTS */}
+      <RecentInsights />
 
-        {/* Filter Section */}
-        <div className="container mx-auto mb-10 mt-32 px-2 flex items-center justify-center">
-          <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative">
-            {/* Full border line */}
-            <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
+      {/* Filter Section */}
+      <div className="container mx-auto mb-10 mt-32 px-2 flex items-center justify-center">
+        <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative">
+          {/* Full border line */}
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
 
-            {categories.map((category, index) => (
-              <button
-                key={index}
-                className={`relative px-6 py-2 text-sm uppercase whitespace-nowrap font-medium font-neuehaasroman ${
-                  selectedCategory === category
-                    ? "text-black after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-black"
-                    : "text-gray-500"
-                }`}
-                onClick={() => setSelectedCategory(category)}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
+          {categories.map((category, index) => (
+            <button
+              key={index}
+              className={`relative px-6 py-2 text-sm uppercase whitespace-nowrap font-medium font-neuehaasroman ${
+                selectedCategory === category
+                  ? "text-black after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-black"
+                  : "text-gray-500"
+              }`}
+              onClick={() => setSelectedCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
         </div>
+      </div>
 
-        {/* Works Section */}
-        <div className="max-w-full px-2">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 w-full">
-            {filteredBlogs.map((blog, index) => (
-              <Link key={index} href={`/blog/${blog.slug || "/"}`}>
-                <div className="w-full">
-                  <div className="relative w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
-                    <Image
-                      src={blog.imageSrc}
-                      alt={blog.title}
-                      className="absolute inset-0 w-full h-full object-cover rounded-sm hover:scale-105 transition-transform duration-500 ease-in-out"
-                      width={1000}
-                      height={300}
-                    />
-                  </div>
-                  <div className="flex flex-col gap-1 items-start py-4">
-                    <span className="text-sm text-gray-500 font-neuehaasroman">
-                      {blog.date}
-                    </span>
-                    <h3 className="text-xl font-medium font-neuehaasroman">
-                      {blog.title}
-                    </h3>
-                    <p className="text-gray-600 font-neuehaasroman">
-                      {blog.description}
-                    </p>
-                  </div>
-                  <a
-                    href={`/blog/${blog.slug || "/"}`}
-                    className="text-sm underline font-neuehaasroman"
-                  >
-                    Read blog
-                  </a>
+      {/* Works Section */}
+      <div className="max-w-full px-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 w-full">
+          {filteredBlogs.map((blog, index) => (
+            <Link key={index} href={`/blog/${blog.slug || "/"}`}>
+              <div className="w-full">
+                <div className="relative w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
+                  <Image
+                    src={blog.imageSrc}
+                    alt={blog.title}
+                    className="absolute inset-0 w-full h-full object-cover rounded-sm hover:scale-105 transition-transform duration-500 ease-in-out"
+                    width={1000}
+                    height={300}
+                  />
                 </div>
-              </Link>
-            ))}
-          </div>
-          <div className="py-10 flex items-center justify-center">
-            <Button
-              text="See all blogs"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
-              variant="outline"
-            />
-          </div>
+                <div className="flex flex-col gap-1 items-start py-4">
+                  <span className="text-sm text-gray-500 font-neuehaasroman">
+                    {blog.date}
+                  </span>
+                  <h3 className="text-xl font-medium font-neuehaasroman">
+                    {blog.title}
+                  </h3>
+                  <p className="text-gray-600 font-neuehaasroman">
+                    {blog.description}
+                  </p>
+                </div>
+                <a
+                  href={`/blog/${blog.slug || "/"}`}
+                  className="text-sm underline font-neuehaasroman"
+                >
+                  Read blog
+                </a>
+              </div>
+            </Link>
+          ))}
         </div>
+        <div className="py-10 flex items-center justify-center">
+          <Button
+            text="See all blogs"
+            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            variant="outline"
+          />
+        </div>
+      </div>
 
-        <Newsletter />
-        {/* Get In Touch Section */}
-        <div className="mx-auto px-4 mt-16">
-          <GetInTouch />
-        </div>
-      </section>
+      <Newsletter />
+      {/* Get In Touch Section */}
+      <div className="mx-auto px-4 mt-16">
+        <GetInTouch />
+      </div>
+    </section>
   );
 };
 
