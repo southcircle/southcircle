@@ -204,48 +204,48 @@ const WorkDetail = ({
                     </p>
                   </div>
                 </div>
-                <div className="md:hidden flex flex-col gap-6">
-                  <h2 className="text-2xl md:text-3xl font-medium mb-4 font-neuehaasroman uppercase text-gray-400">
+                <div className="md:hidden flex flex-col gap-2 mt-6">
+                  <h2 className="text-xl md:text-3xl font-medium mb-4 font-neuehaasroman uppercase text-gray-400">
                     Share this news
                   </h2>
                   <div className="w-full flex items-center justify-between gap-2">
                     <Link
                       href="/"
-                      className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+                      className="p-2 md:p-4 border-2 border-black-100 rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
                         src="/assets/x.svg"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                         alt="X"
                       />
-                      <p className="text-xl font-neuehaasroman pr-2">Twitter</p>
+                      <p className="text-sm md:text-xl font-neuehaasroman pr-2">Twitter</p>
                     </Link>
                     <Link
                       href="/"
-                      className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+                      className="p-2 md:p-4 border-2 border-black-100 rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
                         src="/assets/linkedin.svg"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                         alt="X"
                       />
-                      <p className="text-xl font-neuehaasroman pr-2">
+                      <p className="text-sm md:text-xl font-neuehaasroman pr-2">
                         LinkedIn
                       </p>
                     </Link>
                     <Link
                       href="/"
-                      className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+                      className="p-2 md:p-4 border-2 border-black-100 rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
                         src="/assets/facebook.svg"
-                        width={40}
-                        height={40}
+                        width={35}
+                        height={35}
                         alt="X"
                       />
-                      <p className="text-xl font-neuehaasroman pr-2">
+                      <p className="text-sm md:text-xl font-neuehaasroman pr-2">
                         Facebook
                       </p>
                     </Link>
