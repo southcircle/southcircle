@@ -25,18 +25,18 @@ const WorkDetail = ({
   // console.log(work.title);
 
   return (
-    <section className="pt-10 mt-40 mx-auto px-6 md:px-10 max-w-8xl w-full">
+    <section className="pt-10 mt-32 mx-auto px-2 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-start justify-start text-start mb-20 mx-auto w-full">
         <div className="flex flex-col items-start justify-start max-w-7xl md:px-0 w-full">
-          <div className="flex items-center gap-3 py-5 text-gray-400 text-sm text-nowrap font-neuehaaslight">
+          <div className="flex items-center gap-3 py-5 text-gray-400 text-xs md:text-sm text-nowrap font-neuehaaslight">
             <p>BRANDING</p>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <p>AUGUST 14, 2024</p>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <p>8 MINS READ</p>
           </div>
-          <div className="w-full text-7xl md:text-[120px] font-baseneue font-bold flex gap-6 items-center justify-start text-start uppercase whitespace-nowrap">
+          <div className="w-full text-6xl md:text-[120px] font-baseneue font-bold flex gap-6 items-center justify-start text-start uppercase whitespace-nowrap">
             <span>Why South Circle</span>
             <div className="p-2 md:p-5 rounded-full border-[1px] border-black w-fit -rotate-45">
               <Image
