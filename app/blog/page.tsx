@@ -105,11 +105,7 @@ const Page = () => {
       ? blogs
       : blogs.filter((blog) => blog.category === selectedCategory);
   return (
-    <>
-      <Meta
-        title="SouthCircle - Blogs"
-        description="Imagine more than you see.."
-      />
+    
       <section className="pt-10 mt-32 mx-auto px-10 max-w-8xl">
         {/* Hero Section */}
         <div className="flex flex-col items-center justify-center text-center mx-auto">
@@ -222,7 +218,6 @@ const Page = () => {
           <GetInTouch />
         </div>
       </section>
-    </>
   );
 };
 

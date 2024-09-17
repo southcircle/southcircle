@@ -5,7 +5,7 @@ const OurValues = () => {
   return (
     <section className="pt-32 mt-32 mx-auto px-2">
       <div className="w-full mx-auto">
-        <div className="flex flex-col gap-4 w-full font-neuehasslight">
+        <div className="flex flex-col gap-4 w-full font-neuehasslight tracking-[2px]">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
             Our Values
           </span>

@@ -7,7 +7,7 @@ const WhoWeAre = () => {
     <div className="pt-20 mt-20 mx-auto px-2">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
             Who We Are
           </span>
           <hr className="text-gray-400 bg-gray-400" />

@@ -2,17 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer components {
   .container {
     @apply px-4;
   }
 }
 
-
 @layer base {
-  * {
-    @apply !scroll-smooth;
+  html {
+    @apply scroll-smooth;
   }
 }
 
@@ -25,6 +23,7 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+
   /* Hide scrollbar for IE, Edge and Firefox */
   .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
@@ -36,9 +35,8 @@
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
   }
-   
+
   .no-visible-scrollbar::-webkit-scrollbar {
     display: none;
   }
 }
-

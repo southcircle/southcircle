@@ -62,7 +62,7 @@ const FAQ = () => {
       <div className="max-w-8xl w-full flex items-center justify-center mx-auto">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 mx-auto">
           <div className="flex flex-col gap-5">
-            <p className="font-neuehaasroman text-gray-400 tracking-wide text-lg">
+            <p className="font-neuehaasroman text-gray-400 tracking-[2px] text-lg">
               FAQ
             </p>
             <h1 className="font-baseneue text-8xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-start uppercase">

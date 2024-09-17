@@ -50,15 +50,15 @@ const works: SelectedWorks[] = [
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-16 md:pt-32 md:mt-28 mx-auto px-4 md:px-10">
+    <section className="pt-16 md:pt-16 md:mt-28 mx-auto px-4 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
             Our work
           </span>
           <hr className="text-gray-400 bg-gray-400" />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-2xl md:text-3xl font-normal mb-6 font-neuehaasroman">
+            <h2 className="text-2xl md:text-3xl font-normal font-neuehaasroman">
               Selected Works
             </h2>
             <Button

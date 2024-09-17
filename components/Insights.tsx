@@ -106,7 +106,7 @@ const Insights: React.FC = () => {
     <section className="pt-16 md:pt-32 md:mt-40 mx-auto px-4 md:px-10 max-w-full w-full">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
             Insights
           </span>
           <hr />

@@ -44,7 +44,7 @@ const works: SelectedWorks[] = [
   {
     id: 4,
     title: "Ciange Fiuim",
-    category: ["Product/UIUX Design"],
+    category: ["UI/UX Design"],
     description: "Short body text and description of the brand",
     imageSrc: "/assets/selected/ciange.png",
     slug: "/",
@@ -56,8 +56,9 @@ const categories = [
   "All",
   "Brand Strategy",
   "Marketing",
+  "Development",
   "Visual Identity",
-  "Product/UIUX Design",
+  "UI/UX Design",
 ];
 
 const Page = () => {
@@ -89,17 +90,17 @@ const Page = () => {
 
       {/* Filter Section */}
       <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-4">
-        <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative w-full">
+        <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400 w-full max-w-full"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-200"></div>
 
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`relative px-6 py-2 text-sm uppercase whitespace-nowrap font-medium font-neuehaasroman ${
+              className={`relative py-4 text-sm uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman ${
                 selectedCategory === category
                   ? "text-black after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-black"
-                  : "text-gray-500"
+                  : "text-gray-400"
               }`}
               onClick={() => setSelectedCategory(category)}
             >

@@ -6,7 +6,7 @@ const Newsletter = () => {
     <section className="pt-32 mt-32 mx-auto px-2 mb-32">
       <div className="w-full mx-auto p-6 md:p-12 border-[1px] border-gray-300 rounded-b-[60px] md:rounded-b-[100px] space-y-6 md:space-y-8">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
             Stay Above The Curve
           </span>
         </div>

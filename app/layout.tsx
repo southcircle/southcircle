@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
+// import SmoothScroll from "@/components/ui/SmoothScroll";
 // import CustomCusor from "@/components/CustomCusor";
 
 const baseNeue = localFont({
@@ -22,8 +23,9 @@ const neueHaasRoman = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "South Circle - World-class Brand Design Consultancy",
-  description: "We're a Global Brand Design Company crafting World-class identities that make a profound impact on the way brands are perceived.",
+  title: "SouthCircle | World-Class Brand Design Consultancy.",
+  description:
+    "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -36,15 +38,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${baseNeue.variable} ${neueHaasLight.variable} ${neueHaasRoman.variable}`}>
-        {/* <CustomCusor /> */}
-        <main className="relative flex justify-center items-center flex-col overflow-hidden mx-auto">
-          <div className="w-full">
-            <Header />
-          </div>
-          {children}
-          <Footer />
-        </main>
+      <body
+        className={`${baseNeue.variable} ${neueHaasLight.variable} ${neueHaasRoman.variable}`}
+      >
+        <Header />
+        {/* <SmoothScroll> */}
+          <main className="flex justify-center items-center flex-col mx-auto">
+            {children}
+          </main>
+        {/* </SmoothScroll> */}
+        <Footer />
       </body>
     </html>
   );
