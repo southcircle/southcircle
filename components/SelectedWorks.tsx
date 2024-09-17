@@ -40,11 +40,11 @@ const works: SelectedWorks[] = [
   },
   {
     id: 4,
-    title: "Ciange Fiuim",
-    category: ["Product/UIUX Design"],
-    description: "Short body text and description of the brand",
+    title: "Coming Soon...",
+    category: ["UI/UX Design"],
+    description: "Coming...",
     imageSrc: "/assets/selected/ciange.png",
-    slug: "/",
+    slug: "https://www.behance.net/southcircle",
   },
 ];
 
@@ -72,7 +72,7 @@ const SelectedWorks = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-20 gap-6 w-full mt-10">
           {works.map((work, index) => (
             <Link key={index} href={`${work.slug || "/"}`}>
-              <div className="w-full">
+              <div className="w-full space-y-3">
                 <div className="relative w-full md:h-[460px] overflow-hidden">
                   <Image
                     src={work.imageSrc}
@@ -83,7 +83,7 @@ const SelectedWorks = () => {
                     objectFit="cover"
                   />
                 </div>
-                <div className="flex items-center justify-between py-4">
+                <div className="flex space-y-3 items-center justify-between">
                   <h3 className="text-lg font-medium font-neuehaasroman">
                     {work.title}
                   </h3>
@@ -99,6 +99,9 @@ const SelectedWorks = () => {
                       ))}
                   </div>
                 </div>
+                <p className="text-gray-600 font-neuehaaslight">
+                  {work.description}
+                </p>
                 <div className="flex items-center gap-1 md:hidden">
                   {work?.category &&
                     work?.category.map((cat, index) => (
@@ -110,9 +113,6 @@ const SelectedWorks = () => {
                       </span>
                     ))}
                 </div>
-                <p className="text-gray-600 font-neuehaaslight mt-3">
-                  {work.description}
-                </p>
               </div>
             </Link>
           ))}

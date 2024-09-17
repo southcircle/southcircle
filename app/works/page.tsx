@@ -43,11 +43,11 @@ const works: SelectedWorks[] = [
   },
   {
     id: 4,
-    title: "Ciange Fiuim",
+    title: "Coming Soon...",
     category: ["UI/UX Design"],
-    description: "Short body text and description of the brand",
+    description: "Coming soon...",
     imageSrc: "/assets/selected/ciange.png",
-    slug: "/",
+    slug: "https://www.behance.net/southcircle",
   },
 ];
 
@@ -115,7 +115,7 @@ const Page = () => {
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
             <Link key={index} href="#">
-              <div className="w-full">
+              <div className="w-full space-y-3">
                 <div className="relative w-full h-0 pb-[80%] md:pb-[40%] overflow-hidden">
                   <Image
                     src={work.imageSrc}
@@ -125,7 +125,7 @@ const Page = () => {
                     height={400}
                   />
                 </div>
-                <div className="flex items-center justify-between py-4">
+                <div className="flex items-center justify-between space-y-3">
                   <h3 className="text-lg font-semibold font-neuehaaslight">
                     {work.title}
                   </h3>
@@ -141,6 +141,9 @@ const Page = () => {
                       ))}
                   </div>
                 </div>
+                <p className="text-gray-600 font-neuehaaslight mt-3">
+                  {work.description}
+                </p>
                 <div className="flex items-center gap-1 md:hidden">
                   {work?.category &&
                     work?.category.map((cat, index) => (
@@ -152,9 +155,6 @@ const Page = () => {
                       </span>
                     ))}
                 </div>
-                <p className="text-gray-600 font-neuehaaslight mt-3">
-                  {work.description}
-                </p>
               </div>
             </Link>
           ))}
