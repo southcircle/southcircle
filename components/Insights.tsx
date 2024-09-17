@@ -103,7 +103,7 @@ const Insights: React.FC = () => {
   //   console.log("Maximum Scroll Value:", maxScroll);
 
   return (
-    <section className="pt-16 md:pt-32 md:mt-40 mx-auto px-6 md:px-10">
+    <section className="pt-16 md:pt-32 md:mt-40 mx-auto px-4 md:px-10 max-w-full w-full">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
@@ -135,9 +135,10 @@ const Insights: React.FC = () => {
                 <Image
                   src={blog.imageSrc}
                   alt={blog.title}
-                  width={360}
-                  height={240}
-                  className="object-cover"
+                  width={400}
+                  height={400}
+                  className="object-cover  h-[320px]"
+                  objectFit="cover"
                 />
                 <div className="text-sm text-gray-500 my-2 font-neuehaaslight">
                   {blog.date}

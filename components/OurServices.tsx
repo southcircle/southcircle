@@ -46,7 +46,7 @@ const OurServices = () => {
   // };
 
   return (
-    <section className="pt-16 md:pt-32 md:mt-32 mx-auto px-6 md:px-10">
+    <section className="pt-16 md:pt-32 md:mt-32 mx-auto px-4 md:px-10">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehaaslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase">

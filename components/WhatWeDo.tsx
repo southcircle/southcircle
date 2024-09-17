@@ -87,7 +87,7 @@ const WhatWeDo = () => {
   };
 
   return (
-    <section className="pt-32 mt-32 mx-auto">
+    <section className="pt-32 mt-32 mx-auto max-w-full w-full">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">

@@ -70,9 +70,9 @@ const Page = () => {
       ? works
       : works.filter((work) => work.category?.includes(selectedCategory));
   return (
-    <section className="pt-10 mt-28 mx-auto px-6 md:px-10 max-w-8xl w-full">
+    <section className="pt-10 mt-28 mx-auto px-4 md:px-10 max-w-8xl w-full">
       {/* Hero Section */}
-      <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto px-2">
+      <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="w-full flex flex-col-reverse md:flex-row gap-10 md:gap-20 justify-center max-w-7xl">
           <p className="max-w-md text-xl md:text-lg text-start font-neuehaaslight">
             Explore our top projects that showcase our creativity and expertise.
@@ -88,10 +88,10 @@ const Page = () => {
       </div>
 
       {/* Filter Section */}
-      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full container px-10">
-        <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative">
+      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-4">
+        <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative w-full">
           {/* Full border line */}
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400 w-full max-w-full"></div>
 
           {categories.map((category, index) => (
             <button
@@ -128,7 +128,7 @@ const Page = () => {
                   <h3 className="text-lg font-semibold font-neuehaaslight">
                     {work.title}
                   </h3>
-                  <div className="flex items-center gap-1">
+                  <div className="md:flex items-center gap-1 hidden">
                     {work?.category &&
                       work?.category.map((cat, index) => (
                         <span
@@ -140,7 +140,18 @@ const Page = () => {
                       ))}
                   </div>
                 </div>
-                <p className="text-gray-600 font-neuehaasroman">
+                <div className="flex items-center gap-1 md:hidden">
+                  {work?.category &&
+                    work?.category.map((cat, index) => (
+                      <span
+                        key={index}
+                        className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                </div>
+                <p className="text-gray-600 font-neuehaaslight mt-3">
                   {work.description}
                 </p>
               </div>

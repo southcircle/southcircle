@@ -50,7 +50,7 @@ const works: SelectedWorks[] = [
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-16 md:pt-32 md:mt-28 mx-auto px-6 md:px-10">
+    <section className="pt-16 md:pt-32 md:mt-28 mx-auto px-4 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-wide uppercase font-neuehaasroman">
@@ -73,20 +73,21 @@ const SelectedWorks = () => {
           {works.map((work, index) => (
             <Link key={index} href={`${work.slug || "/"}`}>
               <div className="w-full">
-                <div className="relative w-full aspect-w-16 aspect-h-9 overflow-hidden">
+                <div className="relative w-full md:h-[460px] overflow-hidden">
                   <Image
                     src={work.imageSrc}
                     alt={work.title}
-                    className="rounded-sm object-contain hover:scale-125 transition-all ease-in-out duration-500"
+                    className="rounded-sm object-cover hover:scale-125 transition-all ease-in-out duration-500"
                     width={1000}
-                    height={600}
+                    height={500}
+                    objectFit="cover"
                   />
                 </div>
                 <div className="flex items-center justify-between py-4">
                   <h3 className="text-lg font-medium font-neuehaasroman">
                     {work.title}
                   </h3>
-                  <div className="flex items-center gap-1">
+                  <div className="md:flex items-center gap-1 hidden">
                     {work?.category &&
                       work?.category.map((cat, index) => (
                         <span
@@ -98,7 +99,18 @@ const SelectedWorks = () => {
                       ))}
                   </div>
                 </div>
-                <p className="text-gray-600 font-neuehaaslight">
+                <div className="flex items-center gap-1 md:hidden">
+                  {work?.category &&
+                    work?.category.map((cat, index) => (
+                      <span
+                        key={index}
+                        className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                      >
+                        {cat}
+                      </span>
+                    ))}
+                </div>
+                <p className="text-gray-600 font-neuehaaslight mt-3">
                   {work.description}
                 </p>
               </div>
