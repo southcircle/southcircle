@@ -4,7 +4,7 @@ import CountUp from "./ui/CountUp";
 
 const OurJourney = () => {
   return (
-    <section className="py-32 mx-auto px-2">
+    <section className="py-32 mx-auto px-1">
       <div className="max-w-8xl w-full mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-20 text-center">
           <Image

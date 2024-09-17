@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const WhoWeAre = () => {
   return (
-    <div className="pt-20 mt-20 mx-auto px-2">
+    <div className="pt-20 mt-20 mx-auto px-1">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
