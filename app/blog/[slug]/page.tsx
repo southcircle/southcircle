@@ -29,15 +29,15 @@ const WorkDetail = ({
       {/* Hero Section */}
       <div className="flex flex-col items-start justify-start text-start mb-20 mx-auto w-full">
         <div className="flex flex-col items-start justify-start max-w-7xl md:px-0 w-full">
-          <div className="flex items-center gap-3 py-5 text-gray-400 text-sm text-nowrap">
+          <div className="flex items-center gap-3 py-5 text-gray-400 text-sm text-nowrap font-neuehaaslight">
             <p>BRANDING</p>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <p>AUGUST 14, 2024</p>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <p>8 MINS READ</p>
           </div>
-          <div className="w-full text-7xl md:text-[120px] font-baseneue font-bold flex gap-4 items-center justify-start text-start uppercase whitespace-nowrap">
-            <span>Why South Circle?</span>
+          <div className="w-full text-7xl md:text-[120px] font-baseneue font-bold flex gap-6 items-center justify-start text-start uppercase whitespace-nowrap">
+            <span>Why South Circle</span>
             <div className="p-2 md:p-5 rounded-full border-[1px] border-black w-fit -rotate-45">
               <Image
                 src="/assets/arrow-down.svg"
@@ -71,22 +71,22 @@ const WorkDetail = ({
             href="/"
             className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
           >
-            <Image src="/assets/x.svg" width={50} height={50} alt="X" />
-            <p className="text-xl font-neuehaasroman">Twitter</p>
+            <Image src="/assets/x.svg" width={40} height={40} alt="X" />
+            <p className="text-xl font-neuehaasroman pr-2">Twitter</p>
           </Link>
           <Link
             href="/"
             className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
           >
-            <Image src="/assets/linkedin.svg" width={50} height={50} alt="X" />
-            <p className="text-xl font-neuehaasroman">LinkedIn</p>
+            <Image src="/assets/linkedin.svg" width={40} height={40} alt="X" />
+            <p className="text-xl font-neuehaasroman pr-2">LinkedIn</p>
           </Link>
           <Link
             href="/"
             className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
           >
-            <Image src="/assets/facebook.svg" width={50} height={50} alt="X" />
-            <p className="text-xl font-neuehaasroman">Facebook</p>
+            <Image src="/assets/facebook.svg" width={40} height={40} alt="X" />
+            <p className="text-xl font-neuehaasroman pr-2">Facebook</p>
           </Link>
         </div>
 
@@ -101,7 +101,7 @@ const WorkDetail = ({
             <h2 className="text-4xl font-neuehaasroman">
               Creating a memorable brand identity
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 pb-12">
               <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
                 In today&apos;s competitive marketplace, having a strong brand
                 positioning is more crucial than ever. It is the foundation upon
@@ -114,14 +114,14 @@ const WorkDetail = ({
                 Creating a memorable brand identity starts with understanding
                 your target audience and the unique value your brand offers. It
                 involves crafting a brand story that resonates with your
-                audience, effectively communicating your brand&apos;s personality,
-                values, and purpose. Through strategic messaging, visual
-                elements, and consistent brand voice, you can create a brand
-                identity that captures the essence of your business and leaves a
-                lasting impact on your customers.
+                audience, effectively communicating your brand&apos;s
+                personality, values, and purpose. Through strategic messaging,
+                visual elements, and consistent brand voice, you can create a
+                brand identity that captures the essence of your business and
+                leaves a lasting impact on your customers.
               </p>
             </div>
-            <div className="w-full mt-5">
+            <div className="w-full">
               <Image
                 src="/assets/blogs/team.png"
                 width={2000}
@@ -135,7 +135,7 @@ const WorkDetail = ({
             <h2 className="text-4xl font-neuehaasroman">
               Setting your brand apart
             </h2>
-            <div className="space-y-4">
+            <div className="space-y-4 pb-12">
               <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
                 In a crowded marketplace, it is essential to differentiate your
                 brand from competitors. A strong brand positioning allows you to
@@ -154,7 +154,7 @@ const WorkDetail = ({
                 preferred choice in the minds of your target audience.
               </p>
             </div>
-            <div className="w-full mt-5">
+            <div className="w-full mt-20">
               <Image
                 src="/assets/blogs/chidera.png"
                 width={2000}
@@ -188,28 +188,17 @@ const WorkDetail = ({
                 ambassadors who actively promote and support your brand.
               </p>
             </div>
-            <div className="w-full pt-16 flex items-start justify-end">
+            <div className="w-full pt-16 flex items-start">
               <div className="flex flex-col gap-3 items-start max-w-md">
-                <p className="text-xl font-medium font-neuehaasroman uppercase text-gray-400">
-                  IN CONCLUSION
-                </p>
-                <h2 className="text-2xl font-neuehaasroman">
-                  South Circle is redefining brands, beyond conformity from the
-                  south and risus duis leo ac nunc sapien sit vestibulum.
-                  Convallis amet aliquam odio qraesen cursus risus duis leo.
-                </h2>
-                <div className="flex items-center gap-3 mt-6">
-                  <div className="rounded-full">
-                    <Image
-                      src="/assets/blogs/nelson.svg"
-                      width={60}
-                      height={60}
-                      alt="team image"
-                      className="object-cover"
-                    />
-                  </div>
+                <p>Written by:</p>
+                <div className="flex items-center gap-3">
                   <div className="">
-                    <h4 className="font-neuehaasroman">Gold Nelson</h4>
+                    <Link
+                      href="https://www.linkedin.com/in/gold-nelson/"
+                      className="font-neuehaasroman underline"
+                    >
+                      Gold Nelson
+                    </Link>
                     <p className="text-gray-400">
                       Strategy and Client Relation @South Circle
                     </p>
@@ -220,37 +209,46 @@ const WorkDetail = ({
                     Share this news
                   </h2>
                   <div className="w-full flex items-center justify-between gap-2">
-                  <Link
-                    href="/"
-                    className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
-                  >
-                    <Image src="/assets/x.svg" width={50} height={50} alt="X" />
-                    <p className="text-lg md:text-xl font-neuehaasroman">Twitter</p>
-                  </Link>
-                  <Link
-                    href="/"
-                    className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
-                  >
-                    <Image
-                      src="/assets/linkedin.svg"
-                      width={50}
-                      height={50}
-                      alt="X"
-                    />
-                    <p className="text-lg md:text-xl font-neuehaasroman">LinkedIn</p>
-                  </Link>
-                  <Link
-                    href="/"
-                    className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
-                  >
-                    <Image
-                      src="/assets/facebook.svg"
-                      width={40}
-                      height={40}
-                      alt="X"
-                    />
-                    <p className="text-lg md:text-xl font-neuehaasroman">Facebook</p>
-                  </Link>
+                    <Link
+                      href="/"
+                      className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+                    >
+                      <Image
+                        src="/assets/x.svg"
+                        width={40}
+                        height={40}
+                        alt="X"
+                      />
+                      <p className="text-xl font-neuehaasroman pr-2">Twitter</p>
+                    </Link>
+                    <Link
+                      href="/"
+                      className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+                    >
+                      <Image
+                        src="/assets/linkedin.svg"
+                        width={40}
+                        height={40}
+                        alt="X"
+                      />
+                      <p className="text-xl font-neuehaasroman pr-2">
+                        LinkedIn
+                      </p>
+                    </Link>
+                    <Link
+                      href="/"
+                      className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+                    >
+                      <Image
+                        src="/assets/facebook.svg"
+                        width={40}
+                        height={40}
+                        alt="X"
+                      />
+                      <p className="text-xl font-neuehaasroman pr-2">
+                        Facebook
+                      </p>
+                    </Link>
                   </div>
                 </div>
               </div>

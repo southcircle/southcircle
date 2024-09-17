@@ -103,7 +103,7 @@ const MoreInsights: React.FC = () => {
   //   console.log("Maximum Scroll Value:", maxScroll);
 
   return (
-    <section className="pt-16 md:pt-32 md:mt-40 mx-auto px-2">
+    <section className="pt-16 md:pt-32 md:mt-32 mx-auto px-2">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-base text-gray-400 tracking-wide uppercase font-neuehaaslight">
@@ -111,14 +111,9 @@ const MoreInsights: React.FC = () => {
           </span>
           <hr />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-2xl md:ext-4xl mb-6 w-full md:max-w-sm font-neuehaasroman">
+            <h2 className="text-2xl md:text-4xl mb-6 w-full max-w-md font-neuehaasroman">
               If you enjoyed the previous news, check these out.
             </h2>
-            <Button
-              text="See all blogs"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap hidden md:inline-block"
-              variant="outline"
-            />
           </div>
         </div>
 
@@ -135,9 +130,10 @@ const MoreInsights: React.FC = () => {
                 <Image
                   src={blog.imageSrc}
                   alt={blog.title}
-                  width={360}
-                  height={240}
-                  className="object-cover"
+                  width={400}
+                  height={400}
+                  className="object-cover  h-[320px]"
+                  objectFit="cover"
                 />
                 <div className="text-sm text-gray-500 my-2 font-neuehaaslight">
                   {blog.date}
