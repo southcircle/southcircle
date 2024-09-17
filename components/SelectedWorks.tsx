@@ -50,7 +50,7 @@ const works: SelectedWorks[] = [
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-16 md:pt-16 md:mt-28 mx-auto px-4 md:px-10">
+    <section className="pt-32 md:pt-16 md:mt-28 mx-auto px-4 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
