@@ -50,7 +50,7 @@ const works: SelectedWorks[] = [
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-32 md:pt-16 md:mt-28 mx-auto px-4 md:px-10">
+    <section className="pt-40 md:pt-16 md:mt-28 mx-auto px-4 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
@@ -83,7 +83,7 @@ const SelectedWorks = () => {
                     objectFit="cover"
                   />
                 </div>
-                <div className="flex space-y-3 items-center justify-between">
+                <div className="flex gap-2 items-center justify-between">
                   <h3 className="text-lg font-medium font-neuehaasroman">
                     {work.title}
                   </h3>
@@ -99,10 +99,10 @@ const SelectedWorks = () => {
                       ))}
                   </div>
                 </div>
-                <p className="text-gray-600 font-neuehaaslight">
+                <p className="text-gray-600 font-neuehaaslight mt-2">
                   {work.description}
                 </p>
-                <div className="flex items-center gap-1 md:hidden">
+                <div className="flex items-center gap-1 md:hidden mt-2">
                   {work?.category &&
                     work?.category.map((cat, index) => (
                       <span

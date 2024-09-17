@@ -125,7 +125,7 @@ const Page = () => {
                     height={400}
                   />
                 </div>
-                <div className="flex items-center justify-between space-y-3">
+                <div className="flex items-center justify-between gap-2">
                   <h3 className="text-lg font-semibold font-neuehaaslight">
                     {work.title}
                   </h3>
@@ -141,10 +141,10 @@ const Page = () => {
                       ))}
                   </div>
                 </div>
-                <p className="text-gray-600 font-neuehaaslight mt-3">
+                <p className="text-gray-600 font-neuehaaslight mt-2">
                   {work.description}
                 </p>
-                <div className="flex items-center gap-1 md:hidden">
+                <div className="flex items-center gap-1 md:hidden mt-2">
                   {work?.category &&
                     work?.category.map((cat, index) => (
                       <span
