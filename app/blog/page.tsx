@@ -4,10 +4,6 @@ import Meta from "@/components/Meta";
 import Newsletter from "@/components/Newsletter";
 import RecentInsights from "@/components/RecentInsights";
 import Button from "@/components/ui/Button";
-// import WorkHero from "@/components/WorkHero";
-// import Works from "@/components/Works";
-// import { Post, getPosts } from "@/sanity/queries/posts";
-// import { Recent, getRecents } from "@/sanity/queries/recents";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -97,13 +93,14 @@ const categories = [
 
 const Page = () => {
   // State to track the selected category
-  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [selectedCategory, setSelectedCategory] = useState("All Topic");
 
   // Filter works based on selected category
   const filteredBlogs =
-    selectedCategory === "All"
+    selectedCategory === "All Topic"
       ? blogs
       : blogs.filter((blog) => blog.category === selectedCategory);
+
   return (
     <section className="pt-10 mt-32 mx-auto px-2 md:px-10 w-full">
       {/* Hero Section */}
@@ -128,7 +125,7 @@ const Page = () => {
                 />
                 <Button
                   text="Subscribe"
-                  className="px-6 py-5 w-32 rounded-full font-normal text-sm sm:text-base md:text-base flex justify-center"
+                  className="px-6 py-6 w-32 rounded-full font-normal text-sm sm:text-base md:text-base flex justify-center border-gray-400"
                   variant="outline"
                 />
               </label>
@@ -145,18 +142,18 @@ const Page = () => {
       <RecentInsights />
 
       {/* Filter Section */}
-      <div className="container mx-auto mb-10 mt-32 px-2 flex items-center justify-center">
-        <div className="flex gap-4 overflow-x-scroll md:overflow-visible no-scrollbar relative">
+      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-2">
+        <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
 
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`relative px-6 py-2 text-sm uppercase whitespace-nowrap font-medium font-neuehaasroman ${
+              className={`relative py-4 text-sm hover:border-b-[1px] border-gray-600 uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
                 selectedCategory === category
-                  ? "text-black after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-black"
-                  : "text-gray-500"
+                  ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
+                  : "text-gray-400"
               }`}
               onClick={() => setSelectedCategory(category)}
             >

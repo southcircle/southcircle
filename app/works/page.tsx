@@ -4,7 +4,8 @@ import Meta from "@/components/Meta";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
+import gsap from "gsap";
 
 // Define the Selected Works type
 interface SelectedWorks {
@@ -62,14 +63,64 @@ const categories = [
 ];
 
 const Page = () => {
-  // State to track the selected category
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const underlineRef = useRef<HTMLDivElement>(null);
+  const categoryRefs = useRef<(HTMLButtonElement | null)[]>([]);
+  const worksRef = useRef<HTMLDivElement>(null);
 
   // Filter works based on selected category
   const filteredWorks =
     selectedCategory === "All"
       ? works
       : works.filter((work) => work.category?.includes(selectedCategory));
+
+  useLayoutEffect(() => {
+    // Ensure the underline is positioned correctly on page load
+    const selectedIndex = categories.indexOf(selectedCategory);
+    const selectedCategoryEl = categoryRefs.current[selectedIndex];
+
+    if (selectedCategoryEl && underlineRef.current) {
+      const { left, width } = selectedCategoryEl.getBoundingClientRect();
+      gsap.set(underlineRef.current, {
+        x: left,
+        width: width,
+      });
+    }
+  }, []); // Empty dependency array to run only on mount
+
+  useEffect(() => {
+    // Update the underline position whenever the category changes
+    const selectedIndex = categories.indexOf(selectedCategory);
+    const selectedCategoryEl = categoryRefs.current[selectedIndex];
+
+    if (selectedCategoryEl && underlineRef.current) {
+      const { left, width } = selectedCategoryEl.getBoundingClientRect();
+      gsap.to(underlineRef.current, {
+        x: left,
+        width: width,
+        duration: 0.4,
+        ease: "power3.out",
+      });
+    }
+  }, [selectedCategory]);
+
+  // Animate works display
+  useEffect(() => {
+    if (worksRef.current) {
+      gsap.fromTo(
+        worksRef.current.children,
+        { opacity: 0, scale: 0.9 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.4,
+          ease: "power3.out",
+          stagger: 0.1,
+        }
+      );
+    }
+  }, [filteredWorks]);
+
   return (
     <section className="pt-10 mt-28 mx-auto px-4 md:px-10 max-w-8xl w-full">
       {/* Hero Section */}
@@ -89,17 +140,27 @@ const Page = () => {
       </div>
 
       {/* Filter Section */}
-      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-4">
+      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-2">
         <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-200"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-200 w-full"></div>
+
+          {/* Animated underline */}
+          {/* <div
+            ref={underlineRef}
+            className="absolute  bottom-0 h-[2px] bg-black"
+            style={{ width: "0px" }}
+          ></div> */}
 
           {categories.map((category, index) => (
             <button
               key={index}
-              className={`relative py-4 text-sm uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman ${
+              ref={(el) => {
+                categoryRefs.current[index] = el;
+              }}
+              className={`relative py-4 text-sm hover:border-b-[1px] border-gray-600 uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
                 selectedCategory === category
-                  ? "text-black after:content-[''] after:absolute after:left-0 after:right-0 after:bottom-0 after:h-[2px] after:bg-black"
+                  ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                   : "text-gray-400"
               }`}
               onClick={() => setSelectedCategory(category)}
@@ -111,10 +172,10 @@ const Page = () => {
       </div>
 
       {/* Works Section */}
-      <div className="max-w-full w-full mx-auto">
+      <div ref={worksRef} className="max-w-full w-full mx-auto">
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
-            <Link key={index} href="#">
+            <Link key={index} href={work.slug || "#"} target="_blank">
               <div className="w-full space-y-3">
                 <div className="relative w-full h-0 pb-[80%] md:pb-[40%] overflow-hidden">
                   <Image
@@ -159,7 +220,10 @@ const Page = () => {
             </Link>
           ))}
         </div>
-        <Link href="https://www.behance.net/southcircle" className="py-10 flex items-center justify-center">
+        <Link
+          href="https://www.behance.net/southcircle"
+          className="py-10 flex items-center justify-center"
+        >
           <Button
             text="See more works"
             className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"

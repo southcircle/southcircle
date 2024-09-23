@@ -6,7 +6,7 @@ const OurValues = () => {
     <section className="pt-32 mt-32 mx-auto px-1">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight tracking-[2px]">
-          <span className="text-sm text-gray-400 tracking-tight uppercase font-neuehaaslight">
+          <span className="text-sm text-gray-400 tracking-wider uppercase font-neuehaaslight">
             Our Values
           </span>
           <hr className="text-gray-400 bg-gray-400" />
@@ -27,7 +27,7 @@ const OurValues = () => {
           {/* Services Grid */}
           <div className="gap-12">
             <div>
-              <div className="w-full flex items-start text-xl md:text-lg font-neuehaaslight mb-4 md:mb-0">
+              <div className="w-full flex items-start text-xl md:text-lg font-neuehaaslight mb-8">
                 <p>
                   At South Circle, our culture is rooted in collaboration and
                   flexibility. We have a few traditions, like our monthly
@@ -42,48 +42,48 @@ const OurValues = () => {
                 </p>
               </div>
               <div className="flex flex-col">
-                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-8 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Driven by ambition
                   </h4>
-                  <p className="max-w-lg font-neuehaaslight text-xl text-gray-400">
+                  <p className="max-w-lg font-neuehaaslight text-[#656565]">
                     We&apos;re hungry to lead, constantly pushing ourselves to
                     set new standards in the design world.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-8 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Resilient by nature
                   </h4>
-                  <p className="max-w-lg font-neuehaaslight text-xl text-gray-400">
+                  <p className="max-w-lg font-neuehaaslight text-[#656565]">
                     Challenges? Bring them on. We tackle every obstacle with
                     grit and a relentless pursuit of excellence.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-8 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Integrity always
                   </h4>
-                  <p className="max-w-lg font-neuehaaslight text-xl text-gray-400">
+                  <p className="max-w-lg font-neuehaaslight text-[#656565]">
                     We keep it real, delivering top-tier work with honesty and
                     transparency every step of the way.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-8 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Genuine interest
                   </h4>
-                  <p className="max-w-lg font-neuehaaslight text-xl text-gray-400">
+                  <p className="max-w-lg font-neuehaaslight text-[#656565]">
                     Understanding, helping, learning—that&apos;s how we approach
                     relationships. Everyone receives top-notch treatment,
                     without exception.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-8 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Playful spirit
                   </h4>
-                  <p className="max-w-lg font-neuehaaslight text-xl text-gray-400">
+                  <p className="max-w-lg font-neuehaaslight text-[#656565]">
                     Like us, South Circle is a child at heart: curious, filled
                     with wonder, and intense. The day we lose that is the day we
                     step aside.

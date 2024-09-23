@@ -69,21 +69,21 @@ const WorkDetail = ({
           </h2>
           <Link
             href="/"
-            className="p-2 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+            className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/x.svg" width={26} height={26} alt="X" />
             <p className="text-lg font-neuehaasroman pr-2">Twitter</p>
           </Link>
           <Link
             href="/"
-            className="p-2 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+            className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/linkedin.svg" width={26} height={26} alt="X" />
             <p className="text-lg font-neuehaasroman pr-2">LinkedIn</p>
           </Link>
           <Link
             href="/"
-            className="p-2 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+            className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/facebook.svg" width={26} height={26} alt="X" />
             <p className="text-lg font-neuehaasroman pr-2">Facebook</p>
@@ -211,7 +211,7 @@ const WorkDetail = ({
                   <div className="w-full flex items-center justify-between gap-2">
                     <Link
                       href="/"
-                      className="p-2 md:p-4 border-2 border-black-100 rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
+                      className="p-2 md:p-4 border border-[#2d2d2d] rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
                         src="/assets/x.svg"
@@ -223,7 +223,7 @@ const WorkDetail = ({
                     </Link>
                     <Link
                       href="/"
-                      className="p-2 md:p-4 border-2 border-black-100 rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
+                      className="p-2 md:p-4 border border-[#2d2d2d] rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
                         src="/assets/linkedin.svg"
@@ -237,7 +237,7 @@ const WorkDetail = ({
                     </Link>
                     <Link
                       href="/"
-                      className="p-2 md:p-4 border-2 border-black-100 rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
+                      className="p-2 md:p-4 border border-[#2d2d2d] rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
                         src="/assets/facebook.svg"
