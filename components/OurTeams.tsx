@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface Team {
@@ -17,22 +18,22 @@ const teams: Team[] = [
     fullname: "Chidera Nwanyemike",
     title: "Managing Director & CEO",
     imageSrc: "/assets/team/chidera.png",
-    mail: "chidera@southcircle.co",
-    contact: "+234 906 328 8657",
+    twitter: "https://x.com/chideranwanyemi",
+    linkedin: "https://www.linkedin.com/in/ozoofsouth/",
   },
   {
     fullname: "Oke Omorohwovo",
     title: "Chief Operating Officer",
     imageSrc: "/assets/team/oke.png",
-    mail: "oke@southcircle.co",
-    contact: "+234 905 959 0500",
+    twitter: "https://x.com/Oakswood6",
+    linkedin: "https://www.linkedin.com/in/oke-omorohwovo-41089515b/",
   },
   {
     fullname: "Gold Nelson",
     title: "Strategy and Client Relations",
     imageSrc: "/assets/team/nelson.png",
-    mail: "nelson@southcircle.co",
-    contact: "+234 902 370 8031",
+    twitter: "https://x.com/i_am_goldnelson",
+    linkedin: "https://www.linkedin.com/in/gold-nelson/",
   },
 ];
 
@@ -69,9 +70,18 @@ const OurTeams = () => {
                   {team.title}
                 </p>
               </div>
-              <div className="text-start mb-3">
-                <p className="font-neuehaaslight text-gray-400 tracking-tight">{team.mail}</p>
-                <p className="font-neuehaaslight text-gray-400 tracking-tight">{team.contact}</p>
+              <div className="flex items-center gap-1 text-start mb-3">
+                <Link href={team.twitter || "#"} className="bg-black p-[1px]">
+                  <Image src="/assets/x.svg" width={20} height={20} alt="X" />
+                </Link>
+                <Link href={team.linkedin || "#"} className="bg-black p-[1px]">
+                  <Image
+                    src="/assets/linkedin.svg"
+                    width={20}
+                    height={20}
+                    alt="linkedin"
+                  />
+                </Link>
               </div>
             </div>
           ))}

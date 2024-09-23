@@ -145,7 +145,7 @@ const Page = () => {
       <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-2">
         <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
-          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-400"></div>
+          <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-200"></div>
 
           {categories.map((category, index) => (
             <button

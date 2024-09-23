@@ -18,6 +18,23 @@ const WorkDetail = ({
 }) => {
   const { slug } = params;
 
+  // Function to handle opening social share links
+  const openShareLink = (url: string) => {
+    window.open(url, "_blank");
+  };
+
+  const twitterUrl = `https://twitter.com/share?url=${encodeURIComponent(
+    slug
+  )}`;
+
+  const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+    slug
+  )}`;
+
+  const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+    slug
+  )}`;
+
   console.log(slug);
 
   // const work = await getDetailRecent(slug) || await getDetailPost(slug);
@@ -64,30 +81,30 @@ const WorkDetail = ({
       <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[480px,_1fr]">
         {/* LEFT HAND SIDE */}
         <div className="md:flex flex-col gap-4 hidden">
-          <h2 className="text-lg font-medium mb-4 font-neuehaasroman uppercase text-gray-400">
+          <h2 className="text-lg font-medium mb-4 font-neuehaasroman uppercase text-gray-400 tracking-wider">
             Share this news
           </h2>
-          <Link
-            href="/"
+          <button
+            onClick={() => openShareLink(twitterUrl)}
             className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/x.svg" width={26} height={26} alt="X" />
             <p className="text-lg font-neuehaasroman pr-2">Twitter</p>
-          </Link>
-          <Link
-            href="/"
+          </button>
+          <button
+            onClick={() => openShareLink(linkedInUrl)}
             className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/linkedin.svg" width={26} height={26} alt="X" />
             <p className="text-lg font-neuehaasroman pr-2">LinkedIn</p>
-          </Link>
-          <Link
-            href="/"
+          </button>
+          <button
+            onClick={() => openShareLink(facebookUrl)}
             className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/facebook.svg" width={26} height={26} alt="X" />
             <p className="text-lg font-neuehaasroman pr-2">Facebook</p>
-          </Link>
+          </button>
         </div>
 
         {/* RIGHT HAND SIDE */}
@@ -190,7 +207,7 @@ const WorkDetail = ({
             </div>
             <div className="w-full pt-16 flex items-start">
               <div className="flex flex-col gap-3 items-start max-w-md">
-                <p>Written by:</p>
+                <p className="font-neuehaasroman">Written by:</p>
                 <div className="flex items-center gap-3">
                   <div className="">
                     <Link
@@ -200,17 +217,17 @@ const WorkDetail = ({
                       Gold Nelson
                     </Link>
                     <p className="text-gray-400 font-neuehaasroman">
-                      Strategy and Client Relation @ South Circle
+                      Strategy and Client Relation, South Circle
                     </p>
                   </div>
                 </div>
                 <div className="md:hidden flex flex-col gap-2 mt-6">
-                  <h2 className="text-base font-medium mb-2 font-neuehaasroman uppercase text-gray-400">
+                  <h2 className="text-base font-medium mb-2 font-neuehaasroman uppercase text-gray-400 tracking-wider">
                     Share this news
                   </h2>
                   <div className="w-full flex items-center justify-between gap-2">
-                    <Link
-                      href="/"
+                    <button
+                      onClick={() => openShareLink(twitterUrl)}
                       className="p-2 md:p-4 border border-[#2d2d2d] rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
@@ -220,9 +237,9 @@ const WorkDetail = ({
                         alt="X"
                       />
                       <p className="text-xs font-neuehaasroman pr-2">Twitter</p>
-                    </Link>
-                    <Link
-                      href="/"
+                    </button>
+                    <button
+                      onClick={() => openShareLink(linkedInUrl)}
                       className="p-2 md:p-4 border border-[#2d2d2d] rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
@@ -234,9 +251,9 @@ const WorkDetail = ({
                       <p className="text-xs font-neuehaasroman pr-2">
                         LinkedIn
                       </p>
-                    </Link>
-                    <Link
-                      href="/"
+                    </button>
+                    <button
+                      onClick={() => openShareLink(facebookUrl)}
                       className="p-2 md:p-4 border border-[#2d2d2d] rounded-full text-nowrap flex items-center justify-start w-fit gap-2 md:gap-4"
                     >
                       <Image
@@ -248,7 +265,7 @@ const WorkDetail = ({
                       <p className="text-xs font-neuehaasroman pr-2">
                         Facebook
                       </p>
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </div>

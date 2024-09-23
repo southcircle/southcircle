@@ -158,7 +158,7 @@ const Page = () => {
               ref={(el) => {
                 categoryRefs.current[index] = el;
               }}
-              className={`relative py-4 text-sm hover:border-b-[1px] border-gray-600 uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
+              className={`relative py-4 text-sm hover:border-b-[1px] hover:border-gray-600 uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
                 selectedCategory === category
                   ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                   : "text-gray-400"
