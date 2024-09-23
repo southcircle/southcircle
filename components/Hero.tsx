@@ -18,7 +18,7 @@ const Hero = () => {
           <Link href="/contact">
             <Button
               text="Start a conversation"
-              className="px-10 py-5 rounded-full font-normal text-base sm:text-lg md:text-[18px]"
+              className=" w-[230px] h-20 rounded-full whitespace-nowrap font-normal text-base sm:text-lg md:text-[18px]"
               variant="outline"
             />
           </Link>

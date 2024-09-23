@@ -108,7 +108,7 @@ const Page = () => {
     <section className="pt-10 mt-32 mx-auto px-2 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mx-auto">
-        <div className="relative w-full flex flex-col items-center gap-8 md:gap-10 justify-center max-w-7xl mt-4">
+        <div className="relative w-full flex flex-col items-center gap-8 justify-center max-w-7xl">
           <h1 className="text-6xl sm:text-7xl scale-125 sm:scale-95 md:text-[160px] font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
             <span>Insights for your</span>
             <span>journey.</span>
@@ -123,12 +123,12 @@ const Page = () => {
                 <input
                   type="text"
                   name="subscribe"
-                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-xl"
+                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-xl font-neuehaaslight pl-4"
                   placeholder="Enter email here"
                 />
                 <Button
                   text="Subscribe"
-                  className="px-10 py-5 rounded-full font-normal text-base sm:text-lg md:text-[18px] flex justify-center"
+                  className="px-6 py-5 w-32 rounded-full font-normal text-sm sm:text-base md:text-base flex justify-center"
                   variant="outline"
                 />
               </label>
@@ -205,7 +205,7 @@ const Page = () => {
         <div className="py-10 flex items-center justify-center">
           <Button
             text="See all blogs"
-            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-5 w-32 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
         </div>

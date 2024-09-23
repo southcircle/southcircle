@@ -89,17 +89,17 @@ const ContactForm: React.FC = () => {
               <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl">
                 What are you looking to do?
               </label>
-              <div className="grid grid-cols-2 gap-4 md:gap-6">
+              <div className="grid grid-cols-2 gap-2 md:gap-6">
                 <CheckBox
                   name="service"
                   value="Branding"
-                  title="Brand/Visual Identity"
+                  title="Brand Identity"
                   onChange={handleChange}
                 />
                 <CheckBox
                   name="service"
-                  value="Web development"
-                  title="A website"
+                  value="Development"
+                  title="A Website"
                   onChange={handleChange}
                 />
                 <CheckBox
@@ -110,15 +110,15 @@ const ContactForm: React.FC = () => {
                 />
                 <CheckBox
                   name="service"
-                  value="App development"
-                  title="Mobile app development"
+                  value="App Development"
+                  title="App Development"
                   onChange={handleChange}
                 />
               </div>
             </div>
             <div className="w-full">
               <label
-                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                className="block text-gray-700 font-medium font-neuehaaslight mb-2 md:mb-4 text-base md:text-xl"
                 htmlFor="name"
               >
                 What&apos;s your name?
@@ -129,14 +129,14 @@ const ContactForm: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
-                placeholder="Gold Nelson"
+                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                placeholder="Full Name"
                 required
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 md:text-xl"
                 htmlFor="organization"
               >
                 What&apos;s your company/organisation name?
@@ -147,14 +147,14 @@ const ContactForm: React.FC = () => {
                 name="organization"
                 value={formData.organization}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="South Circle Co."
                 required
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 md:text-xl"
                 htmlFor="email"
               >
                 What&apos;s your email?
@@ -165,14 +165,14 @@ const ContactForm: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
-                placeholder="nelson@southcircle.co"
+                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                placeholder="example@mail.com"
                 required
               />
             </div>
             <div className="w-full">
               <label
-                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 md:text-xl"
                 htmlFor="contact"
               >
                 How did you find us?
@@ -183,13 +183,13 @@ const ContactForm: React.FC = () => {
                 name="contact"
                 value={formData.contact}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="LinkedIn, Google, Instagram,..."
                 required
               />
             </div>
             <div className="w-full">
-              <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl">
+              <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 md:text-xl">
                 What&apos;s your estimated project budget? *
               </label>
               <div className="grid grid-cols-2 gap-4 md:gap-6">
@@ -221,7 +221,7 @@ const ContactForm: React.FC = () => {
             </div>
             <div className="w-full">
               <label
-                className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl"
+                className="block text-gray-700 font-medium font-neuehaaslight mb-4 md:text-xl"
                 htmlFor="help"
               >
                 Describe your project
@@ -231,7 +231,7 @@ const ContactForm: React.FC = () => {
                 name="help"
                 value={formData.help}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600 no-scrollbar"
+                className="no-scrollbar w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="Tell us how we can help. It could be the project summary or brief."
                 required
               />
@@ -239,7 +239,7 @@ const ContactForm: React.FC = () => {
             <div className="w-full mx-auto mt-8">
               <Button
                 text={isSubmitting ? "Sending..." : "Send the message"}
-                className="px-8 py-8 text-lg font-medium rounded-full whitespace-nowrap font-neuehaaslight w-[200px] md:w-fit"
+                className="px-8 py-8 text-sm md:text-lg font-medium rounded-full whitespace-nowrap font-neuehaaslight w-40 md:w-48"
                 variant="outline"
                 disabled={isSubmitting}
               />

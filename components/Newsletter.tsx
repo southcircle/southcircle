@@ -26,12 +26,12 @@ const Newsletter = () => {
             <input
               type="email"
               name="subscribe"
-              className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-lg font-neuehaaslight text-lg"
+              className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-lg font-neuehaaslight text-lg pl-4"
               placeholder="Enter email here"
             />
             <Button
               text="Subscribe"
-              className="px-6 md:px-10 py-3 md:py-5 rounded-full font-normal text-sm text-center sm:text-lg md:text-[18px] flex justify-center"
+              className="px-6 w-32 md:px-10 py-3 md:py-5 rounded-full font-normal text-sm text-center md:text-sm flex justify-center"
               variant="outline"
             />
           </label>

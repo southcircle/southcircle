@@ -95,23 +95,25 @@ const WhatWeDo = () => {
           </span>
           <hr className="text-gray-400 bg-gray-400" />
         </div>
-        <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[500px,_1fr]">
+        <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[360px,_1fr]">
           {/* Left Column - Title and Button */}
           <div className="max-w-sm md:w-full space-y-6">
             <h2 className="text-4xl font-medium mb-4 font-neuehaasroman">
               Building a Strong Foundation
             </h2>
+            <div>
             <Button
               text="Get in touch"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
+              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
               variant="outline"
             />
+            </div>
           </div>
 
           {/* Services Grid */}
           <div className="gap-12">
             {services.map((service, idx) => (
-              <div className="mt-6" key={idx}>
+              <div className="mt-8 md:mt-0" key={idx}>
                 <div
                   className={`w-full flex items-center justify-center p-20 ${service.serviceStyle}`}
                 >

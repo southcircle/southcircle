@@ -16,11 +16,13 @@ const OurValues = () => {
             <h2 className="text-4xl font-neuehaasroman mb-4">
               Powered by intellect driven by values.
             </h2>
+            <div>
             <Button
               text="Get in touch"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
+              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
               variant="outline"
             />
+            </div>
           </div>
           {/* Services Grid */}
           <div className="gap-12">
@@ -40,7 +42,7 @@ const OurValues = () => {
                 </p>
               </div>
               <div className="flex flex-col">
-                <div className="flex flex-col md:flex-row gap-2 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Driven by ambition
                   </h4>
@@ -49,7 +51,7 @@ const OurValues = () => {
                     set new standards in the design world.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-2 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Resilient by nature
                   </h4>
@@ -58,7 +60,7 @@ const OurValues = () => {
                     grit and a relentless pursuit of excellence.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-2 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Integrity always
                   </h4>
@@ -67,7 +69,7 @@ const OurValues = () => {
                     transparency every step of the way.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-2 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Genuine interest
                   </h4>
@@ -77,7 +79,7 @@ const OurValues = () => {
                     without exception.
                   </p>
                 </div>
-                <div className="flex flex-col md:flex-row gap-2 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
+                <div className="flex flex-col md:flex-row gap-4 items-start justify-between w-full py-6 border-b-[1px] border-gray-400">
                   <h4 className="font-neuehaasroman font-medium whitespace-nowrap">
                     Playful spirit
                   </h4>

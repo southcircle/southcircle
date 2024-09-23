@@ -3,28 +3,23 @@ import clsx from 'clsx';
 
 interface ButtonProps {
   text: string;
-  size?: string;
   variant?: 'primary' | 'secondary' | 'outline';
   onClick?: () => void;
-  className?: string; // New className prop
+  className?: string;
   disabled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
   text,
-  size,
   variant = 'primary',
   onClick,
   disabled = false,
-  className, // Accepting custom className
+  className,
 }) => {
-
-
-  // Define variants for text, background, and border based on the button type
   const baseClasses = {
-    primary: 'bg-blue-500 text-white border-transparent',
+    primary: 'bg-blue-500 text-white border-transparent mx-auto',
     secondary: 'bg-gray-500 text-white border-transparent',
-    outline: 'bg-white text-black border-black',
+    outline: 'bg-white text-black border-black mx-auto',
   };
 
   return (
@@ -33,27 +28,36 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       className={clsx(
         'relative overflow-hidden transition-all duration-300 border font-neuehaasroman group',
-        size, // Predefined size classes
-        baseClasses[variant], // Predefined variant classes
-        className // Custom classes passed via the className prop
+        className, // This handles custom padding and other styles
+        baseClasses[variant]
       )}
     >
-      {/* Button Text */}
+      {/* First span: Moves up and disappears */}
       <span
         className={clsx(
-          'relative z-10 transition-colors duration-500 ease-in-out',
+          'absolute inset-0 flex items-center text-center justify-center transition-transform duration-500 ease-in-out transform',
           {
-            'group-hover:text-white': variant === 'outline' || variant === 'primary',
-            'group-hover:text-black': variant === 'secondary',
+            'group-hover:-translate-y-full': variant === 'outline' || variant === 'primary',
+            'translate-y-0': true,
           }
         )}
+        style={{ padding: 'inherit' }} // Make sure padding is inherited from the button
       >
         {text}
       </span>
-      {/* Background Animation */}
+
+      {/* Second span: Comes from the bottom */}
       <span
-        className="rounded-full absolute inset-0 bg-black transition-all duration-500 ease-in-out transform translate-y-full group-hover:translate-y-0"
-      />
+        className={clsx(
+          'absolute inset-0 bg-black text-white flex items-center justify-center transition-transform duration-500 ease-in-out transform translate-y-full rounded-full',
+          {
+            'group-hover:translate-y-0': variant === 'outline' || variant === 'primary',
+          }
+        )}
+        style={{ padding: 'inherit' }} // Make sure padding is inherited from the button
+      >
+        {text}
+      </span>
     </button>
   );
 };

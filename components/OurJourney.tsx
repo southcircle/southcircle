@@ -23,7 +23,7 @@ const OurJourney = () => {
           />
         </div>
         <div className="py-20 flex items-end justify-center">
-          <p className="max-w-md font-medium font-neuehaasroman text-5xl">
+          <p className="font-medium font-neuehaasroman max-w-lg text-4xl md:text-5xl">
             We are not content with just blending in - we are on a mission to
             stand out, with vision to become one of the leading agencies in
             Southern Nigeria.

@@ -50,22 +50,24 @@ const works: SelectedWorks[] = [
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-40 md:pt-16 md:mt-28 mx-auto px-4 md:px-10">
+    <section className="pt-60 md:pt-60 md:mt-28 mx-auto px-4 md:px-10 ">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
             Our work
           </span>
           <hr className="text-gray-400 bg-gray-400" />
-          <div className="py-2 flex items-center justify-between">
+          <div className="py-2 flex items-center justify-between w-full">
             <h2 className="text-2xl md:text-3xl font-normal font-neuehaasroman">
               Selected Works
             </h2>
+            <div>
             <Button
               text="See all works"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
+              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
               variant="outline"
             />
+            </div>
           </div>
         </div>
         {/* Grid layout for work items */}
@@ -77,14 +79,14 @@ const SelectedWorks = () => {
                   <Image
                     src={work.imageSrc}
                     alt={work.title}
-                    className="rounded-sm object-cover hover:scale-125 transition-all ease-in-out duration-500"
+                    className="rounded-sm object-cover hover:scale-110 h-full transition-all ease-in-out duration-500"
                     width={1000}
                     height={500}
                     objectFit="cover"
                   />
                 </div>
-                <div className="flex gap-2 items-center justify-between">
-                  <h3 className="text-lg font-medium font-neuehaasroman">
+                <div className="flex gap-1 items-center justify-between">
+                  <h3 className="text-sm md:text-lg font-medium font-neuehaasroman">
                     {work.title}
                   </h3>
                   <div className="md:flex items-center gap-1 hidden">
@@ -99,15 +101,15 @@ const SelectedWorks = () => {
                       ))}
                   </div>
                 </div>
-                <p className="text-gray-600 font-neuehaaslight mt-2">
+                <p className="text-gray-600 font-neuehaaslight">
                   {work.description}
                 </p>
-                <div className="flex items-center gap-1 md:hidden mt-2">
+                <div className="flex items-center gap-1 md:hidden mt-1">
                   {work?.category &&
                     work?.category.map((cat, index) => (
                       <span
                         key={index}
-                        className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                        className="border-[1px] text-xs border-black px-2 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                       >
                         {cat}
                       </span>
@@ -117,13 +119,13 @@ const SelectedWorks = () => {
             </Link>
           ))}
         </div>
-        <div className="py-10 flex items-center justify-center">
+        <Link href="/works" className="py-10 flex items-center justify-center">
           <Button
             text="See all works"
-            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
-        </div>
+        </Link>
       </div>
     </section>
   );

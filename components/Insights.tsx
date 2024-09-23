@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Button from "./ui/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 // Define the Blog type
 interface Blog {
@@ -110,15 +111,17 @@ const Insights: React.FC = () => {
             Insights
           </span>
           <hr />
-          <div className="py-2 flex items-center justify-between">
+          <div className="py-2 flex items-center justify-between w-full">
             <h2 className="text-2xl md:ext-3xl mb-6 w-full md:max-w-sm font-neuehaasroman">
               Read through the wonderful insights from our Journey.
             </h2>
+            <div>
             <Button
               text="See all blogs"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap hidden md:inline-block"
+              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap hidden md:inline-block"
               variant="outline"
             />
+            </div>
           </div>
         </div>
 
@@ -184,13 +187,13 @@ const Insights: React.FC = () => {
             />
           </button>
         </div>
-        <div className="py-10 flex items-center justify-center">
+        <Link href="/blogs" className="py-10 flex items-center justify-center">
           <Button
             text="See all blogs"
-            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
-        </div>
+        </Link>
       </div>
     </section>
   );

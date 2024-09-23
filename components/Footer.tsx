@@ -20,9 +20,9 @@ const Footer = () => {
           <div className="flex flex-col gap-5 items-start font-neuehaasroman">
             <div className="flex flex-col gap-2 items-start font-medium">
               <CustomLink
-                href="tel:+234905333432"
+                href="tel:+2349063288657"
                 animate={false}
-                text="+23458-034-5353"
+                text="+23490-6328-8657"
               />
               <CustomLink
                 href="mailto:hello@southcircle.co"

@@ -13,7 +13,7 @@ const page = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center max-w-7xl md:px-0">
-          <h1 className="w-full text-8xl md:text-[160px]  font-baseneue font-bold flex flex-col items-start text-start uppercase whitespace-nowrap">
+          <h1 className="w-full text-7xl md:text-[160px]  font-baseneue font-bold flex flex-col items-start text-start uppercase whitespace-nowrap">
             <span>Curious about</span>
             <span>us? here&apos;s the</span>
             <span>inside scoop.</span>
@@ -31,7 +31,7 @@ const page = () => {
           width={540}
           height={240}
           alt="about-down"
-          className="object-contain mt-20"
+          className="object-contain mt-12"
         />
       </div>
       <WhoWeAre />

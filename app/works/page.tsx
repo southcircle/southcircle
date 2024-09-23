@@ -80,7 +80,7 @@ const Page = () => {
             See how we turn bold ideas into impactful results and push the
             boundaries of design.
           </p>
-          <h1 className="text-8xl md:text-9xl font-baseneue font-bold flex flex-col items-start text-start uppercase">
+          <h1 className="text-7xl md:text-9xl font-baseneue font-bold flex flex-col items-start text-start uppercase">
             <span>A collection</span>
             <span>of our most</span>
             <span>inspiring work.</span>
@@ -159,13 +159,13 @@ const Page = () => {
             </Link>
           ))}
         </div>
-        <div className="py-10 flex items-center justify-center">
+        <Link href="https://www.behance.net/southcircle" className="py-10 flex items-center justify-center">
           <Button
-            text="See all works"
-            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            text="See more works"
+            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
-        </div>
+        </Link>
       </div>
 
       {/* Get In Touch Section */}

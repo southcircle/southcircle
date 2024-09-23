@@ -65,7 +65,7 @@ const FAQ = () => {
             <p className="font-neuehaasroman text-gray-400 tracking-[2px] text-lg">
               FAQ
             </p>
-            <h1 className="font-baseneue text-8xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-start uppercase">
+            <h1 className="font-baseneue text-7xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-start uppercase">
               Find the
               <br />
               Clarity you
@@ -74,14 +74,14 @@ const FAQ = () => {
             </h1>
           </div>
           <div className="flex w-full items-end ml-auto py-4">
-            <div className="space-y-6 divide-y-[1px] divide-gray-300 max-w-2xl w-[620px]">
+            <div className="space-y-6 divide-y-[1px] divide-gray-300 max-w-2xl w-full">
               {faqs.map((faq, index) => (
-                <div key={index} className="">
+                <div key={index} className="w-full">
                   <button
                     onClick={() => toggleFAQ(index)}
                     className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-neuehaasroman"
                   >
-                    <p className="w-[280px] md:w-full">{faq.question}</p>
+                    <p className="w-[200px] md:w-full text-sm md:text-base">{faq.question}</p>
                     {activeIndex === index ? (
                       <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
                         <Image

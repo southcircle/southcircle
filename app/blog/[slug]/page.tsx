@@ -25,7 +25,7 @@ const WorkDetail = ({
   // console.log(work.title);
 
   return (
-    <section className="pt-10 mt-32 mx-auto px-2 md:px-10 w-full">
+    <section className="pt-10 mt-32 mx-auto w-full px-3 md:px-10">
       {/* Hero Section */}
       <div className="flex flex-col items-start justify-start text-start mb-20 mx-auto w-full">
         <div className="flex flex-col items-start justify-start max-w-7xl md:px-0 w-full">
@@ -36,7 +36,7 @@ const WorkDetail = ({
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <p>8 MINS READ</p>
           </div>
-          <div className="w-full text-6xl md:text-[120px] font-baseneue font-bold flex gap-6 items-center justify-start text-start uppercase whitespace-nowrap">
+          <div className="w-full text-5xl md:text-[120px] font-baseneue font-bold flex gap-6 items-center justify-start text-start uppercase whitespace-nowrap">
             <span>Why South Circle</span>
             <div className="p-2 md:p-5 rounded-full border-[1px] border-black w-fit -rotate-45">
               <Image
@@ -61,32 +61,32 @@ const WorkDetail = ({
       </div>
 
       {/* BLOG CONTENT */}
-      <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[640px,_1fr]">
+      <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[480px,_1fr]">
         {/* LEFT HAND SIDE */}
-        <div className="md:flex flex-col gap-6 hidden">
-          <h2 className="text-3xl font-medium mb-4 font-neuehaasroman uppercase text-gray-400">
+        <div className="md:flex flex-col gap-4 hidden">
+          <h2 className="text-lg font-medium mb-4 font-neuehaasroman uppercase text-gray-400">
             Share this news
           </h2>
           <Link
             href="/"
-            className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+            className="p-2 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
           >
-            <Image src="/assets/x.svg" width={40} height={40} alt="X" />
-            <p className="text-xl font-neuehaasroman pr-2">Twitter</p>
+            <Image src="/assets/x.svg" width={26} height={26} alt="X" />
+            <p className="text-lg font-neuehaasroman pr-2">Twitter</p>
           </Link>
           <Link
             href="/"
-            className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+            className="p-2 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
           >
-            <Image src="/assets/linkedin.svg" width={40} height={40} alt="X" />
-            <p className="text-xl font-neuehaasroman pr-2">LinkedIn</p>
+            <Image src="/assets/linkedin.svg" width={26} height={26} alt="X" />
+            <p className="text-lg font-neuehaasroman pr-2">LinkedIn</p>
           </Link>
           <Link
             href="/"
-            className="p-4 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
+            className="p-2 border-2 border-black-100 rounded-full flex items-center justify-start w-fit gap-4"
           >
-            <Image src="/assets/facebook.svg" width={40} height={40} alt="X" />
-            <p className="text-xl font-neuehaasroman pr-2">Facebook</p>
+            <Image src="/assets/facebook.svg" width={26} height={26} alt="X" />
+            <p className="text-lg font-neuehaasroman pr-2">Facebook</p>
           </Link>
         </div>
 
@@ -199,13 +199,13 @@ const WorkDetail = ({
                     >
                       Gold Nelson
                     </Link>
-                    <p className="text-gray-400">
-                      Strategy and Client Relation @South Circle
+                    <p className="text-gray-400 font-neuehaasroman">
+                      Strategy and Client Relation @ South Circle
                     </p>
                   </div>
                 </div>
                 <div className="md:hidden flex flex-col gap-2 mt-6">
-                  <h2 className="text-xl md:text-3xl font-medium mb-4 font-neuehaasroman uppercase text-gray-400">
+                  <h2 className="text-base font-medium mb-2 font-neuehaasroman uppercase text-gray-400">
                     Share this news
                   </h2>
                   <div className="w-full flex items-center justify-between gap-2">
@@ -215,11 +215,11 @@ const WorkDetail = ({
                     >
                       <Image
                         src="/assets/x.svg"
-                        width={35}
-                        height={35}
+                        width={20}
+                        height={20}
                         alt="X"
                       />
-                      <p className="text-sm md:text-xl font-neuehaasroman pr-2">Twitter</p>
+                      <p className="text-xs font-neuehaasroman pr-2">Twitter</p>
                     </Link>
                     <Link
                       href="/"
@@ -227,11 +227,11 @@ const WorkDetail = ({
                     >
                       <Image
                         src="/assets/linkedin.svg"
-                        width={35}
-                        height={35}
+                        width={20}
+                        height={20}
                         alt="X"
                       />
-                      <p className="text-sm md:text-xl font-neuehaasroman pr-2">
+                      <p className="text-xs font-neuehaasroman pr-2">
                         LinkedIn
                       </p>
                     </Link>
@@ -241,11 +241,11 @@ const WorkDetail = ({
                     >
                       <Image
                         src="/assets/facebook.svg"
-                        width={35}
-                        height={35}
+                        width={20}
+                        height={20}
                         alt="X"
                       />
-                      <p className="text-sm md:text-xl font-neuehaasroman pr-2">
+                      <p className="text-xs font-neuehaasroman pr-2">
                         Facebook
                       </p>
                     </Link>

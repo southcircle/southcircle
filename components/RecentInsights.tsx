@@ -19,7 +19,7 @@ const RecentInsights = () => {
                     <Image
                       src="/assets/blogs/imagine-more.png"
                       alt="Imagine more"
-                      className="rounded-sm object-contain hover:scale-125 transition-all ease-in-out duration-500"
+                      className="rounded-sm object-contain hover:scale-110 transition-all ease-in-out duration-500"
                       width={700}
                       height={200}
                     />

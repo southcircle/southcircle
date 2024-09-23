@@ -92,11 +92,11 @@ const page = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mx-auto w-full">
         <div className="relative w-full flex flex-col items-center gap-10 md:gap-20 justify-center max-w-7xl">
-          <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight left-14 top-20 hidden md:inline-block">
+          <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight left-10 top-20 hidden md:inline-block">
             From innovative strategies to striking designs, we turn your vision
             into.
           </p>
-          <h1 className="text-7xl md:text-[160px] font-baseneue flex flex-col items-center text-center uppercase whitespace-nowrap">
+          <h1 className="text-6xl md:text-[160px] font-baseneue flex flex-col items-center text-center uppercase whitespace-nowrap">
             <span>Empowering</span>
             <span>your brand&apos;s next</span>
             <span>big move.</span>
@@ -115,7 +115,7 @@ const page = () => {
               className="object-contain animate-bounce"
             />
           </div>
-          <p className="absolute max-w-sm text-2xl text-start font-neuehaaslight right-14 bottom-40 hidden md:inline-block">
+          <p className="absolute max-w-sm text-2xl text-start font-neuehaaslight right-4 bottom-40 hidden md:inline-block">
             From innovative strategies to striking designs, we turn your vision
             into a powerful reality. Explore how our expertise drives your
             brand&apos;s success.

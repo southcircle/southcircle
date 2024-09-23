@@ -11,11 +11,11 @@ interface CustomLinkProps {
 const CustomLink: React.FC<CustomLinkProps> = ({ href, text, animate = true, className = "" }) => {
   return (
     <Link className={`relative inline-block ${className} ${animate ? 'group' : ''} overflow-hidden`} href={href}>
-        <span className={`relative inline-block transition-transform duration-500 ease-in-out ${animate ? 'group-hover:-translate-y-full' : ''}`}>
+        <span className={`relative inline-block transition-transform duration-500 ease-in-out ${animate ? 'group-hover:translate-y-full' : ''}`}>
           {text}
         </span>
         {animate && (
-          <span className="absolute top-0 left-0 w-full h-full translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
+          <span className="absolute top-0 left-0 w-full h-full -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out">
             {text}
           </span>
         )}

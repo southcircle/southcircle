@@ -98,7 +98,7 @@ const Header = () => {
         <Link href="/contact" className="font-normal flex items-center">
           <Button
             text="Contact us"
-            className={`px-8 py-3 rounded-full whitespace-nowrap ${
+            className={`w-[120px] h-10 rounded-full whitespace-nowrap ${
               isActive("/contact") ? "" : ""
             }`}
             variant="outline"

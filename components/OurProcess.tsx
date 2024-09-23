@@ -13,7 +13,7 @@ const OurProcess = () => {
         </div>
         <div className="space-y-10 mt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 align-text-bottom mb-20">
-            <h1 className="text-8xl md:text-[170px] gap-3 md:gap-2 font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
+            <h1 className="text-7xl md:text-[170px] gap-3 md:gap-2 font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
               <span>How We Make</span>
               <span>it happen.</span>
             </h1>

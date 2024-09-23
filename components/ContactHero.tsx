@@ -5,7 +5,7 @@ const ContactHero = () => {
   return (
     <section className="pb-16 pt-10 sm:pt-16 md:pt-16">
       <div className="relative mx-auto w-full flex flex-col justify-center items-center">
-        <h1 className="font-baseneue text-8xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-center uppercase">
+        <h1 className="font-baseneue text-7xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-center uppercase">
           Start the Conversation
           <br />
           that Changes Everything.

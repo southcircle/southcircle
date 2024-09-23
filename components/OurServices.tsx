@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import Button from "./ui/Button";
+import Link from "next/link";
 
 const OurServices = () => {
   const services = [
@@ -66,11 +67,13 @@ const OurServices = () => {
                 different and stays unforgettable.
               </p>
             </div>
+            <div>
             <Button
               text="See our services"
-              className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
               variant="outline"
             />
+            </div>
           </div>
           <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, idx) => (
@@ -94,13 +97,13 @@ const OurServices = () => {
             ))}
           </div>
         </div>
-        <div className="py-10 flex items-center justify-center">
+        <Link href="/services" className="py-10 flex items-center justify-center">
           <Button
             text="See our services"
-            className="px-6 py-3 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
-        </div>
+        </Link>
       </div>
     </section>
   );
