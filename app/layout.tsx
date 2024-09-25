@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baseNeue.variable} ${neueHaasLight.variable} ${neueHaasRoman.variable}`}
+        className={`${baseNeue.variable} ${neueHaasLight.variable} ${neueHaasRoman.variable} antialiased`}
       >
         <Header />
         {/* <SmoothScroll> */}
