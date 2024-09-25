@@ -8,7 +8,23 @@ import Footer from "@/components/Footer";
 // import CustomCusor from "@/components/CustomCusor";
 
 const baseNeue = localFont({
-  src: "../public/fonts/BaseNeueTrial-SuperCondBold.ttf",
+  src: [
+    {
+      path: "../public/fonts/BaseNeueTrial-SuperCondBold.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/BaseNeueTrial-SuperCondBold.woff",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/BaseNeueTrial-SuperCondBold.ttf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
   variable: "--font-baseneue",
 });
 

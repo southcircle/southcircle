@@ -28,6 +28,12 @@ const config = {
         neuehaaslight: 'var(--font-neuehaaslight)',
         neuehaasroman: 'var(--font-neuehaasroman)',
       },
+      fontSmoothing: {
+        antialiased: {
+          '-webkit-font-smoothing': 'antialiased',
+          '-moz-osx-font-smoothing': 'grayscale',
+        },
+      },
       colors: {
         black: {
           DEFAULT: "#0C0C0C",

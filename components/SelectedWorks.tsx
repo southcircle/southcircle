@@ -82,7 +82,6 @@ const SelectedWorks = () => {
                     className="rounded-sm object-cover hover:scale-110 h-full transition-all ease-in-out duration-500"
                     width={1000}
                     height={500}
-                    objectFit="cover"
                   />
                 </div>
                 <div className="flex gap-1 items-center justify-between">

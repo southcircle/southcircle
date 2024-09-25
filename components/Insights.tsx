@@ -141,7 +141,6 @@ const Insights: React.FC = () => {
                   width={400}
                   height={400}
                   className="object-cover  h-[320px]"
-                  objectFit="cover"
                 />
                 <div className="text-sm text-gray-500 my-2 font-neuehaaslight">
                   {blog.date}
