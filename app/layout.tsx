@@ -39,7 +39,7 @@ const neueHaasRoman = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "SouthCircle | World-Class Brand Design Consultancy.",
+  title: "South Circle | World-Class Brand Design Consultancy.",
   description:
     "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
   icons: {

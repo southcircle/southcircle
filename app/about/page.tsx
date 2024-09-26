@@ -27,8 +27,8 @@ const page = () => {
           </p>
         </div>
         <Image
-          src="/assets/about-banner.png"
-          width={540}
+          src="/assets/about-banner.svg"
+          width={720}
           height={240}
           alt="about-down"
           className="object-contain mt-12"

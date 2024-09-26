@@ -4,48 +4,46 @@ import CountUp from "./ui/CountUp";
 
 const OurJourney = () => {
   return (
-    <section className="py-32 mx-auto px-1">
+    <section className="py-40 mx-auto px-1">
       <div className="max-w-8xl w-full mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-20 text-center">
           <Image
             src="/assets/team/groupOne.png"
             alt="group team one"
-            width={600}
-            height={400}
-            className="object-cover"
+            width={800}
+            height={440}
+            className="object-cover "
           />
           <Image
             src="/assets/team/groupTwo.png"
             alt="group team two"
-            width={500}
+            width={540}
             height={400}
             className="object-cover"
           />
         </div>
-        <div className="py-20 flex items-end justify-center">
-          <p className="font-medium font-neuehaasroman max-w-lg text-4xl md:text-5xl">
-            We are not content with just blending in - we are on a mission to
-            stand out, with vision to become one of the leading agencies in
-            Southern Nigeria.
+        <div className="py-24 flex items-end justify-center">
+          <p className="font-medium font-neuehaasroman max-w-xl text-4xl md:text-5xl">
+          With a clear vision and bold ambition, we&apos;re on a mission to redefine creativity and innovation. Our goal? To become one of the leading agencies in Southern Nigeria, delivering exceptional results that set new industry standards.
           </p>
         </div>
-        <div className="flex items-center justify-center w-full">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-32">
-            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+        <div className="flex items-center justify-center w-full mx-auto max-w-5xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-40 w-full">
+            <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Members</p>
-              <CountUp amount={5} duration={2000} />
+              <CountUp amount={5} plus="" duration={2000} />
             </div>
-            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+            <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Office</p>
-              <CountUp amount={1} duration={200} />
+              <CountUp amount={1} plus="" duration={200} />
             </div>
-            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+            <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Projects</p>
-              <CountUp amount={20} duration={100} />
+              <CountUp amount={20} plus="+" duration={100} />
             </div>
-            <div className="flex flex-col items-start gap-3 border-b-[2px] border-gray-400">
+            <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Years</p>
-              <CountUp amount={2} duration={50} />
+              <CountUp amount={2} plus="" duration={50} />
             </div>
           </div>
         </div>

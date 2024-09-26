@@ -62,11 +62,13 @@ const SelectedWorks = () => {
               Selected Works
             </h2>
             <div>
-            <Button
-              text="See all works"
-              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
-              variant="outline"
-            />
+              <Link href="/works">
+                <Button
+                  text="See works"
+                  className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+                  variant="outline"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -74,7 +76,7 @@ const SelectedWorks = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-y-20 gap-6 w-full mt-10">
           {works.map((work, index) => (
             <Link key={index} href={`${work.slug || "/"}`}>
-              <div className="w-full space-y-3">
+              <div className="w-full">
                 <div className="relative w-full md:h-[460px] overflow-hidden">
                   <Image
                     src={work.imageSrc}
@@ -84,16 +86,16 @@ const SelectedWorks = () => {
                     height={500}
                   />
                 </div>
-                <div className="flex gap-1 items-center justify-between">
-                  <h3 className="text-sm md:text-lg font-medium font-neuehaasroman">
+                <div className="flex gap-1 items-center justify-between pt-3">
+                  <h3 className="text-xl font-medium font-neuehaasroman">
                     {work.title}
                   </h3>
-                  <div className="md:flex items-center gap-1 hidden">
+                  <div className="md:flex items-center gap-1 hidden mt-2">
                     {work?.category &&
                       work?.category.map((cat, index) => (
                         <span
                           key={index}
-                          className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                         >
                           {cat}
                         </span>
@@ -108,7 +110,7 @@ const SelectedWorks = () => {
                     work?.category.map((cat, index) => (
                       <span
                         key={index}
-                        className="border-[1px] text-xs border-black px-2 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                        className="border-[0.8px] text-sm border-gray-200 px-2 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                       >
                         {cat}
                       </span>
@@ -118,10 +120,10 @@ const SelectedWorks = () => {
             </Link>
           ))}
         </div>
-        <Link href="/works" className="py-10 flex items-center justify-center">
+        <Link href="/works" className="py-10 flex items-center justify-center md:hidden">
           <Button
-            text="See all works"
-            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            text="See works"
+            className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight"
             variant="outline"
           />
         </Link>

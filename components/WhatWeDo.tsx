@@ -4,6 +4,7 @@ import Button from "./ui/Button";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Link from "next/link";
 
 interface Service {
   title?: string;
@@ -20,13 +21,13 @@ const services: Service[] = [
     serviceImg: "/assets/services/branding-service.svg",
     serviceStyle: "bg-[#5975FF0D]",
     services: [
-      { question: "Naming", answer: "-" },
-      { question: "Visual identity", answer: "+" },
-      { question: "Verbal design", answer: "+" },
-      { question: "Sound & motion design", answer: "+" },
-      { question: "Typography", answer: "+" },
-      { question: "Illustrations", answer: "+" },
-      { question: "Brand guidelines", answer: "+" },
+      { question: "Naming", answer: "We create memorable and meaningful names that capture the essence of your brand, aligning with your mission and values." },
+      { question: "Visual identity", answer: "Our design team crafts visual elements—logos, colour palettes, and more—that reflect your brand's personality and vision." },
+      { question: "Verbal design", answer: "We refine your brand's voice through tailored messaging and tone, ensuring consistency in communication." },
+      { question: "Sound & motion design", answer: "We integrate sound and motion into your brand experience, enhancing emotional connections with your audience." },
+      { question: "Typography", answer: "Our typography solutions enhance readability and visual appeal, aligning with your brand identity." },
+      { question: "Illustrations", answer: "Unique illustrations add personality and depth to your branding, making it more relatable and memorable." },
+      { question: "Brand guidelines", answer: "We compile all brand elements into a comprehensive brand book, ensuring consistency across all communications and empowering your team." },
     ],
   },
   {
@@ -34,11 +35,11 @@ const services: Service[] = [
     serviceImg: "/assets/services/strategy-service.svg",
     serviceStyle: "bg-[#FF4A4A0D]",
     services: [
-      { question: "Product discovery and strategy", answer: "+" },
-      { question: "Positioning and alignment", answer: "+" },
-      { question: "Market research and insights", answer: "+" },
-      { question: "Brand positioning", answer: "+" },
-      { question: "Brand architecture and narrative", answer: "+" },
+      { question: "Product Discovery and Strategy", answer: "We employ strategic user research to deeply understand your audience's problems and needs." },
+      { question: "Positioning and Alignment", answer: "Our team helps position your brand effectively in the market, ensuring alignment with your values and goals." },
+      { question: "Market Research and Insights", answer: "In-depth market research informs your brand strategy and positioning." },
+      { question: "Brand Positioning", answer: "We develop clear brand positioning to differentiate you from competitors." },
+      { question: "Brand Architecture and Narrative", answer: "We organize your brand's portfolio and narrative for clarity and impact." },
     ],
   },
   {
@@ -46,13 +47,13 @@ const services: Service[] = [
     serviceImg: "/assets/services/marketing-service.svg",
     serviceStyle: "bg-[#0ACC920D]",
     services: [
-      { question: "Social media campaign", answer: "+" },
-      { question: "Search engine optimization", answer: "+" },
-      { question: "Email marketing", answer: "+" },
-      { question: "Billboard campaign", answer: "+" },
-      { question: "TV and display ad", answer: "+" },
-      { question: "Broadcasting", answer: "+" },
-      { question: "PR and press release", answer: "+" },
+      { question: "Social Media Campaign", answer: "We create tailored social media campaigns that amplify your brand's voice and connect with your audience." },
+      { question: "Search Engine Optimization", answer: "Our SEO strategies enhance your online visibility and drive organic traffic to your website." },
+      { question: "Email Marketing", answer: "We design personalized email campaigns that nurture leads and drive customer engagement." },
+      { question: "Billboard Campaign", answer: "Our striking billboard designs grab attention and elevate brand awareness in high-traffic areas." },
+      { question: "TV and Display Ad", answer: "We create captivating TV and display ads that communicate your brand's message effectively." },
+      { question: "Broadcasting", answer: "Our broadcasting strategies ensure your message is heard across multiple channels." },
+      { question: "PR and Press release", answer: "We manage your public relations to shape perceptions and maintain a positive brand image." },
     ],
   },
   {
@@ -60,11 +61,11 @@ const services: Service[] = [
     serviceImg: "/assets/services/product-design.svg",
     serviceStyle: "bg-[#FFC02E0D]",
     services: [
-      { question: "User research & insights", answer: "+" },
-      { question: "Concept development", answer: "+" },
-      { question: "UI/UX design", answer: "+" },
-      { question: "Design systems & guidelines", answer: "+" },
-      { question: "Design consultation", answer: "+" },
+      { question: "User Research & Insights", answer: "We conduct thorough user research to gain deep insights into user behaviors, preferences, and pain points." },
+      { question: "Concept Development", answer: "Our team collaborates with you to develop innovative concepts that solve real user problems." },
+      { question: "UI/UX Design", answer: "We design user interfaces and experiences that seamlessly blend functionality with aesthetic appeal." },
+      { question: "Design Systems & Guidelines", answer: "We create comprehensive design systems that ensure consistency across all platforms and touchpoints." },
+      { question: "Design Consultation", answer: "Our design consultation services provide expert guidance to refine your design approach and strategy." },
     ],
   },
   {
@@ -72,11 +73,11 @@ const services: Service[] = [
     serviceImg: "/assets/services/development-service.svg",
     serviceStyle: "bg-[#8F00FF0D]",
     services: [
-      { question: "Mobile app development", answer: "+" },
-      { question: "Web development", answer: "+" },
-      { question: "Front-end development", answer: "+" },
-      { question: "Back-end development", answer: "+" },
-      { question: "Maintenance and support", answer: "+" },
+      { question: "Mobile App Development", answer: "We design and develop mobile applications that offer exceptional user experiences across all devices." },
+      { question: "Web Development", answer: "Our web development services create responsive websites that effectively showcase your brand and meet your business goals." },
+      { question: "Frontend Development", answer: "We focus on crafting intuitive user interfaces that enhance user interaction and experience." },
+      { question: "Backend Development", answer: "Our back-end development ensures that your applications run smoothly and efficiently, managing data and server interactions." },
+      { question: "Maintenance and Support", answer: "We provide ongoing maintenance and support to ensure your digital products remain up-to-date and perform optimally." },
     ],
   },
 ];
@@ -97,25 +98,27 @@ const WhatWeDo = () => {
           </span>
           <hr className="text-gray-400 bg-gray-400" />
         </div>
-        <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[360px,_1fr]">
+        <div className="mt-10 w-full grid grid-cols-1 md:grid-cols-[390px,_1fr]">
           {/* Left Column - Title and Button */}
           <div className="max-w-sm md:w-full space-y-6">
             <h2 className="text-4xl font-medium mb-4 font-neuehaasroman">
               Building a Strong Foundation
             </h2>
             <div>
-            <Button
-              text="Get in touch"
-              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
-              variant="outline"
-            />
+              <Link href="/contact">
+                <Button
+                  text="Get in touch"
+                  className="w-36 h-12 py-4 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight"
+                  variant="outline"
+                />
+              </Link>
             </div>
           </div>
 
           {/* Services Grid */}
           <div className="gap-12">
             {services.map((service, idx) => (
-              <div className="mt-8 md:mt-0" key={idx}>
+              <div className="mt-8 md:mt-4" key={idx}>
                 <div
                   className={`w-full flex items-center justify-center p-20 ${service.serviceStyle}`}
                 >
@@ -130,7 +133,7 @@ const WhatWeDo = () => {
                   <h3 className="text-lg  tracking-[2px] font-neuehaasroman uppercase md:mt-6">
                     {service.title}
                   </h3>
-                  <div className="space-y-6 divide-y-[1px] divide-gray-300 w-full md:max-w-2xl md:w-[620px]">
+                  <div className="space-y-6 divide-y-[1px] divide-gray-300 w-full md:max-w-3xl md:w-[820px]">
                     {service?.services &&
                       service?.services.map((faq, index) => (
                         <div key={index} className="">

@@ -104,7 +104,7 @@ const Insights: React.FC = () => {
   //   console.log("Maximum Scroll Value:", maxScroll);
 
   return (
-    <section className="pt-16 md:pt-32 md:mt-40 mx-auto px-4 md:px-10 max-w-full w-full">
+    <section className="pt-8 md:pt-10 md:mt-10 mx-auto px-4 md:px-10 max-w-full w-full">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
@@ -116,11 +116,13 @@ const Insights: React.FC = () => {
               Read through the wonderful insights from our Journey.
             </h2>
             <div>
-            <Button
-              text="See all blogs"
-              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap hidden md:inline-block"
-              variant="outline"
-            />
+              <Link href="/blog">
+                <Button
+                  text="See insights"
+                  className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+                  variant="outline"
+                />
+              </Link>
             </div>
           </div>
         </div>
@@ -186,10 +188,10 @@ const Insights: React.FC = () => {
             />
           </button>
         </div>
-        <Link href="/blogs" className="py-10 flex items-center justify-center">
+        <Link href="/blog" className="py-10 flex items-center justify-center md:hidden">
           <Button
-            text="See all blogs"
-            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            text="See insights"
+            className="w-44 h-12 py-4 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
             variant="outline"
           />
         </Link>

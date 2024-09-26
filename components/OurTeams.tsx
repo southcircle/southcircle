@@ -16,21 +16,21 @@ interface Team {
 const teams: Team[] = [
   {
     fullname: "Chidera Nwanyemike",
-    title: "Managing Director & CEO",
+    title: "Managing Partner & CEO",
     imageSrc: "/assets/team/chidera.png",
     twitter: "https://x.com/chideranwanyemi",
     linkedin: "https://www.linkedin.com/in/ozoofsouth/",
   },
   {
     fullname: "Oke Omorohwovo",
-    title: "Chief Operating Officer",
+    title: "COO & Partner",
     imageSrc: "/assets/team/oke.png",
     twitter: "https://x.com/Oakswood6",
     linkedin: "https://www.linkedin.com/in/oke-omorohwovo-41089515b/",
   },
   {
     fullname: "Gold Nelson",
-    title: "Strategy and Client Relations",
+    title: "Strategy and Client Relations & Partner",
     imageSrc: "/assets/team/nelson.png",
     twitter: "https://x.com/i_am_goldnelson",
     linkedin: "https://www.linkedin.com/in/gold-nelson/",
@@ -71,14 +71,14 @@ const OurTeams = () => {
                 </p>
               </div>
               <div className="flex items-center gap-1 text-start mb-3">
-                <Link href={team.twitter || "#"} className="bg-black p-[1px]">
-                  <Image src="/assets/x.svg" width={20} height={20} alt="X" />
+                <Link href={team.twitter || "#"} className="">
+                  <Image src="/assets/x-outline.svg" width={28} height={28} alt="X" />
                 </Link>
-                <Link href={team.linkedin || "#"} className="bg-black p-[1px]">
+                <Link href={team.linkedin || "#"} className="">
                   <Image
-                    src="/assets/linkedin.svg"
-                    width={20}
-                    height={20}
+                    src="/assets/linkedin-outline.svg"
+                    width={28}
+                    height={28}
                     alt="linkedin"
                   />
                 </Link>

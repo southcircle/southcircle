@@ -19,7 +19,7 @@ const WhoWeAre = () => {
             <div>
             <Button
               text="See our services"
-              className="px-6 py-4 w-32 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
+              className="px-6 py-6 w-36 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
               variant="outline"
             />
             </div>
@@ -30,16 +30,11 @@ const WhoWeAre = () => {
           <div className="w-full grid grid-cols-1 gap-6">
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="p-8 md:p-12 flex flex-col items-start gap-3 bg-[#5975FF0D] rounded-sm">
-                <h4 className="font-medium font-neuehaasroman text-xl md:text-lg tracking-tight text-nowrap">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-wide text-nowrap">
                   Full-service design agency
                 </h4>
                 <p className="text-[#0C0C0CA3] text-base md:text-lg font-normal font-neuehaaslight">
-                  South Circle is an agency that combines expertise in design,
-                  technology, and psychology to deliver measurable business
-                  outcomes for growing startups and established companies. We
-                  strategically curate our client roster, focusing on
-                  relationships where we can deliver distinct, quantifiable
-                  results.
+                At South Circle, we merge expertise in design, technology, and psychology to craft strategies that drive measurable results. By carefully selecting clients who align with our mission, we focus on delivering distinct, quantifiable outcomes that fuel business growth.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
                   <Image
@@ -52,18 +47,15 @@ const WhoWeAre = () => {
                 </div>
               </div>
               <div className="p-8 md:p-12 flex flex-col items-start gap-3 bg-[#FF4A4A0D] rounded-sm">
-                <h4 className="font-medium font-neuehaasroman text-xl md:text-lg tracking-tight">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-wide">
                   Design, development and marketing
                 </h4>
                 <p className="text-[#0C0C0CA3] text-base md:text-lg font-normal font-neuehaaslight">
-                  Our partnership doesn&apos;t end at launch. We&apos;re in it
-                  for the long haul, continuously refining and evolving our
-                  strategies to ensure sustained success. Together, we adapt and
-                  grow, keeping your brand at the forefront.
+                We believe in long-term success, not just short-term wins. Our commitment goes beyond the launch—through continuous refinement and adaptation, we ensure your brand stays relevant and grows sustainably in an ever-evolving landscape.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
                   <Image
-                    src="/assets/services/circle.svg"
+                    src="/assets/services/visual.svg"
                     alt="Full Service"
                     width={40}
                     height={40}
@@ -72,16 +64,11 @@ const WhoWeAre = () => {
                 </div>
               </div>
               <div className="p-8 md:p-12 flex flex-col items-start gap-3 bg-[#0ACC920D] rounded-sm">
-                <h4 className="font-medium font-neuehaasroman text-xl md:text-lg tracking-tight text-nowrap">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-wide text-nowrap">
                   Smooth makes us worried
                 </h4>
                 <p className="text-[#0C0C0CA3] text-base md:text-lg font-normal font-neuehaaslight">
-                  Business design isn&apos;t manufacturing. We don&apos;t try to
-                  remove friction. In fact, we embrace it, even thrive from it.
-                  That means crashing ideas, roles, and processes right into
-                  each other. Friction brings the energy needed to create and
-                  provoke change. A state when creative ideation nurtures
-                  strategic thinking and vice versa.
+                We thrive on disruption. At South Circle, we don&apos;t shy away from friction—it&apos;s what fuels our creativity. By embracing challenges and clashing ideas, we provoke the energy needed to spark innovation and create transformative solutions for your business.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
                   <Image
@@ -99,7 +86,7 @@ const WhoWeAre = () => {
         <Link href="/services" className="py-10 flex items-center justify-center">
           <Button
             text="See our services"
-            className="px-10 py-4 w-28 text-xs font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-6 w-36 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
         </Link>

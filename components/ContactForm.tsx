@@ -148,7 +148,7 @@ const ContactForm: React.FC = () => {
                 value={formData.organization}
                 onChange={handleChange}
                 className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
-                placeholder="South Circle Co."
+                placeholder="Your Company"
                 required
               />
             </div>
@@ -239,7 +239,7 @@ const ContactForm: React.FC = () => {
             <div className="w-full mx-auto mt-8">
               <Button
                 text={isSubmitting ? "Sending..." : "Send the message"}
-                className="px-8 py-8 text-sm md:text-lg font-medium rounded-full whitespace-nowrap font-neuehaaslight w-40 md:w-48"
+                className="px-12 py-8 text-sm md:text-lg font-medium rounded-full whitespace-nowrap font-neuehaaslight w-44 md:w-52"
                 variant="outline"
                 disabled={isSubmitting}
               />

@@ -22,7 +22,7 @@ const Newsletter = () => {
             </p>
         </div>
         <div>
-          <label className="flex items-center justify-between w-full px-3 md:p-6 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
+          <label className="flex items-center justify-between w-full p-4 md:py-4 md:pl-12 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
             <input
               type="email"
               name="subscribe"
@@ -31,7 +31,7 @@ const Newsletter = () => {
             />
             <Button
               text="Subscribe"
-              className="px-2 w-32 md:px-10 py-3 md:py-8 rounded-full font-normal text-xs text-center md:text-sm flex justify-center border-gray-400"
+              className="px-16 py-12 w-48 rounded-full font-normal text-sm text-center md:text-lg flex justify-center border-gray-400"
               variant="outline"
             />
           </label>

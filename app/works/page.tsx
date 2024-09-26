@@ -125,8 +125,8 @@ const Page = () => {
     <section className="pt-10 mt-28 mx-auto px-4 md:px-10 max-w-8xl w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
-        <div className="w-full flex flex-col-reverse md:flex-row gap-10 md:gap-20 justify-center max-w-7xl">
-          <p className="max-w-md text-xl md:text-lg text-start font-neuehaaslight">
+        <div className="w-full flex flex-col-reverse md:flex-row gap-10 md:gap-28 justify-center max-w-7xl">
+          <p className="max-w-sm text-xl md:text-lg text-start font-neuehaaslight">
             Explore our top projects that showcase our creativity and expertise.
             See how we turn bold ideas into impactful results and push the
             boundaries of design.
@@ -140,7 +140,7 @@ const Page = () => {
       </div>
 
       {/* Filter Section */}
-      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-2">
+      <div className="mx-auto mb-16 mt-32 flex items-center justify-center w-full px-2">
         <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-200 w-full"></div>
@@ -153,12 +153,12 @@ const Page = () => {
           ></div> */}
 
           {categories.map((category, index) => (
-            <button
-              key={index}
+            <div key={index} className="flex items-center gap-10">
+              <button
               ref={(el) => {
                 categoryRefs.current[index] = el;
               }}
-              className={`relative py-4 text-sm hover:border-b-[1px] hover:border-gray-600 uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
+              className={`relative py-4 text-sm hover:border-b-[1px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
                 selectedCategory === category
                   ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                   : "text-gray-400"
@@ -167,6 +167,8 @@ const Page = () => {
             >
               {category}
             </button>
+            <span className={index === categories.length - 1 ? "hidden" : ""}>·</span>
+            </div>
           ))}
         </div>
       </div>
@@ -176,7 +178,7 @@ const Page = () => {
         <div className="grid grid-cols-1 gap-12 w-full">
           {filteredWorks.map((work, index) => (
             <Link key={index} href={work.slug || "#"} target="_blank">
-              <div className="w-full space-y-3">
+              <div className="w-full">
                 <div className="relative w-full h-0 pb-[80%] md:pb-[40%] overflow-hidden">
                   <Image
                     src={work.imageSrc}
@@ -186,23 +188,23 @@ const Page = () => {
                     height={400}
                   />
                 </div>
-                <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center justify-between pt-3">
                   <h3 className="text-lg font-semibold font-neuehaaslight">
                     {work.title}
                   </h3>
-                  <div className="md:flex items-center gap-1 hidden">
+                  <div className="md:flex items-center gap-1 hidden mt-2">
                     {work?.category &&
                       work?.category.map((cat, index) => (
                         <span
                           key={index}
-                          className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                         >
                           {cat}
                         </span>
                       ))}
                   </div>
                 </div>
-                <p className="text-gray-600 font-neuehaaslight mt-2">
+                <p className="text-gray-600 font-neuehaaslight">
                   {work.description}
                 </p>
                 <div className="flex items-center gap-1 md:hidden mt-2">
@@ -210,7 +212,7 @@ const Page = () => {
                     work?.category.map((cat, index) => (
                       <span
                         key={index}
-                        className="border-[1px] text-sm border-black px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                        className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                       >
                         {cat}
                       </span>

@@ -11,25 +11,25 @@ const OurServices = () => {
       desc: "Craft clear, actionable strategies that drive brand success and resonate with your target audience.",
       title: "Brand Strategy",
       imageSrc: "/assets/services/brand.svg",
-      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#5975FF0D] rounded-sm",
+      style: "p-10 flex flex-col items-start gap-3 bg-[#5975FF0D] rounded-sm",
     },
     {
       desc: "Design compelling visual elements that represent your brand’s essence and stand out in the market.",
       title: "Visual Identity",
       imageSrc: "/assets/services/visual.svg",
-      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#FF4A4A0D] rounded-sm",
+      style: "p-10 flex flex-col items-start gap-3 bg-[#FF4A4A0D] rounded-sm",
     },
     {
       desc: "Develop integrated marketing strategies to enhance visibility, engage your audience, and drive growth.",
       title: "Marketing",
       imageSrc: "/assets/services/marketing.svg",
-      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#FFC02E0D] rounded-sm",
+      style: "p-10 flex flex-col items-start gap-3 bg-[#FFC02E0D] rounded-sm",
     },
     {
       desc: "Build responsive, user-friendly websites that effectively showcase your brand and achieve your business goals.",
       title: "Development",
       imageSrc: "/assets/services/development.svg",
-      style: "p-10 md:p-12 flex flex-col items-start gap-3 bg-[#0ACC920D] rounded-sm",
+      style: "p-10 flex flex-col items-start gap-3 bg-[#0ACC920D] rounded-sm",
     },
     // Add more testimonials here
   ];
@@ -47,7 +47,7 @@ const OurServices = () => {
   // };
 
   return (
-    <section className="pt-16 md:pt-32 md:mt-32 mx-auto px-4 md:px-10">
+    <section className="pt-14 md:pt-14 md:mt-14 mx-auto px-4 md:px-10">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehaaslight">
           <span className="text-sm text-gray-400 tracking-[2px] font-neuehaaslight uppercase">
@@ -55,24 +55,28 @@ const OurServices = () => {
           </span>
           <hr className="text-gray-400 bg-gray-400" />
         </div>
-        <div className="w-full flex flex-col md:flex-row align-top gap-28 mt-10">
-          <div className="flex flex-col items-start gap-8">
-            <div className="space-y-4 max-w-md">
+        <div className="w-full flex flex-col md:flex-row align-top md:gap-40 mt-10">
+          <div className="flex flex-col items-start gap-6">
+            <div className="space-y-4 max-w-lg">
               <p className="text-[#0C0C0C] font-normal font-neuehaaslight text-2xl text-start">
-                We&apos;re all about flipping the script and making brands that
-                don&apos;t just show up.
+                We&apos;re all about flipping the script <br />
+                and making brands that don&apos;t just <br />
+                show up.
               </p>
               <p className="text-[#0C0C0C] font-normal font-neuehaaslight text-2xl text-start">
-                We mix strategy with creativity to make sure your brand hits
-                different and stays unforgettable.
+                We mix strategy with creativity to <br />
+                make sure your brand hits different <br />
+                and stays unforgettable.
               </p>
             </div>
             <div>
-            <Button
-              text="See our services"
-              className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
-              variant="outline"
-            />
+              <Link href="/services">
+                <Button
+                  text="See our services"
+                  className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+                  variant="outline"
+                />
+              </Link>
             </div>
           </div>
           <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -97,7 +101,10 @@ const OurServices = () => {
             ))}
           </div>
         </div>
-        <Link href="/services" className="py-10 flex items-center justify-center">
+        <Link
+          href="/services"
+          className="py-10 flex items-center justify-center"
+        >
           <Button
             text="See our services"
             className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"

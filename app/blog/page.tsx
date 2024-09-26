@@ -88,7 +88,6 @@ const categories = [
   "Visual Identity",
   "Marketing",
   "Development",
-  "Insights",
 ];
 
 const Page = () => {
@@ -116,7 +115,7 @@ const Page = () => {
           </p>
           <div className="max-w-3xl w-full px-2">
             <div>
-              <label className="flex items-center justify-between w-full p-4 md:p-6 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
+              <label className="flex items-center justify-between w-full p-4 md:py-4 md:pl-12 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
                 <input
                   type="text"
                   name="subscribe"
@@ -125,7 +124,7 @@ const Page = () => {
                 />
                 <Button
                   text="Subscribe"
-                  className="px-6 py-6 w-32 rounded-full font-normal text-sm sm:text-base md:text-base flex justify-center border-gray-400"
+                  className="px-16 py-12 w-48 rounded-full font-normal text-sm sm:text-base md:text-lg flex justify-center border-gray-400"
                   variant="outline"
                 />
               </label>
@@ -142,15 +141,15 @@ const Page = () => {
       <RecentInsights />
 
       {/* Filter Section */}
-      <div className="mx-auto mb-10 mt-32 flex items-center justify-center w-full px-2">
+      <div className="mx-auto mb-16 mt-32 flex items-center justify-center w-full px-2">
         <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-200"></div>
 
           {categories.map((category, index) => (
-            <button
-              key={index}
-              className={`relative py-4 text-sm hover:border-b-[1px] border-gray-600 uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
+            <div key={index} className="flex items-center gap-10">
+              <button
+              className={`relative py-4 text-sm hover:border-b-[1px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
                 selectedCategory === category
                   ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                   : "text-gray-400"
@@ -159,6 +158,8 @@ const Page = () => {
             >
               {category}
             </button>
+            <span className={index === categories.length - 1 ? "hidden" : ""}>·</span>
+            </div>
           ))}
         </div>
       </div>

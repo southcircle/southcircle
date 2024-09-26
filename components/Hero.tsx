@@ -13,7 +13,7 @@ const Hero = () => {
         </div>
         <div className="flex flex-col items-center text-center md:text-center lg:text-start lg:items-start md:items-center max-w-lg md:absolute md:top-1/2 md:right-0 md:translate-y-[50%] md:translate-x-[-24%]">
           <p className="font-normal text-lg sm:text-xl md:text-2xl text-black mb-10 font-neuehaaslight w-full px-2">
-            Ambitious leaders turn to us to craft world-class identities and experiences. We push the boundaries of what&apos;s possible, blending creativity with strategy to shape brand perception.
+          Visionary leaders come to us to craft iconic brand identities and memorable experiences. We challenge the ordinary, blending bold creativity with data-driven strategy to redefine how your audience sees and engages with your brand.
           </p>
           <Link href="/contact">
             <Button

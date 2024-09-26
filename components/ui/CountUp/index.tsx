@@ -4,9 +4,10 @@ import React, { useState, useEffect } from 'react';
 interface CountUpProps {
   amount: number;
   duration: number;
+  plus: string;
 }
 
-const CountUp: React.FC<CountUpProps> = ({ amount, duration }) => {
+const CountUp: React.FC<CountUpProps> = ({ amount, duration, plus }) => {
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
@@ -26,7 +27,7 @@ const CountUp: React.FC<CountUpProps> = ({ amount, duration }) => {
     return () => clearInterval(timer); // Cleanup interval on unmount
   }, [amount, duration]);
 
-  return <div className='font-baseneue text-9xl'>{count}</div>;
+  return <p className='font-baseneue text-[140px] md:text-[180px] py-0 flex items-center gap-1'><span>{count}</span><span>{plus}</span></p>;
 };
 
 export default CountUp;
