@@ -5,9 +5,10 @@ interface CountUpProps {
   amount: number;
   duration: number;
   plus: string;
+  begin: number | false;
 }
 
-const CountUp: React.FC<CountUpProps> = ({ amount, duration, plus }) => {
+const CountUp: React.FC<CountUpProps> = ({ amount, duration, plus, begin }) => {
   const [count, setCount] = useState<number>(0);
 
   useEffect(() => {
@@ -27,7 +28,7 @@ const CountUp: React.FC<CountUpProps> = ({ amount, duration, plus }) => {
     return () => clearInterval(timer); // Cleanup interval on unmount
   }, [amount, duration]);
 
-  return <p className='font-baseneue text-[140px] md:text-[180px] py-0 flex items-center gap-1'><span>{count}</span><span>{plus}</span></p>;
+  return <p className='font-baseneue text-[140px] md:text-[180px] py-0 flex items-center gap-1'><span>{begin}</span><span>{count}</span><span>{plus}</span></p>;
 };
 
 export default CountUp;

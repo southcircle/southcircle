@@ -149,7 +149,7 @@ const Page = () => {
           {categories.map((category, index) => (
             <div key={index} className="flex items-center gap-10">
               <button
-              className={`relative py-4 text-sm hover:border-b-[1px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
+              className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
                 selectedCategory === category
                   ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                   : "text-gray-400"

@@ -31,19 +31,19 @@ const OurJourney = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-40 w-full">
             <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Members</p>
-              <CountUp amount={5} plus="" duration={2000} />
+              <CountUp begin={0} amount={5} plus="" duration={2000} />
             </div>
             <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Office</p>
-              <CountUp amount={1} plus="" duration={200} />
+              <CountUp begin={0} amount={1} plus="" duration={200} />
             </div>
             <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Projects</p>
-              <CountUp amount={20} plus="+" duration={100} />
+              <CountUp begin={false} amount={20} plus="+" duration={100} />
             </div>
             <div className="flex flex-col items-start border-b-[2px] border-gray-400">
               <p className="font-neuehaaslight text-xl text-gray-400">Years</p>
-              <CountUp amount={2} plus="" duration={50} />
+              <CountUp begin={0} amount={2} plus="" duration={50} />
             </div>
           </div>
         </div>
