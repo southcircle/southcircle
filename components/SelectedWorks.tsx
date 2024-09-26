@@ -123,7 +123,7 @@ const SelectedWorks = () => {
         <Link href="/works" className="py-10 flex items-center justify-center md:hidden">
           <Button
             text="See works"
-            className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight"
+            className="w-44 h-12 py-2 text-center text-sm md:text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight"
             variant="outline"
           />
         </Link>

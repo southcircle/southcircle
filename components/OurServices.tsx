@@ -73,7 +73,7 @@ const OurServices = () => {
               <Link href="/services">
                 <Button
                   text="See our services"
-                  className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+                  className="w-44 h-12 py-6 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
                   variant="outline"
                 />
               </Link>
