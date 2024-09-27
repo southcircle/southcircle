@@ -9,10 +9,10 @@ import React from "react";
 
 const page = () => {
   return (
-    <main className="pt-10 mt-32 mx-auto px-4 md:px-10 w-full">
+    <main className="pt-10 mt-28 mx-auto px-4 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center max-w-7xl md:px-0">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-16 items-center justify-center max-w-7xl md:px-0">
           <h1 className="w-full text-7xl md:text-[160px]  font-baseneue font-bold flex flex-col items-start text-start uppercase whitespace-nowrap">
             <span>Curious about</span>
             <span>us? here&apos;s the</span>

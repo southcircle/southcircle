@@ -46,15 +46,15 @@ const WorkDetail = ({
       {/* Hero Section */}
       <div className="flex flex-col items-start justify-start text-start mb-20 mx-auto w-full">
         <div className="flex flex-col items-start justify-start max-w-7xl md:px-0 w-full">
-          <div className="flex items-center gap-3 py-5 text-gray-400 text-xs md:text-sm text-nowrap font-neuehaaslight">
+          <div className="flex items-center gap-3 py-5 text-gray-400 text-xs md:text-sm text-nowrap font-neuehaaslight tracking-[2px]">
             <p>BRANDING</p>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <p>AUGUST 14, 2024</p>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
-            <p>8 MINS READ</p>
+            <p>4 MINS READ</p>
           </div>
           <div className="w-full text-5xl md:text-[120px] font-baseneue font-bold flex gap-6 items-center justify-start text-start uppercase whitespace-nowrap">
-            <span>Why South Circle</span>
+            <span>Art Is Dead</span>
             <div className="p-2 md:p-5 rounded-full border-[1px] border-black w-fit -rotate-45">
               <Image
                 src="/assets/arrow-down.svg"
@@ -68,7 +68,7 @@ const WorkDetail = ({
         </div>
         <div className="w-full py-8">
           <Image
-            src="/assets/blogs/imagine-more.png"
+            src="/assets/blogs/art-is-dead.png"
             width={1000}
             height={200}
             alt="imagine more"
@@ -110,37 +110,20 @@ const WorkDetail = ({
         {/* RIGHT HAND SIDE */}
         <div className="flex flex-col items-start">
           <h1 className="font-neuehaasroman text-3xl">
-            South Circle is redefining brands, beyond conformity from the south
-            and risus duis leo ac nunc sapien sit vestibulum. Convallis amet
-            aliquam odio qraesen cursus risus duis leo.
+          People often say, &quot;I love what you do, but I&apos;m just not the artsy type&quot; or, &quot;I can&apos;t draw to save my life.&quot; It&apos;s almost like there&apos;s this invisible standard everyone thinks they need to reach in order to be considered an artist. But that&apos;s a misconception. Art isn&apos;t about skill alone; it&apos;s about expression. And guess what? Life itself is art.
           </h1>
           <div className="space-y-6 mt-6 mb-10">
-            <h2 className="text-4xl font-neuehaasroman">
-              Creating a memorable brand identity
-            </h2>
             <div className="space-y-4 pb-12">
               <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
-                In today&apos;s competitive marketplace, having a strong brand
-                positioning is more crucial than ever. It is the foundation upon
-                which successful businesses build their identity and connect
-                with their target audience. A strong brand positioning helps
-                your business stand out from the competition, creates a lasting
-                impression, and shapes how your audience perceives your brand.
+              I get it, though. With AI-generated art becoming a hot topic, it can sometimes feel like there&apos;s a predefined benchmark for what qualifies as &quot;good art.&quot; And if what you create doesn&apos;t measure up, it&apos;s dismissed. But that&apos;s not how it works. Art is self-expression in its purest form, and when it&apos;s authentic, it has the power to build connections and a sense of belonging. When you express something real—whether it&apos;s a feeling, an experience, or even a fleeting thought—someone out there will resonate with it.
               </p>
               <p className="text-xl tracking-wide text-gray-500 font-neuehaaslight">
-                Creating a memorable brand identity starts with understanding
-                your target audience and the unique value your brand offers. It
-                involves crafting a brand story that resonates with your
-                audience, effectively communicating your brand&apos;s
-                personality, values, and purpose. Through strategic messaging,
-                visual elements, and consistent brand voice, you can create a
-                brand identity that captures the essence of your business and
-                leaves a lasting impact on your customers.
+              Think about it. You see a piece of art that mirrors a struggle or joy you&apos;ve experienced. It&apos;s an instant bond, right? You realize, &quot;I&apos;m not alone; someone else gets it.&quot; In a world that often urges us to chase perfection (thanks, to social media), art can be a comforting reminder that it&apos;s okay to be real and flawed. It&apos;s okay to express ourselves without worrying about meeting any standards.
               </p>
             </div>
             <div className="w-full">
               <Image
-                src="/assets/blogs/team.png"
+                src="/assets/blogs/art-two.png"
                 width={2000}
                 height={400}
                 alt="team image"
@@ -149,29 +132,15 @@ const WorkDetail = ({
             </div>
           </div>
           <div className="space-y-6 mt-6 mb-10">
-            <h2 className="text-4xl font-neuehaasroman">
-              Setting your brand apart
-            </h2>
             <div className="space-y-4 pb-12">
               <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
-                In a crowded marketplace, it is essential to differentiate your
-                brand from competitors. A strong brand positioning allows you to
-                highlight what sets you apart and communicate the unique value
-                you bring to your customers. It helps establish a clear and
-                distinct identity that resonates with your target audience and
-                fosters brand loyalty.
+              The reality is, we&apos;re all human before we&apos;re anything else. When we&apos;re not pressured to meet some imaginary artistic ideal, we&apos;re free to express our experiences as they are—raw, unpolished, and full of meaning. Feeling down and all you want to do is draw a frown inside a circle? Do it. That&apos;s your art. You may not even want to define it with words—let the viewer interpret it. That&apos;s the beauty of art; it&apos;s limitless.
               </p>
               <p className="text-xl tracking-wide text-gray-500 font-neuehaaslight">
-                To differentiate your brand, it is crucial to conduct thorough
-                market research and understand your competition. Identify gaps
-                in the market, analyze consumer preferences, and uncover unique
-                selling points that make your brand stand out. By focusing on
-                these differentiators and effectively communicating them through
-                your brand positioning, you can position your business as the
-                preferred choice in the minds of your target audience.
+              Humans are wired to connect. So, when we see something genuine, something we relate to, we form a bond. It makes life feel less lonely. Art does that—it&apos;s a bridge, not a finish line. It&apos;s about shaping perceptions, yes, but it&apos;s also about showing that life isn&apos;t always about happiness or perfection. Its messy, nuanced, and complex. And that&apos;s okay. When we embrace this reality, we start to live without fear of judgment.
               </p>
             </div>
-            <div className="w-full mt-20">
+            {/* <div className="w-full mt-20">
               <Image
                 src="/assets/blogs/chidera.png"
                 width={2000}
@@ -179,30 +148,12 @@ const WorkDetail = ({
                 alt="team image"
                 className="object-cover w-[100vw]"
               />
-            </div>
+            </div> */}
           </div>
           <div className="space-y-6 mt-6 mb-10">
-            <h2 className="text-4xl font-neuehaasroman">
-              Creating emotional connections
-            </h2>
             <div className="space-y-4">
               <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
-                A strong brand positioning builds trust and fosters loyalty
-                among your customers. When your brand consistently delivers on
-                its promises and aligns with the expectations of your audience,
-                it creates a sense of trust and reliability. A well-defined
-                brand positioning helps establish this trust by consistently
-                delivering a positive and consistent brand experience across all
-                touchpoints.
-              </p>
-              <p className="text-xl tracking-wide text-gray-500 font-neuehaaslight">
-                By understanding your audience&apos;s needs, values, and
-                aspirations, you can develop a brand positioning that resonates
-                with their emotions. Emotional connections are powerful drivers
-                of brand loyalty and advocacy. By crafting a brand positioning
-                that evokes positive emotions, you can create long-lasting
-                relationships with your customers, turning them into brand
-                ambassadors who actively promote and support your brand.
+              At the end of the day, art is a way of choosing to truly live, not just exist. It&apos;s not the destination, it&apos;s the way we choose to see and express life&apos;s journey.
               </p>
             </div>
             <div className="w-full pt-16 flex items-start">
@@ -211,13 +162,13 @@ const WorkDetail = ({
                 <div className="flex items-center gap-3">
                   <div className="">
                     <Link
-                      href="https://www.linkedin.com/in/gold-nelson/"
+                      href="https://www.linkedin.com/in/oke-omorohwovo-41089515b/"
                       className="font-neuehaasroman underline"
                     >
-                      Gold Nelson
+                      Oke Omorohwovo
                     </Link>
                     <p className="text-gray-400 font-neuehaasroman">
-                      Strategy and Client Relation, South Circle
+                    COO & Partner, South Circle
                     </p>
                   </div>
                 </div>

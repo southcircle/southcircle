@@ -22,61 +22,13 @@ interface Blogs {
 const blogs: Blogs[] = [
   {
     id: 1,
-    title: "Why South Circle",
+    title: "Art Is Dead",
     category: "Branding",
     description:
-      "Short body text and description of the brand from the south and risus duis leo ac nunc sapien sit",
-    imageSrc: "/assets/blogs/imagine-more.png",
-    slug: "/why-south-circle",
-    date: "August 24, 2024",
-  },
-  {
-    id: 2,
-    title: "Turning businesses into brands",
-    category: "Marketing",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam text and description of the brand from the south and risus...",
-    imageSrc: "/assets/blogs/brain-stretched.png",
-    slug: "/turning-businesses-into-brands",
-    date: "September 2, 2024",
-  },
-  {
-    id: 3,
-    title: "The impact of social media on branding",
-    category: "Visual Identity",
-    description:
-      "Creating a consistent brand identity across all touchpoints...",
-    imageSrc: "/assets/blogs/cd-player.png",
-    slug: "/the-impact-of-social-media-on-branding",
-    date: "August 14, 2024",
-  },
-  {
-    id: 4,
-    title: "Why Designers love music?",
-    category: "Product/UIUX Design",
-    description: "Short body text and description of the brand",
-    imageSrc: "/assets/blogs/headset.png",
-    slug: "/why-designers-love-music",
-    date: "August 24, 2024",
-  },
-  {
-    id: 5,
-    title: "Build up a tech career",
-    category: "Branding",
-    description: "Short body text and description of the brand",
-    imageSrc: "/assets/blogs/medical.png",
-    slug: "/build-up-a-tech-career",
-    date: "August 24, 2024",
-  },
-  {
-    id: 6,
-    title: "Are no-code products successful?",
-    category: "Marketing",
-    description:
-      "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
-    imageSrc: "/assets/blogs/apple.png",
-    slug: "/build-up-a-tech-career",
-    date: "September 2, 2024",
+      "People often say, “I love what you do, but I’m just not the artsy type” or, “I can’t draw to save my life.”",
+    imageSrc: "/assets/blogs/art-is-dead.png",
+    slug: "art-is-dead",
+    date: "September 24, 2024",
   },
 ];
 
@@ -149,16 +101,18 @@ const Page = () => {
           {categories.map((category, index) => (
             <div key={index} className="flex items-center gap-10">
               <button
-              className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
-                selectedCategory === category
-                  ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
-                  : "text-gray-400"
-              }`}
-              onClick={() => setSelectedCategory(category)}
-            >
-              {category}
-            </button>
-            <span className={index === categories.length - 1 ? "hidden" : ""}>·</span>
+                className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
+                  selectedCategory === category
+                    ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
+                    : "text-gray-400"
+                }`}
+                onClick={() => setSelectedCategory(category)}
+              >
+                {category}
+              </button>
+              <span className={index === categories.length - 1 ? "hidden" : ""}>
+                ·
+              </span>
             </div>
           ))}
         </div>
@@ -167,38 +121,46 @@ const Page = () => {
       {/* Works Section */}
       <div className="max-w-full px-2">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 w-full">
-          {filteredBlogs.map((blog, index) => (
-            <Link key={index} href={`/blog/${blog.slug || "/"}`}>
-              <div className="w-full">
-                <div className="relative w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
-                  <Image
-                    src={blog.imageSrc}
-                    alt={blog.title}
-                    className="absolute inset-0 w-full h-full object-cover rounded-sm hover:scale-105 transition-transform duration-500 ease-in-out"
-                    width={1000}
-                    height={300}
-                  />
+          {filteredBlogs.length > 0 ? (
+            filteredBlogs.map((blog, index) => (
+              <Link key={index} href={`/blog/${blog.slug || "/"}`}>
+                <div className="w-full">
+                  <div className="relative w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
+                    <Image
+                      src={blog.imageSrc}
+                      alt={blog.title}
+                      className="absolute inset-0 w-full h-full object-cover rounded-sm hover:scale-105 transition-transform duration-500 ease-in-out"
+                      width={1000}
+                      height={300}
+                    />
+                  </div>
+                  <div className="flex flex-col gap-1 items-start py-4">
+                    <span className="text-sm text-gray-500 font-neuehaasroman">
+                      {blog.date}
+                    </span>
+                    <h3 className="text-xl font-medium font-neuehaasroman">
+                      {blog.title}
+                    </h3>
+                    <p className="text-gray-600 font-neuehaasroman">
+                      {blog.description}
+                    </p>
+                  </div>
+                  <a
+                    href={`/blog/${blog.slug || "/"}`}
+                    className="text-sm underline font-neuehaasroman"
+                  >
+                    Read blog
+                  </a>
                 </div>
-                <div className="flex flex-col gap-1 items-start py-4">
-                  <span className="text-sm text-gray-500 font-neuehaasroman">
-                    {blog.date}
-                  </span>
-                  <h3 className="text-xl font-medium font-neuehaasroman">
-                    {blog.title}
-                  </h3>
-                  <p className="text-gray-600 font-neuehaasroman">
-                    {blog.description}
-                  </p>
-                </div>
-                <a
-                  href={`/blog/${blog.slug || "/"}`}
-                  className="text-sm underline font-neuehaasroman"
-                >
-                  Read blog
-                </a>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            ))
+          ) : (
+            <div className="text-center w-full col-span-full py-10">
+              <p className="text-6xl font-baseneue font-medium text-gray-500">
+                No blog in here
+              </p>
+            </div>
+          )}
         </div>
         <div className="py-10 flex items-center justify-center">
           <Button
