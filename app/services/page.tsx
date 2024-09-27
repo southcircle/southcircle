@@ -88,7 +88,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="pt-10 mt-32 mx-auto px-4 md:px-10 max-w-full w-full">
+    <section className="pt-10 mt-32 mx-auto px-4 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mx-auto w-full">
         <div className="relative w-full flex flex-col items-center gap-10 md:gap-20 justify-center max-w-7xl">

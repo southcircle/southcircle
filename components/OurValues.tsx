@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const OurValues = () => {
   return (
-    <section className="pt-32 mt-32 mx-auto px-1">
+    <section className="pt-16 mt-16 mx-auto px-1">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight tracking-[2px]">
           <span className="text-sm text-gray-400 tracking-wider uppercase font-neuehaaslight">

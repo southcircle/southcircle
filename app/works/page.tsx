@@ -122,7 +122,7 @@ const Page = () => {
   }, [filteredWorks]);
 
   return (
-    <section className="pt-10 mt-28 mx-auto px-4 md:px-10 max-w-8xl w-full">
+    <section className="pt-10 mt-28 mx-auto px-4 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="w-full flex flex-col-reverse md:flex-row gap-10 md:gap-28 justify-center max-w-7xl">
