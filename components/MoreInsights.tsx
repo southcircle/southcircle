@@ -10,17 +10,19 @@ interface Blog {
   title: string;
   date: string;
   description: string;
+  slug: string;
   imageSrc: string;
 }
 
 const blogs: Blog[] = [
   {
     id: 1,
-    title: "Why South Circle",
-    date: "August 28, 2024",
+    title: "Art Is Dead",
     description:
-      "South Circle is redefining brands, beyond conformity from the south...",
-    imageSrc: "/assets/blogs/imagine-more.png",
+      "People often say, “I love what you do, but I’m just not the artsy type” or, “I can’t draw to save my life.”",
+    imageSrc: "/assets/blogs/art-is-dead.png",
+    slug: "art-is-dead",
+    date: "September 24, 2024",
   },
   {
     id: 2,
@@ -29,6 +31,7 @@ const blogs: Blog[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
     imageSrc: "/assets/blogs/brain-stretched.png",
+    slug: "art-is-dead",
   },
   {
     id: 3,
@@ -37,6 +40,7 @@ const blogs: Blog[] = [
     description:
       "Creating a consistent brand identity across all touchpoints...",
     imageSrc: "/assets/blogs/cd-player.png",
+    slug: "art-is-dead",
   },
   {
     id: 4,
@@ -45,22 +49,7 @@ const blogs: Blog[] = [
     description:
       "Lorem ipsum dolor sit amet consectetur. Aliquet ut cursus aliquam...",
     imageSrc: "/assets/blogs/brain-stretched.png",
-  },
-  {
-    id: 5,
-    title: "Why South Circle",
-    date: "August 28, 2024",
-    description:
-      "South Circle is redefining brands, beyond conformity from the south...",
-    imageSrc: "/assets/blogs/imagine-more.png",
-  },
-  {
-    id: 6,
-    title: "The impact of social media on branding",
-    date: "August 03, 2024",
-    description:
-      "Creating a consistent brand identity across all touchpoints...",
-    imageSrc: "/assets/blogs/cd-player.png",
+    slug: "art-is-dead",
   },
 ];
 
@@ -112,7 +101,7 @@ const MoreInsights: React.FC = () => {
           </span>
           <hr />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-2xl md:text-4xl mb-6 w-full max-w-md font-neuehaasroman">
+            <h2 className="text-2xl md:text-4xl mb-6 w-full max-w-md font-semibold font-neuehaasroman">
               If you enjoyed the previous news, check these out.
             </h2>
           </div>
@@ -133,20 +122,20 @@ const MoreInsights: React.FC = () => {
                   alt={blog.title}
                   width={400}
                   height={400}
-                  className="object-cover  h-[320px]"
+                  className="object-cover rounded-3xl h-[320px]"
                 />
-                <div className="text-sm text-gray-500 my-2 font-neuehaaslight">
+                <div className="text-sm text-gray-500 my-2 font-neuehaasroman leading-relaxed uppercase">
                   {blog.date}
                 </div>
-                <h3 className="text-lg font-medium truncate font-neuehaasroman">
+                <h3 className="text-lg font-semibold truncate font-neuehaasroman leading-relaxed">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 max-w-[340px] font-neuehaaslight">
+                <p className="text-gray-600 max-w-[340px] font-neuehaasroman">
                   {blog.description}
                 </p>
                 <a
                   href="#"
-                  className="text-black underline my-5 inline-block text-[15px] font-neuehaasroman"
+                  className="text-black font-medium underline my-5 inline-block text-[15px] font-neuehaasroman"
                 >
                   Read blog
                 </a>

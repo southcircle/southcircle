@@ -77,12 +77,12 @@ const Header = () => {
           text="Works"
           className={isActive("/works") ? "text-gray-400" : ""}
         />
-        <CustomLink
+        {/* <CustomLink
           href="/services"
           animate={true}
           text="Services"
           className={isActive("/services") ? "text-gray-400" : ""}
-        />
+        /> */}
         <CustomLink
           href="/about"
           animate={true}
@@ -118,12 +118,12 @@ const Header = () => {
       {toggle && (
         <div ref={mobileMenuRef} onClick={handleMenu} className="absolute top-24 right-0 left-0 px-6 py-10 bg-white shadow-lg z-[9999]">
           <div className="border-[1px] border-gray-300 px-10 pt-10 pb-14 flex flex-col gap-6 items-start w-full ">
-            {["/works", "/services", "/about", "/blog", "/contact"].map((href, index) => (
+            {["/works", "/about", "/blog", "/contact"].map((href, index) => (
               <Link
                 key={index}
                 href={href}
                 onClick={handleMenu}
-                className={`font-baseneue uppercase text-5xl text-black w-full pb-5 border-b-[1px] border-gray-300 ${isActive(href) ? "text-gray-400" : ""}`}
+                className={`font-neuehaasroman uppercase text-5xl text-black w-full pb-5 border-b-[1px] border-gray-300 ${isActive(href) ? "text-gray-400" : ""}`}
                 style={{ opacity: 100, transform: `translateY(${index * 10}px)` }}
               >
                 {href.replace("/", "").replace(/^\w/, (c) => c.toUpperCase())}

@@ -81,7 +81,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="pt-32 md:mt-32 mx-auto px-2">
+    <section className="pt-28 md:mt-28 mx-auto px-2">
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
           <form onSubmit={handleSubmit} className="space-y-6">

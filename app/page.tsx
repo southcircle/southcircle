@@ -1,8 +1,8 @@
 "use client";
 import GetInTouch from "@/components/GetInTouch";
 import Hero from "@/components/Hero";
-import Insights from "@/components/Insights";
-import OurServices from "@/components/OurServices";
+// import Insights from "@/components/Insights";
+// import OurServices from "@/components/OurServices";
 import SelectedWorks from "@/components/SelectedWorks";
 import { useEffect, useState } from "react";
 
@@ -38,8 +38,8 @@ export default function Home() {
     <>
       <Hero />
       <SelectedWorks />
-      <OurServices />
-      <Insights />
+      {/* <OurServices /> */}
+      {/* <Insights /> */}
       <GetInTouch />
     </>
   );

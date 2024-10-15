@@ -47,7 +47,7 @@ const OurTeams = () => {
           </span>
           <hr />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-3xl font-normal mb-6 max-w-sm font-neuehaasroman">
+            <h2 className="text-3xl font-semibold mb-6 max-w-sm font-neuehaasroman">
               Your go-to crew for getting things done.
             </h2>
           </div>
@@ -60,13 +60,13 @@ const OurTeams = () => {
                 alt={team.title || ""}
                 width={1000}
                 height={240}
-                className="object-cover"
+                className="object-cover rounded-3xl"
               />
               <div className="my-3">
-                <h3 className="text-lg font-medium truncate font-neuehaasroman">
+                <h3 className="text-lg font-semibold truncate font-neuehaasroman">
                   {team.fullname}
                 </h3>
-                <p className="text-gray-600 w-full font-neuehaaslight">
+                <p className="text-gray-600 w-full font-neuehaasroman">
                   {team.title}
                 </p>
               </div>

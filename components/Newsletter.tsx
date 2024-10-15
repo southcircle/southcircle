@@ -10,18 +10,18 @@ const Newsletter = () => {
             Stay Above The Curve
           </span>
         </div>
-        <div className="w-full max-w-7xl">
-          <h1 className="text-7xl md:text-9xl font-baseneue font-bold flex flex-col items-start text-start uppercase">
+        <div className="flex flex-col gap-10 md:gap-0 md:flex-row">
+          <h1 className="text-7xl md:text-8xl font-neuehaasroman font-semibold flex-1 flex flex-col items-start text-start">
             <span>Get our</span>
-            <span>Newsletter</span>
-            <span>Straight to you.</span>
+            <span>newsletter</span>
+            <span>straight to you.</span>
           </h1>
-          <p className="text-xl sm:text-2xl text-start font-neuehaaslight md:hidden mt-2">
-              Explore the narratives that shape our work and reveal the
-              inspiration behind our projects.
-            </p>
+          <p className="max-w-sm text-xl sm:text-2xl text-start font-neuehaasroman mt-auto mr-0 md:mr-52">
+            Subscribe for more insights and trending updates delivered to your
+            doorstep mailbox.
+          </p>
         </div>
-        <div>
+        <div className="mt-10">
           <label className="flex items-center justify-between w-full p-4 md:py-4 md:pl-12 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
             <input
               type="email"

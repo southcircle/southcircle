@@ -57,35 +57,31 @@ const Page = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mx-auto">
         <div className="relative w-full flex flex-col items-center gap-8 justify-center max-w-7xl">
-          <h1 className="text-6xl sm:text-7xl scale-125 sm:scale-95 md:text-[160px] font-baseneue flex flex-col items-start text-start uppercase whitespace-nowrap">
-            <span>Insights for your</span>
-            <span>journey.</span>
+          <h1 className="text-6xl sm:text-8xl font-semibold font-neuehaasroman flex flex-col items-center text-center whitespace-nowrap">
+            <span>Insights from</span>
+            <span>our journey.</span>
           </h1>
-          <p className="max-w-xs text-xl sm:text-2xl text-start font-neuehaaslight md:hidden">
+          <p className="max-w-xl text-xl text-center font-neuehaasroman">
             Explore the narratives that shape our work and reveal the
             inspiration behind our projects.
           </p>
           <div className="max-w-3xl w-full px-2">
             <div>
-              <label className="flex items-center justify-between w-full p-4 md:py-4 md:pl-12 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
+              <label className="flex items-center justify-between w-full p-4 md:py-3 md:pl-8 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
                 <input
                   type="text"
-                  name="subscribe"
-                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-xl font-neuehaaslight pl-4"
-                  placeholder="Enter email here"
+                  name="search"
+                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-xl text-[#0C0C0CB0] placeholder:text-[#0C0C0CB0] font-neuehaaslight pl-4"
+                  placeholder="Search for any insight..."
                 />
                 <Button
-                  text="Subscribe"
-                  className="px-16 py-12 w-48 rounded-full font-normal text-sm sm:text-base md:text-lg flex justify-center border-gray-400"
+                  text="Search now"
+                  className="px-16 py-12 md:py-10 w-48 rounded-full font-normal text-[#1F1F1F] text-sm sm:text-base md:text-lg flex justify-center border-gray-400 whitespace-nowrap"
                   variant="outline"
                 />
               </label>
             </div>
           </div>
-          <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight right-32 sm:right-24 md:right-32 lg:right-64 bottom-48 hidden md:inline-block">
-            Explore the narratives that shape our work and reveal the
-            inspiration behind our projects
-          </p>
         </div>
       </div>
 
@@ -125,7 +121,7 @@ const Page = () => {
             filteredBlogs.map((blog, index) => (
               <Link key={index} href={`/blog/${blog.slug || "/"}`}>
                 <div className="w-full">
-                  <div className="relative w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
+                  <div className="relative rounded-3xl w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
                     <Image
                       src={blog.imageSrc}
                       alt={blog.title}
@@ -135,10 +131,10 @@ const Page = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-1 items-start py-4">
-                    <span className="text-sm text-gray-500 font-neuehaasroman">
+                    <span className="text-sm text-gray-500 font-neuehaasroman uppercase">
                       {blog.date}
                     </span>
-                    <h3 className="text-xl font-medium font-neuehaasroman">
+                    <h3 className="text-xl font-semibold leading-relaxed font-neuehaasroman">
                       {blog.title}
                     </h3>
                     <p className="text-gray-600 font-neuehaasroman">
@@ -147,7 +143,7 @@ const Page = () => {
                   </div>
                   <a
                     href={`/blog/${blog.slug || "/"}`}
-                    className="text-sm underline font-neuehaasroman"
+                    className="text-sm font-medium underline font-neuehaasroman"
                   >
                     Read blog
                   </a>
@@ -156,7 +152,7 @@ const Page = () => {
             ))
           ) : (
             <div className="text-center w-full col-span-full py-10">
-              <p className="text-6xl font-baseneue font-medium text-gray-500">
+              <p className="text-6xl font-neuehaasroman font-medium text-gray-500">
                 No blog in here
               </p>
             </div>

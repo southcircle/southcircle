@@ -15,7 +15,7 @@ const Footer = () => {
           <Image src="/assets/imagine-more.gif" alt="imagine more" width={400} height={400}/>
         </div>
         <div className="flex gap-10 align-top items-start">
-          <h4 className="text-[#0C0C0CA3] text-lg font-neuehaaslight">
+          <h4 className="text-[#0C0C0CB0] font-medium text-lg font-neuehaaslight">
             Contact
           </h4>
           <div className="flex flex-col gap-5 items-start font-neuehaasroman">
@@ -29,6 +29,7 @@ const Footer = () => {
                 href="mailto:hello@southcircle.co"
                 animate={false}
                 text="hello@southcircle.co"
+                className="border-b-[0.2px] border-[#919191b0] text-[#0C0C0CB0]"
               />
             </div>
             <div className="max-w-sm text-start font-neuehaasroman">
@@ -47,61 +48,50 @@ const Footer = () => {
                 href="linkedin.com"
                 animate={true}
                 text="LinkedIn"
-                className="underline"
+                className="border-b-[0.2px] border-[#919191b0]"
               />
               <CustomLink
                 href="instagram.com"
                 animate={true}
                 text="Instagram"
-                className="underline"
+                className="border-b-[0.2px] border-[#919191b0]"
               />
               <CustomLink
                 href="twiiter.com"
                 animate={true}
                 text="Twitter"
-                className="underline"
+                className="border-b-[0.2px] border-[#919191b0]"
               />
               <CustomLink
                 href="facebook.com"
                 animate={true}
                 text="Facebook"
-                className="underline"
+                className="border-b-[0.2px] border-[#919191b0]"
               />
               <CustomLink
                 href="behance.com"
                 animate={true}
                 text="Behance"
-                className="underline"
+                className="border-b-[0.2px] border-[#919191b0]"
               />
               <CustomLink
                 href="dribbble.com"
                 animate={true}
                 text="Dribbble"
-                className="underline"
+                className="border-b-[0.2px] border-[#919191b0]"
               />
             </div>
           </div>
         </div>
       </div>
       <hr className="text-gray-400" />
-      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full pt-8">
-      
-        <div className="flex flex-col  md:flex-row items-center gap-5 text-gray-500 font-neuehaaslight">
+      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full pt-8 font-neuehaasroman tracking-wide">
+        <div className="flex flex-col  md:flex-row items-center gap-5 text-gray-500">
           <p>&copy; {year} South Circle LLC, All right reserved.</p>
         </div>
-        <div className="hidden md:inline-block">
-          <Link className="" href="/">
-            <Image src="/assets/logo.png" width={32} height={32} alt="logo" />
-          </Link>
-        </div>
-        <div className="flex items-center gap-6 text-gray-500 font-neuehaaslight">
+        <div className="flex items-center gap-6 text-gray-500">
           <CustomLink href="/privacy" animate={true} text="Privacy" />
           <CustomLink href="/terms" animate={true} text="Terms of use" />
-        </div>
-        <div className="inline-block md:hidden">
-          <Link className="" href="/">
-            <Image src="/assets/logo.png" width={32} height={32} alt="logo" />
-          </Link>
         </div>
       </div>
     </footer>

@@ -13,30 +13,29 @@ const page = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="flex flex-col md:flex-row gap-4 md:gap-16 items-center justify-center max-w-7xl md:px-0">
-          <h1 className="w-full text-7xl md:text-[160px]  font-baseneue font-bold flex flex-col items-start text-start uppercase whitespace-nowrap">
-            <span>Curious about</span>
-            <span>us? here&apos;s the</span>
+          <h1 className="w-full text-7xl font-neuehaasroman font-semibold flex flex-col items-center text-center whitespace-nowrap">
+            <span>Curious about us? here&apos;s the</span>
             <span>inside scoop.</span>
           </h1>
-          <p
-            className="w-full md:max-w-xs text-xl align-bottom
-           text-start font-neuehaaslight"
-          >
-            Discover what drives us, what we&apos;re passionate about, and how
-            we&apos;re shaping the future. Get the details that make us tick.
-          </p>
         </div>
         <Image
           src="/assets/about-banner.svg"
           width={720}
           height={240}
           alt="about-down"
-          className="object-contain mt-12"
+          className="object-contain mt-8"
         />
+        <div className="py-24 flex items-end justify-center">
+          <p className="font-medium text-start font-neuehaasroman max-w-xl text-4xl md:text-5xl leading-loose">
+            We are not content with just blending in - we are on a mission to
+            stand out, with vision to become one of the leading agencies in
+            Southern Nigeria.
+          </p>
+        </div>
       </div>
+      {/* <OurJourney /> */}
       <WhoWeAre />
       <OurValues />
-      <OurJourney />
       <OurTeams />
       <GetInTouch />
     </main>

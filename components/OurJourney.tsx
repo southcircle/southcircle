@@ -6,7 +6,7 @@ const OurJourney = () => {
   return (
     <section className="py-40 mx-auto px-1">
       <div className="max-w-8xl w-full mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-20 text-center">
+        {/* <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-20 text-center">
           <Image
             src="/assets/team/groupOne.png"
             alt="group team one"
@@ -21,12 +21,12 @@ const OurJourney = () => {
             height={400}
             className="object-cover"
           />
-        </div>
-        <div className="py-24 flex items-end justify-center">
+        </div> */}
+        {/* <div className="py-24 flex items-end justify-center">
           <p className="font-medium font-neuehaasroman max-w-xl text-4xl md:text-5xl">
           With a clear vision and bold ambition, we&apos;re on a mission to redefine creativity and innovation. Our goal? To become one of the leading agencies in Southern Nigeria, delivering exceptional results that set new industry standards.
           </p>
-        </div>
+        </div> */}
         <div className="flex items-center justify-center w-full mx-auto max-w-5xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-40 w-full">
             <div className="flex flex-col items-start border-b-[2px] border-gray-400">

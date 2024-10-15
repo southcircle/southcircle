@@ -38,33 +38,33 @@ const works: SelectedWorks[] = [
     imageSrc: "/assets/selected/gamebox.webp",
     slug: "https://www.behance.net/southcircle",
   },
-  {
-    id: 4,
-    title: "Coming Soon...",
-    category: ["UI/UX Design"],
-    description: "Coming...",
-    imageSrc: "/assets/selected/ciange.png",
-    slug: "https://www.behance.net/southcircle",
-  },
+  // {
+  //   id: 4,
+  //   title: "Coming Soon...",
+  //   category: ["UI/UX Design"],
+  //   description: "Coming...",
+  //   imageSrc: "/assets/selected/ciange.png",
+  //   slug: "https://www.behance.net/southcircle",
+  // },
 ];
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-60 md:pt-60 md:mt-28 mx-auto px-4 md:px-10 ">
+    <section className="pt-20 md:mt-20 mx-auto px-4 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
+          <span className="text-sm text-[#0C0C0CB0] tracking-[2px] uppercase font-neuehaasroman">
             Our work
           </span>
           <hr className="text-gray-400 bg-gray-400" />
           <div className="py-2 flex items-center justify-between w-full">
-            <h2 className="text-2xl md:text-3xl font-normal font-neuehaasroman">
+            <h2 className="text-2xl md:text-3xl font-semibold font-neuehaasroman">
               Selected Works
             </h2>
             <div>
               <Link href="/works">
                 <Button
-                  text="See works"
+                  text="See all works"
                   className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
                   variant="outline"
                 />
@@ -77,17 +77,17 @@ const SelectedWorks = () => {
           {works.map((work, index) => (
             <Link key={index} href={`${work.slug || "/"}`}>
               <div className="w-full">
-                <div className="relative w-full md:h-[460px] overflow-hidden">
+                <div className="relative rounded-3xl w-full md:h-[460px] overflow-hidden">
                   <Image
                     src={work.imageSrc}
                     alt={work.title}
-                    className="rounded-sm object-cover hover:scale-110 h-full transition-all ease-in-out duration-500"
+                    className="object-cover hover:scale-110 h-full transition-all ease-in-out duration-500"
                     width={1000}
                     height={500}
                   />
                 </div>
                 <div className="flex gap-1 items-center justify-between pt-3">
-                  <h3 className="text-xl font-medium font-neuehaasroman">
+                  <h3 className="text-2xl font-semibold font-neuehaasroman tracking-wide">
                     {work.title}
                   </h3>
                   <div className="md:flex items-center gap-1 hidden mt-2">
@@ -95,14 +95,14 @@ const SelectedWorks = () => {
                       work?.category.map((cat, index) => (
                         <span
                           key={index}
-                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaasroman"
                         >
                           {cat}
                         </span>
                       ))}
                   </div>
                 </div>
-                <p className="text-gray-600 font-neuehaaslight">
+                <p className="leading-7 text-[#0C0C0CB0] text-lg font-medium font-neuehaasroman">
                   {work.description}
                 </p>
                 <div className="flex items-center gap-1 md:hidden mt-1">
@@ -110,7 +110,7 @@ const SelectedWorks = () => {
                     work?.category.map((cat, index) => (
                       <span
                         key={index}
-                        className="border-[0.8px] text-sm border-gray-200 px-2 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                        className="border-[0.8px] text-sm border-gray-200 px-2 py-1 whitespace-nowrap rounded-full inline-block font-neuehaasroman"
                       >
                         {cat}
                       </span>

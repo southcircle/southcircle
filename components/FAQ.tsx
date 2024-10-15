@@ -65,10 +65,10 @@ const FAQ = () => {
             <p className="font-neuehaasroman text-gray-400 tracking-[2px] text-lg">
               FAQ
             </p>
-            <h1 className="font-baseneue text-7xl sm:text-8xl md:text-[120px] lg:text-[160px] font-bold tracking-wide text-start uppercase">
+            <h1 className="font-neuehaasroman text-7xl sm:text-8xl md:text-[98px] lg:text-[98px] font-bold tracking-wide text-start">
               Find the
               <br />
-              Clarity you
+              clarity you
               <br />
               need here.
             </h1>
@@ -81,7 +81,7 @@ const FAQ = () => {
                     onClick={() => toggleFAQ(index)}
                     className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-neuehaasroman"
                   >
-                    <p className="w-[200px] md:w-full text-sm md:text-base">{faq.question}</p>
+                    <p className="w-[200px] md:w-full text-base md:text-lg font-medium">{faq.question}</p>
                     {activeIndex === index ? (
                       <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
                         <Image
@@ -103,7 +103,7 @@ const FAQ = () => {
                     )}
                   </button>
                   {activeIndex === index && (
-                    <p className="mt-2 text-gray-600 font-neuehaaslight">
+                    <p className="mt-2 text-gray-600 font-neuehaasroman">
                       {faq.answer}
                     </p>
                   )}
