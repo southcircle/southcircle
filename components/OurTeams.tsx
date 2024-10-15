@@ -76,7 +76,7 @@ const OurTeams = () => {
                 </Link>
                 <Link href={team.linkedin || "#"} className="">
                   <Image
-                    src="/assets/linkedin-outline.svg"
+                    src="/assets/linkedIn-outline.svg"
                     width={28}
                     height={28}
                     alt="linkedin"
