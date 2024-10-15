@@ -12,23 +12,14 @@ const OurValues = () => {
           </span>
           <hr className="text-gray-400 bg-gray-400" />
         </div>
-        <div className="mt-10 w-full grid grid-cols-1 md:grid-cols-[500px,_1fr] gap-20">
+        <div className="mt-10 w-full grid grid-cols-1 md:grid-cols-1 lg:grid-cols-[500px,_1fr]">
           <div className="max-w-sm">
-            <h2 className="text-4xl font-semibold font-neuehaasroman mb-4">
+            <h2 className="text-4xl font-semibold font-neuehaasroman">
               Powered by intellect, driven by values.
             </h2>
-            {/* <div>
-            <Link href="/contact">
-                <Button
-                  text="Get in touch"
-                  className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
-                  variant="outline"
-                />
-              </Link>
-            </div> */}
           </div>
           {/* Services Grid */}
-          <div className="gap-12">
+          <div className="gap-8">
             <div>
               <div className="w-full flex items-start text-xl md:text-lg font-neuehaasroman mb-8">
                 <p>

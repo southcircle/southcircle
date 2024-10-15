@@ -9,20 +9,20 @@ const WhoWeAre = () => {
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
-            Who We Are
+            What We Do
           </span>
           <hr className="text-gray-400 bg-gray-400" />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-3xl font-normal mb-6 font-neuehaasroman">
-              Proudly pioneering brand and business design.
+            <h2 className="text-4xl font-semibold max-w-md mb-6 font-neuehaasroman">
+              Building a strong brand with our expertise.
             </h2>
-            <div>
-            <Button
-              text="See our services"
-              className="px-6 py-6 w-36 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
-              variant="outline"
-            />
-            </div>
+            {/* <div>
+              <Button
+                text="See our services"
+                className="px-6 py-6 w-36 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight hidden md:inline-block"
+                variant="outline"
+              />
+            </div> */}
           </div>
         </div>
         <div className="space-y-10 mt-10">
@@ -34,7 +34,11 @@ const WhoWeAre = () => {
                   Full-service design agency
                 </h4>
                 <p className="text-[#0C0C0CA3] text-base md:text-lg font-normal font-neuehaaslight">
-                At South Circle, we merge expertise in design, technology, and psychology to craft strategies that drive measurable results. By carefully selecting clients who align with our mission, we focus on delivering distinct, quantifiable outcomes that fuel business growth.
+                  At South Circle, we merge expertise in design, technology, and
+                  psychology to craft strategies that drive measurable results.
+                  By carefully selecting clients who align with our mission, we
+                  focus on delivering distinct, quantifiable outcomes that fuel
+                  business growth.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
                   <Image
@@ -51,7 +55,10 @@ const WhoWeAre = () => {
                   Design, development and marketing
                 </h4>
                 <p className="text-[#0C0C0CA3] text-base md:text-lg font-normal font-neuehaaslight">
-                We believe in long-term success, not just short-term wins. Our commitment goes beyond the launch—through continuous refinement and adaptation, we ensure your brand stays relevant and grows sustainably in an ever-evolving landscape.
+                  We believe in long-term success, not just short-term wins. Our
+                  commitment goes beyond the launch—through continuous
+                  refinement and adaptation, we ensure your brand stays relevant
+                  and grows sustainably in an ever-evolving landscape.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
                   <Image
@@ -68,7 +75,11 @@ const WhoWeAre = () => {
                   Smooth makes us worried
                 </h4>
                 <p className="text-[#0C0C0CA3] text-base md:text-lg font-normal font-neuehaaslight">
-                We thrive on disruption. At South Circle, we don&apos;t shy away from friction—it&apos;s what fuels our creativity. By embracing challenges and clashing ideas, we provoke the energy needed to spark innovation and create transformative solutions for your business.
+                  We thrive on disruption. At South Circle, we don&apos;t shy
+                  away from friction—it&apos;s what fuels our creativity. By
+                  embracing challenges and clashing ideas, we provoke the energy
+                  needed to spark innovation and create transformative solutions
+                  for your business.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
                   <Image
@@ -83,7 +94,10 @@ const WhoWeAre = () => {
             </div>
           </div>
         </div>
-        <Link href="/services" className="py-10 flex items-center justify-center">
+        <Link
+          href="/services"
+          className="py-10 flex items-center justify-center"
+        >
           <Button
             text="See our services"
             className="px-6 py-6 w-36 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
