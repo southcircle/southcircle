@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <section className="pt-16 mt-16 max-w-8xl h-[60vh]">
       <div className="relative mx-auto w-full flex flex-col justify-center items-center">
-        <div className="flex flex-col items-center gap-4 sm:mb-12 sm:justify-center text-8xl font-bold tracking-wide text-center font-neuehaasroman w-full leading-none">
+        <div className="flex flex-col items-center gap-4 sm:mb-12 sm:justify-center text-7xl md:text-9xl font-bold text-center font-neuehaasroman w-full">
           <h1>Empowering your</h1>
           <h1>brand&apos;s next big move.</h1>
         </div>
