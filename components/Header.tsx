@@ -69,7 +69,7 @@ const Header = () => {
           className="w-10 h-auto"
         />
       </Link>
-      <div className="md:flex flex-row items-center gap-6 relative font-neuehaasroman hidden">
+      <div className="md:flex flex-row items-center gap-6 relative font-neuehaaslight hidden">
         {/* Add active class based on the current route */}
         <CustomLink
           href="/works"
@@ -98,7 +98,7 @@ const Header = () => {
         <Link href="/contact" className="font-normal flex items-center">
           <Button
             text="Contact us"
-            className={`w-[120px] h-10 rounded-full whitespace-nowrap ${
+            className={`w-[120px] h-10 rounded-full font-neuehaaslight whitespace-nowrap ${
               isActive("/contact") ? "" : ""
             }`}
             variant="outline"

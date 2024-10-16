@@ -5,7 +5,7 @@ const OurProcess = () => {
     <section className="pt-32 mt-32 mx-auto mb-32">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
             Our Process
           </span>
           <hr className="text-gray-400 bg-gray-400" />

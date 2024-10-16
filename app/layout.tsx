@@ -7,34 +7,55 @@ import Footer from "@/components/Footer";
 // import SmoothScroll from "@/components/ui/SmoothScroll";
 // import CustomCusor from "@/components/CustomCusor";
 
-const baseNeue = localFont({
-  src: [
-    {
-      path: "../public/fonts/BaseNeueTrial-SuperCondBold.woff2",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/BaseNeueTrial-SuperCondBold.woff",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/BaseNeueTrial-SuperCondBold.ttf",
-      weight: "400",
-      style: "normal",
-    },
-  ],
-  variable: "--font-baseneue",
-});
+// const neueHaasRoman = localFont({
+//   src: [
+//     {
+//       path: "../public/fonts/NeueHaasDisplay-Mediu.woff",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "../public/fonts/NeueHaasDisplay-Mediu.ttf",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "../public/fonts/NeueHaasDisplay-Mediu.eot",
+//       weight: "400",
+//       style: "normal",
+//     },
+//   ],
+//   variable: "--font-neuehaasroman",
+// });
+
+// const neueHaasLight = localFont({
+//   src: [
+//     {
+//       path: "../public/fonts/NeueHaasDisplay-Roman.woff",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "../public/fonts/NeueHaasDisplay-Roman.ttf",
+//       weight: "400",
+//       style: "normal",
+//     },
+//     {
+//       path: "../public/fonts/NeueHaasDisplay-Roman.eot",
+//       weight: "400",
+//       style: "normal",
+//     },
+//   ],
+//   variable: "--font-neuehaaslight",
+// });
 
 const neueHaasLight = localFont({
-  src: "../public/fonts/NeueHaasDisplayLight.ttf",
+  src: "../public/fonts/NeueHaasDisplay-Roman.woff",
   variable: "--font-neuehaaslight",
 });
 
 const neueHaasRoman = localFont({
-  src: "../public/fonts/NeueHaasDisplayRoman.ttf",
+  src: "../public/fonts/NeueHaasDisplay-Mediu.woff",
   variable: "--font-neuehaasroman",
 });
 
@@ -55,7 +76,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${baseNeue.variable} ${neueHaasLight.variable} ${neueHaasRoman.variable} antialiased`}
+        className={`${neueHaasLight.variable} ${neueHaasRoman.variable} antialiased`}
       >
         <Header />
         {/* <SmoothScroll> */}

@@ -62,7 +62,7 @@ const FAQ = () => {
       <div className="max-w-8xl w-full flex items-center justify-center mx-auto">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 mx-auto">
           <div className="flex flex-col gap-5">
-            <p className="font-neuehaasroman text-gray-400 tracking-[2px] text-lg">
+            <p className="font-neuehaaslight text-gray-400 tracking-[2px] text-lg">
               FAQ
             </p>
             <h1 className="font-neuehaasroman text-7xl sm:text-8xl md:text-[98px] lg:text-[98px] font-bold tracking-wide text-start">
@@ -103,7 +103,7 @@ const FAQ = () => {
                     )}
                   </button>
                   {activeIndex === index && (
-                    <p className="mt-2 text-gray-600 font-neuehaasroman">
+                    <p className="mt-2 text-gray-600 font-neuehaaslight">
                       {faq.answer}
                     </p>
                   )}

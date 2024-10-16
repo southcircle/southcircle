@@ -6,7 +6,7 @@ const Newsletter = () => {
     <section className="pt-32 mt-32 mx-auto px-2 mb-32">
       <div className="w-full mx-auto p-6 md:p-12 border-[1px] border-gray-300 rounded-b-[60px] md:rounded-b-[100px] space-y-6 md:space-y-8">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaasroman">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
             Stay Above The Curve
           </span>
         </div>
@@ -16,7 +16,7 @@ const Newsletter = () => {
             <span>newsletter</span>
             <span>straight to you.</span>
           </h1>
-          <p className="max-w-sm text-xl sm:text-2xl text-start font-neuehaasroman mt-auto mr-0 md:mr-52">
+          <p className="max-w-sm text-xl sm:text-2xl text-start font-neuehaaslight mt-auto mr-0 md:mr-52">
             Subscribe for more insights and trending updates delivered to your
             doorstep mailbox.
           </p>
@@ -31,7 +31,7 @@ const Newsletter = () => {
             />
             <Button
               text="Subscribe"
-              className="px-16 py-12 w-48 rounded-full font-normal text-sm text-center md:text-lg flex justify-center border-gray-400"
+              className="px-16 py-12 w-48 rounded-full font-normal font-neuehaaslight text-sm text-center md:text-lg flex justify-center border-gray-400"
               variant="outline"
             />
           </label>

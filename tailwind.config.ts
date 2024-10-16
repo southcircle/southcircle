@@ -24,7 +24,6 @@ const config = {
     },
     extend: {
       fontFamily: {
-        baseneue: 'var(--font-baseneue)',
         neuehaaslight: 'var(--font-neuehaaslight)',
         neuehaasroman: 'var(--font-neuehaasroman)',
       },

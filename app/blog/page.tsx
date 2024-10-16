@@ -61,7 +61,7 @@ const Page = () => {
             <span>Insights from</span>
             <span>our journey.</span>
           </h1>
-          <p className="max-w-xl text-xl text-center font-neuehaasroman">
+          <p className="max-w-xl text-xl text-center font-neuehaaslight">
             Explore the narratives that shape our work and reveal the
             inspiration behind our projects.
           </p>
@@ -71,12 +71,12 @@ const Page = () => {
                 <input
                   type="text"
                   name="search"
-                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-xl text-[#0C0C0CB0] placeholder:text-[#0C0C0CB0] font-neuehaaslight pl-4"
+                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-lg text-[#0C0C0CB0] placeholder:text-[#0C0C0CB0] font-neuehaaslight pl-4"
                   placeholder="Search for any insight..."
                 />
                 <Button
                   text="Search now"
-                  className="px-16 py-12 md:py-10 w-48 rounded-full font-normal text-[#1F1F1F] text-sm sm:text-base md:text-lg flex justify-center border-gray-400 whitespace-nowrap"
+                  className="px-16 py-12 md:py-10 w-48 rounded-full font-normal font-neuehaaslight text-[#1F1F1F] text-sm sm:text-base md:text-lg flex justify-center border-gray-400 whitespace-nowrap"
                   variant="outline"
                 />
               </label>
@@ -97,7 +97,7 @@ const Page = () => {
           {categories.map((category, index) => (
             <div key={index} className="flex items-center gap-10">
               <button
-                className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
+                className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaaslight transition-all duration-300 ease-in-out ${
                   selectedCategory === category
                     ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                     : "text-gray-400"
@@ -131,19 +131,19 @@ const Page = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-1 items-start py-4">
-                    <span className="text-sm text-gray-500 font-neuehaasroman uppercase">
+                    <span className="text-sm text-gray-500 font-neuehaaslight uppercase">
                       {blog.date}
                     </span>
                     <h3 className="text-xl font-semibold leading-relaxed font-neuehaasroman">
                       {blog.title}
                     </h3>
-                    <p className="text-gray-600 font-neuehaasroman">
+                    <p className="text-gray-600 font-neuehaaslight">
                       {blog.description}
                     </p>
                   </div>
                   <a
                     href={`/blog/${blog.slug || "/"}`}
-                    className="text-sm font-medium underline font-neuehaasroman"
+                    className="text-sm font-medium underline font-neuehaaslight"
                   >
                     Read blog
                   </a>
@@ -152,7 +152,7 @@ const Page = () => {
             ))
           ) : (
             <div className="text-center w-full col-span-full py-10">
-              <p className="text-6xl font-neuehaasroman font-medium text-gray-500">
+              <p className="text-6xl font-neuehaaslight font-medium text-gray-500">
                 No blog in here
               </p>
             </div>

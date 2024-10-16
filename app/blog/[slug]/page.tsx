@@ -46,7 +46,7 @@ const WorkDetail = ({
       {/* Hero Section */}
       <div className="flex flex-col items-start justify-start text-start mb-20 mx-auto w-full">
         <div className="flex flex-col items-start justify-start max-w-7xl md:px-0 w-full">
-          <div className="flex items-center gap-3 py-5 text-[#0C0C0CB0] text-xs md:text-sm text-nowrap font-neuehaasroman tracking-[2px]">
+          <div className="flex items-center gap-3 py-5 text-[#0C0C0CB0] text-xs md:text-sm text-nowrap font-neuehaaslight tracking-[2px]">
             <p>BRANDING</p>
             <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
             <p>AUGUST 14, 2024.</p>
@@ -79,7 +79,7 @@ const WorkDetail = ({
       <div className="mt-6 w-full grid grid-cols-1 md:grid-cols-[480px,_1fr]">
         {/* LEFT HAND SIDE */}
         <div className="md:flex flex-col gap-4 hidden">
-          <h2 className="text-lg font-medium mb-4 font-neuehaasroman uppercase text-gray-400 tracking-wider">
+          <h2 className="text-lg font-medium mb-4 font-neuehaaslight uppercase text-gray-400 tracking-wider">
             Share this news
           </h2>
           <button
@@ -87,21 +87,21 @@ const WorkDetail = ({
             className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/x.svg" width={26} height={26} alt="X" />
-            <p className="text-lg font-neuehaasroman pr-2">Twitter</p>
+            <p className="text-lg font-neuehaaslight pr-2">Twitter</p>
           </button>
           <button
             onClick={() => openShareLink(linkedInUrl)}
             className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/linkedin.svg" width={26} height={26} alt="X" />
-            <p className="text-lg font-neuehaasroman pr-2">LinkedIn</p>
+            <p className="text-lg font-neuehaaslight pr-2">LinkedIn</p>
           </button>
           <button
             onClick={() => openShareLink(facebookUrl)}
             className="p-2 border border-[#2d2d2d] rounded-full flex items-center justify-start w-fit gap-4"
           >
             <Image src="/assets/facebook.svg" width={26} height={26} alt="X" />
-            <p className="text-lg font-neuehaasroman pr-2">Facebook</p>
+            <p className="text-lg font-neuehaaslight pr-2">Facebook</p>
           </button>
         </div>
 
@@ -112,10 +112,10 @@ const WorkDetail = ({
           </h1>
           <div className="space-y-6 mt-6 mb-10">
             <div className="space-y-4 pb-12">
-              <p className="text-xl text-gray-500 font-neuehaasroman tracking-wide">
+              <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
               I get it, though. With AI-generated art becoming a hot topic, it can sometimes feel like there&apos;s a predefined benchmark for what qualifies as &quot;good art.&quot; And if what you create doesn&apos;t measure up, it&apos;s dismissed. But that&apos;s not how it works. Art is self-expression in its purest form, and when it&apos;s authentic, it has the power to build connections and a sense of belonging. When you express something real—whether it&apos;s a feeling, an experience, or even a fleeting thought—someone out there will resonate with it.
               </p>
-              <p className="text-xl tracking-wide text-gray-500 font-neuehaasroman">
+              <p className="text-xl tracking-wide text-gray-500 font-neuehaaslight">
               Think about it. You see a piece of art that mirrors a struggle or joy you&apos;ve experienced. It&apos;s an instant bond, right? You realize, &quot;I&apos;m not alone; someone else gets it.&quot; In a world that often urges us to chase perfection (thanks, to social media), art can be a comforting reminder that it&apos;s okay to be real and flawed. It&apos;s okay to express ourselves without worrying about meeting any standards.
               </p>
             </div>
@@ -131,10 +131,10 @@ const WorkDetail = ({
           </div>
           <div className="space-y-6 mt-6 mb-10">
             <div className="space-y-4 pb-12">
-              <p className="text-xl text-gray-500 font-neuehaasroman tracking-wide">
+              <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
               The reality is, we&apos;re all human before we&apos;re anything else. When we&apos;re not pressured to meet some imaginary artistic ideal, we&apos;re free to express our experiences as they are—raw, unpolished, and full of meaning. Feeling down and all you want to do is draw a frown inside a circle? Do it. That&apos;s your art. You may not even want to define it with words—let the viewer interpret it. That&apos;s the beauty of art; it&apos;s limitless.
               </p>
-              <p className="text-xl tracking-wide text-gray-500 font-neuehaasroman">
+              <p className="text-xl tracking-wide text-gray-500 font-neuehaaslight">
               Humans are wired to connect. So, when we see something genuine, something we relate to, we form a bond. It makes life feel less lonely. Art does that—it&apos;s a bridge, not a finish line. It&apos;s about shaping perceptions, yes, but it&apos;s also about showing that life isn&apos;t always about happiness or perfection. Its messy, nuanced, and complex. And that&apos;s okay. When we embrace this reality, we start to live without fear of judgment.
               </p>
             </div>
@@ -150,13 +150,13 @@ const WorkDetail = ({
           </div>
           <div className="space-y-6 mt-6 mb-10">
             <div className="space-y-4">
-              <p className="text-xl text-gray-500 font-neuehaasroman tracking-wide">
+              <p className="text-xl text-gray-500 font-neuehaaslight tracking-wide">
               At the end of the day, art is a way of choosing to truly live, not just exist. It&apos;s not the destination, it&apos;s the way we choose to see and express life&apos;s journey.
               </p>
             </div>
             <div className="w-full pt-16 flex items-start">
               <div className="flex flex-col gap-3 items-start max-w-md">
-                <p className="font-neuehaasroman">Written by:</p>
+                <p className="font-neuehaaslight">Written by:</p>
                 <div className="flex items-center gap-3">
                   <div className="">
                     <Link
@@ -165,13 +165,13 @@ const WorkDetail = ({
                     >
                       Oke Omorohwovo
                     </Link>
-                    <p className="text-gray-400 font-neuehaasroman">
+                    <p className="text-gray-400 font-neuehaaslight">
                     COO & Partner, South Circle
                     </p>
                   </div>
                 </div>
                 <div className="md:hidden flex flex-col gap-2 mt-6">
-                  <h2 className="text-base font-medium mb-2 font-neuehaasroman uppercase text-gray-400 tracking-wider">
+                  <h2 className="text-base font-medium mb-2 font-neuehaaslight uppercase text-gray-400 tracking-wider">
                     Share this news
                   </h2>
                   <div className="w-full flex items-center justify-between gap-2">
@@ -185,7 +185,7 @@ const WorkDetail = ({
                         height={20}
                         alt="X"
                       />
-                      <p className="text-xs font-neuehaasroman pr-2">Twitter</p>
+                      <p className="text-xs font-neuehaaslight pr-2">Twitter</p>
                     </button>
                     <button
                       onClick={() => openShareLink(linkedInUrl)}
@@ -197,7 +197,7 @@ const WorkDetail = ({
                         height={20}
                         alt="X"
                       />
-                      <p className="text-xs font-neuehaasroman pr-2">
+                      <p className="text-xs font-neuehaaslight pr-2">
                         LinkedIn
                       </p>
                     </button>
@@ -211,7 +211,7 @@ const WorkDetail = ({
                         height={20}
                         alt="X"
                       />
-                      <p className="text-xs font-neuehaasroman pr-2">
+                      <p className="text-xs font-neuehaaslight pr-2">
                         Facebook
                       </p>
                     </button>
@@ -224,7 +224,7 @@ const WorkDetail = ({
       </div>
 
       {/* MORE INSIGHTS */}
-      <MoreInsights />
+      {/* <MoreInsights /> */}
 
       {/* GET IN TOUCH */}
       <GetInTouch />

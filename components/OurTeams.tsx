@@ -66,7 +66,7 @@ const OurTeams = () => {
                 <h3 className="text-lg font-semibold truncate font-neuehaasroman">
                   {team.fullname}
                 </h3>
-                <p className="text-gray-600 w-full font-neuehaasroman">
+                <p className="text-gray-600 w-full font-neuehaaslight">
                   {team.title}
                 </p>
               </div>

@@ -26,19 +26,19 @@ const RecentInsights = () => {
                   </div>
                   <div className="flex flex-col items-start justify-between gap-6 md:gap-16 md:px-3">
                     <div className="flex flex-col items-start gap-1">
-                      <span className="text-sm text-gray-500 font-neuehaasroman uppercase">
+                      <span className="text-sm text-gray-500 font-neuehaaslight uppercase">
                       September 24, 2024
                       </span>
                       <h3 className="text-2xl font-semibold font-neuehaasroman">
                         Art Is Dead.
                       </h3>
-                      <p className="text-lg text-gray-600 font-neuehaasroman max-w-2xl">
+                      <p className="text-lg text-gray-600 font-neuehaaslight max-w-2xl">
                       People often say, &quot;I love what you do, but I&apos;m just not the artsy type&quot; or, &quot;I can&apos;t draw to save my life.&quot; It&apos;s almost like there&apos;s this invisible standard everyone thinks they need to reach in order to be considered an artist. But that&apos;s a misconception. Art isn&apos;t about skill alone; it&apos;s about expression. And guess what? Life itself is art.
                       </p>
                     </div>
                     <a
                       href="/blog/art-is-dead"
-                      className="text-sm font-medium underline font-neuehaasroman"
+                      className="text-sm font-medium underline font-neuehaaslight"
                     >
                       Read blog
                     </a>

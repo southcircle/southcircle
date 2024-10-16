@@ -53,7 +53,7 @@ const SelectedWorks = () => {
     <section className="pt-20 md:mt-20 mx-auto px-4 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-[#0C0C0CB0] tracking-[2px] uppercase font-neuehaasroman">
+          <span className="text-sm text-[#0C0C0CB0] tracking-[2px] uppercase font-neuehaaslight">
             Our work
           </span>
           <hr className="text-gray-400 bg-gray-400" />
@@ -95,14 +95,14 @@ const SelectedWorks = () => {
                       work?.category.map((cat, index) => (
                         <span
                           key={index}
-                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaasroman"
+                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                         >
                           {cat}
                         </span>
                       ))}
                   </div>
                 </div>
-                <p className="leading-7 text-[#0C0C0CB0] text-lg font-medium font-neuehaasroman">
+                <p className="leading-7 text-[#0C0C0CB0] text-lg font-medium font-neuehaaslight">
                   {work.description}
                 </p>
                 <div className="flex items-center gap-1 md:hidden mt-1">
@@ -110,7 +110,7 @@ const SelectedWorks = () => {
                     work?.category.map((cat, index) => (
                       <span
                         key={index}
-                        className="border-[0.8px] text-sm border-gray-200 px-2 py-1 whitespace-nowrap rounded-full inline-block font-neuehaasroman"
+                        className="border-[0.8px] text-sm border-gray-200 px-2 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                       >
                         {cat}
                       </span>

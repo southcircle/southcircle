@@ -131,7 +131,7 @@ const Page = () => {
             <span>guided toward</span>
             <span>growth.</span>
           </h1>
-          <p className="max-w-sm text-xl text-start font-neuehaasroman font-medium text-[#0C0C0CB0] p-3">
+          <p className="max-w-sm text-xl text-start font-neuehaaslight font-medium text-[#0C0C0CB0] p-3">
             Explore our top projects that showcase our creativity and expertise.
             See how we turn bold ideas into impactful results and push the
             boundaries of design.
@@ -158,7 +158,7 @@ const Page = () => {
                 ref={(el) => {
                   categoryRefs.current[index] = el;
                 }}
-                className={`relative py-4 text-sm hover:border-b-[1px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaasroman transition-all duration-300 ease-in-out ${
+                className={`relative py-4 text-sm hover:border-b-[1px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaaslight transition-all duration-300 ease-in-out ${
                   selectedCategory === category
                     ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                     : "text-[#0C0C0CB0]"
@@ -199,14 +199,14 @@ const Page = () => {
                       work?.category.map((cat, index) => (
                         <span
                           key={index}
-                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaasroman"
+                          className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                         >
                           {cat}
                         </span>
                       ))}
                   </div>
                 </div>
-                <p className="leading-7 text-[#0C0C0CB0] text-lg font-medium font-neuehaasroman">
+                <p className="leading-7 text-[#0C0C0CB0] text-lg font-medium font-neuehaaslight">
                   {work.description}
                 </p>
                 <div className="flex items-center gap-1 md:hidden mt-2">
@@ -214,7 +214,7 @@ const Page = () => {
                     work?.category.map((cat, index) => (
                       <span
                         key={index}
-                        className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaasroman"
+                        className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
                       >
                         {cat}
                       </span>

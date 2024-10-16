@@ -124,18 +124,18 @@ const MoreInsights: React.FC = () => {
                   height={400}
                   className="object-cover rounded-3xl h-[320px]"
                 />
-                <div className="text-sm text-gray-500 my-2 font-neuehaasroman leading-relaxed uppercase">
+                <div className="text-sm text-gray-500 my-2 font-neuehaaslight leading-relaxed uppercase">
                   {blog.date}
                 </div>
                 <h3 className="text-lg font-semibold truncate font-neuehaasroman leading-relaxed">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 max-w-[340px] font-neuehaasroman">
+                <p className="text-gray-600 max-w-[340px] font-neuehaaslight">
                   {blog.description}
                 </p>
                 <a
                   href="#"
-                  className="text-black font-medium underline my-5 inline-block text-[15px] font-neuehaasroman"
+                  className="text-black font-medium underline my-5 inline-block text-[15px] font-neuehaaslight"
                 >
                   Read blog
                 </a>

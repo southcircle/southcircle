@@ -11,7 +11,7 @@ const ContactHero = () => {
           <span>conversation</span>
           <span>everything.</span>
         </h1>
-        <p className="text-xl md:text-2xl text-start font-neuehaasroman max-w-sm px-2 mt-auto mb-4">
+        <p className="text-xl md:text-2xl text-start font-neuehaaslight max-w-sm px-2 mt-auto mb-4">
           We believe in long-term collaboration for the best results. Our team
           integrates with yours, working remotely but fully committed to your
           success.

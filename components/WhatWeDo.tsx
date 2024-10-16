@@ -209,7 +209,7 @@ const WhatWeDo = () => {
     <section className="pt-32 mt-32 mx-auto w-full">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 uppercase font-neuehaasroman tracking-[2px]">
+          <span className="text-sm text-gray-400 uppercase font-neuehaaslight tracking-[2px]">
             What We Do
           </span>
           <hr className="text-gray-400 bg-gray-400" />
@@ -227,18 +227,18 @@ const WhatWeDo = () => {
             {services.map((service, idx) => (
               <div className="mt-8 md:mt-4" key={idx}>
                 <div
-                  className={`w-full flex items-center justify-center p-20 rounded-3xl ${service.serviceStyle}`}
+                  className={`w-full flex flex-col items-start justify-center p-20 rounded-2xl ${service.serviceStyle}`}
                 >
                   <Image
                     src={service.serviceImg || ""}
-                    width={160}
-                    height={160}
+                    width={80}
+                    height={80}
                     alt={service.title || "Service image"}
-                    className="grayscale"
+                    className="grayscale "
                   />
-                </div>
+                
                 <div className="flex flex-col gap-8 mt-6 md:mt-0 w-full items-start justify-between py-4 md:pt-0">
-                  <h3 className="text-lg font-semibold tracking-[2px] font-neuehaasroman uppercase md:mt-6">
+                  <h3 className="text-lg font-semibold tracking-[1px] font-neuehaasroman md:mt-6">
                     {service.title}
                   </h3>
                   <div className="space-y-2 w-full md:max-w-3xl md:w-[820px]">
@@ -246,13 +246,14 @@ const WhatWeDo = () => {
                       service?.services.map((faq, index) => (
                         <div key={index} className="">
                           <div
-                            className="flex justify-between items-center w-full text-left text-xl font-medium py-2 font-neuehaasroman"
+                            className="flex justify-between items-center w-full text-left text-xl font-medium py-2 font-neuehaaslight"
                           >
                             {faq.question}
                           </div>
                         </div>
                       ))}
                   </div>
+                </div>
                 </div>
               </div>
             ))}

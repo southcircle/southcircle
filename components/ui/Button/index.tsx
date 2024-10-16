@@ -27,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={clsx(
-        'relative overflow-hidden transition-all duration-300 border font-neuehaasroman group',
+        'relative overflow-hidden transition-all duration-300 border group',
         className, // This handles custom padding and other styles
         baseClasses[variant]
       )}

@@ -14,7 +14,7 @@ const CallUsNow = () => {
           <Link href="tel:+2349053934">
             <Button
               text="Call us"
-              className="px-36 md:px-80 py-20 md:py-36 w-full rounded-full font-medium text-2xl md:text-5xl border-2 whitespace-nowrap mx-auto"
+              className="px-36 md:px-80 py-20 md:py-36 w-full rounded-full font-medium font-neuehaaslight text-2xl md:text-5xl border-2 whitespace-nowrap mx-auto"
               variant="outline"
             />
           </Link>
