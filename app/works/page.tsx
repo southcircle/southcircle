@@ -125,8 +125,8 @@ const Page = () => {
     <section className="pt-10 mt-28 mx-auto px-4 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
-        <div className="w-full flex flex-col md:flex-row gap-10 md:gap-28 justify-center max-w-7xl">
-          <h1 className="text-7xl md:text-8xl font-neuehaasroman font-bold flex flex-col items-start text-start">
+        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-28 justify-center max-w-7xl">
+          <h1 className="text-5xl md:text-8xl font-neuehaasroman font-bold flex flex-col items-start text-start w-full">
             <span>Brands we&apos;ve</span>
             <span>guided toward</span>
             <span>growth.</span>
@@ -141,7 +141,7 @@ const Page = () => {
 
       {/* Filter Section */}
       <div className="mx-auto mb-16 mt-32 flex items-center justify-center w-full px-2">
-        <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
+        <div className="flex justify-start md:justify-center gap-8 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
           <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-[#0C0C0C1A] w-full"></div>
 
@@ -153,7 +153,7 @@ const Page = () => {
           ></div> */}
 
           {categories.map((category, index) => (
-            <div key={index} className="flex items-center gap-10">
+            <div key={index} className="flex items-center gap-6 md:gap-10">
               <button
                 ref={(el) => {
                   categoryRefs.current[index] = el;
@@ -181,7 +181,7 @@ const Page = () => {
           {filteredWorks.map((work, index) => (
             <Link key={index} href={work.slug || "#"} target="_blank">
               <div className="w-full">
-                <div className="relative rounded-3xl w-full h-0 pb-[80%] md:pb-[40%] overflow-hidden">
+                <div className="relative rounded-2xl w-full h-0 pb-[80%] md:pb-[40%] overflow-hidden">
                   <Image
                     src={work.imageSrc}
                     alt={work.title}
@@ -206,7 +206,7 @@ const Page = () => {
                       ))}
                   </div>
                 </div>
-                <p className="leading-7 text-[#0C0C0CB0] text-lg font-medium font-neuehaaslight">
+                <p className="leading-7 text-[#0C0C0CB0] text-base md:text-lg font-medium font-neuehaaslight">
                   {work.description}
                 </p>
                 <div className="flex items-center gap-1 md:hidden mt-2">
@@ -224,7 +224,7 @@ const Page = () => {
             </Link>
           ))}
         </div>
-        <Link
+        {/* <Link
           href="https://www.behance.net/southcircle"
           className="py-10 flex items-center justify-center"
         >
@@ -233,7 +233,7 @@ const Page = () => {
             className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
-        </Link>
+        </Link> */}
       </div>
 
       {/* Get In Touch Section */}

@@ -30,7 +30,7 @@ const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck, onC
     <label
       className={clsx(
         className, 
-        `flex items-center p-4 md:p-8 rounded-full border transition-colors duration-300 ease-in-out cursor-pointer`,
+        `flex items-center p-3 px-4 md:p-8 rounded-full border transition-colors duration-300 ease-in-out cursor-pointer w-fit`,
         isChecked ? 'border-black bg-transparent' : 'border-gray-200'
       )}
     >
@@ -46,13 +46,13 @@ const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck, onC
 
       {/* Custom square box */}
       <div
-        className={`w-5 h-5 border mr-4 ${
+        className={`w-4 h-4 md:w-5 md:h-5 border mr-2 md:mr-4 ${
           isChecked ? 'bg-black' : 'bg-white'
         } border-gray-400`}
       ></div>
       
       {/* Title */}
-      <span className="text-gray-800 font-neuehaasroman text-start leading-5 text-xs md:text-base">{title}</span>
+      <span className="text-gray-800 font-neuehaaslight font-medium text-start leading-5 text-sm md:text-base">{title}</span>
     </label>
   );
 };

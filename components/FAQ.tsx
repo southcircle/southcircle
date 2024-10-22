@@ -65,9 +65,9 @@ const FAQ = () => {
             <p className="font-neuehaaslight text-gray-400 tracking-[2px] text-lg">
               FAQ
             </p>
-            <h1 className="font-neuehaasroman text-7xl sm:text-8xl md:text-[98px] lg:text-[98px] font-bold tracking-wide text-start">
-              Find the
-              <br />
+            <h1 className="font-neuehaasroman text-4xl sm:text-7xl md:text-[82px] font-bold tracking-wide text-start">
+              Find the{" "}
+              <br className="hidden md:inline-block"/>
               clarity you
               <br />
               need here.
@@ -81,7 +81,7 @@ const FAQ = () => {
                     onClick={() => toggleFAQ(index)}
                     className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-neuehaasroman"
                   >
-                    <p className="w-[200px] md:w-full text-base md:text-lg font-medium">{faq.question}</p>
+                    <p className="w-[200px] md:w-full text-xl md:text-2xl font-semibold">{faq.question}</p>
                     {activeIndex === index ? (
                       <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
                         <Image
@@ -103,7 +103,7 @@ const FAQ = () => {
                     )}
                   </button>
                   {activeIndex === index && (
-                    <p className="mt-2 text-gray-600 font-neuehaaslight">
+                    <p className="mt-2 text-base md:text-lg font-medium text-[#0C0C0CB0] font-neuehaaslight">
                       {faq.answer}
                     </p>
                   )}

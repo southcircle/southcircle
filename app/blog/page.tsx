@@ -56,27 +56,29 @@ const Page = () => {
     <section className="pt-10 mt-32 mx-auto px-2 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mx-auto">
-        <div className="relative w-full flex flex-col items-center gap-8 justify-center max-w-7xl">
-          <h1 className="text-6xl sm:text-8xl font-semibold font-neuehaasroman flex flex-col items-center text-center whitespace-nowrap">
+        <div className="relative w-full flex flex-col items-center gap-10 justify-center max-w-7xl">
+          <div className="w-full flex flex-col gap-4 md:gap-8 px-4">
+          <h1 className="text-5xl sm:text-8xl font-semibold font-neuehaasroman flex flex-col items-center text-center whitespace-nowrap">
             <span>Insights from</span>
             <span>our journey.</span>
           </h1>
-          <p className="max-w-xl text-xl text-center font-neuehaaslight">
+          <p className="max-w-xl text-base md:text-xl text-center font-neuehaaslight">
             Explore the narratives that shape our work and reveal the
             inspiration behind our projects.
           </p>
+          </div>
           <div className="max-w-3xl w-full px-2">
             <div>
-              <label className="flex items-center justify-between w-full p-4 md:py-3 md:pl-8 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
+              <label className="flex items-center justify-between w-full px-4 py-4 md:py-3 md:pl-8 rounded-full border transition-colors duration-300 ease-in-out bg-transparent border-gray-400">
                 <input
                   type="text"
                   name="search"
-                  className="bg-transparent border-none focus:border-none outline-none w-full h-full py-6 placeholder:font-neuehaaslight placeholder:text-lg text-[#0C0C0CB0] placeholder:text-[#0C0C0CB0] font-neuehaaslight pl-4"
+                  className="bg-transparent border-none focus:border-none outline-none w-full h-full md:py-6 placeholder:font-neuehaaslight placeholder:text-sm md:placeholder:text-lg text-[#0C0C0CB0] placeholder:text-[#0C0C0CB0] font-neuehaaslight pl-4"
                   placeholder="Search for any insight..."
                 />
                 <Button
                   text="Search now"
-                  className="px-16 py-12 md:py-10 w-48 rounded-full font-normal font-neuehaaslight text-[#1F1F1F] text-sm sm:text-base md:text-lg flex justify-center border-gray-400 whitespace-nowrap"
+                  className="md:px-16 py-6 md:py-10 w-48 rounded-full font-normal font-neuehaaslight text-[#1F1F1F] text-sm sm:text-base md:text-lg flex justify-center border-[#1F1F1F] whitespace-nowrap"
                   variant="outline"
                 />
               </label>
@@ -90,12 +92,12 @@ const Page = () => {
 
       {/* Filter Section */}
       <div className="mx-auto mb-16 mt-32 flex items-center justify-center w-full px-2">
-        <div className="flex justify-center gap-16 overflow-x-scroll md:overflow-visible no-scrollbar relative">
+        <div className="flex justify-start md:justify-center gap-8 overflow-x-scroll md:overflow-visible no-scrollbar relative">
           {/* Full border line */}
           <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-gray-200"></div>
 
           {categories.map((category, index) => (
-            <div key={index} className="flex items-center gap-10">
+            <div key={index} className="flex items-center gap-6 md:gap-10">
               <button
                 className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaaslight transition-all duration-300 ease-in-out ${
                   selectedCategory === category
@@ -121,29 +123,29 @@ const Page = () => {
             filteredBlogs.map((blog, index) => (
               <Link key={index} href={`/blog/${blog.slug || "/"}`}>
                 <div className="w-full">
-                  <div className="relative rounded-3xl w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
+                  <div className="relative rounded-2xl w-full h-0 pb-[80%] md:pb-[80%] overflow-hidden">
                     <Image
                       src={blog.imageSrc}
                       alt={blog.title}
-                      className="absolute inset-0 w-full h-full object-cover rounded-sm hover:scale-105 transition-transform duration-500 ease-in-out"
+                      className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500 ease-in-out"
                       width={1000}
                       height={300}
                     />
                   </div>
                   <div className="flex flex-col gap-1 items-start py-4">
-                    <span className="text-sm text-gray-500 font-neuehaaslight uppercase">
+                    <span className="text-sm text-[#0C0C0CB0] font-neuehaaslight uppercase">
                       {blog.date}
                     </span>
-                    <h3 className="text-xl font-semibold leading-relaxed font-neuehaasroman">
+                    <h3 className="text-xl md:text-2xl font-semibold leading-relaxed font-neuehaasroman mt-3">
                       {blog.title}
                     </h3>
-                    <p className="text-gray-600 font-neuehaaslight">
+                    <p className="text-base md:text-lg text-[#0C0C0CB0] font-neuehaaslight">
                       {blog.description}
                     </p>
                   </div>
                   <a
                     href={`/blog/${blog.slug || "/"}`}
-                    className="text-sm font-medium underline font-neuehaaslight"
+                    className="text-base font-medium underline font-neuehaaslight"
                   >
                     Read blog
                   </a>

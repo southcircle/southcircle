@@ -42,7 +42,7 @@ const ContactForm: React.FC = () => {
     });
   };
 
-  console.log(formData);
+  // console.log(formData);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -81,12 +81,21 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <section className="pt-28 md:mt-28 mx-auto px-2">
+    <section className="pt-16 md:mt-28 mx-auto px-2">
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
+        <div className="p-2 inline-block md:hidden">
+            <Image
+              src="/assets/phone.svg"
+              alt="phone"
+              width={400}
+              height={400}
+              className="object-contain"
+            />
+          </div>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="w-full">
-              <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-xl">
+              <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-base md:text-xl">
                 What are you looking to do?
               </label>
               <div className="grid grid-cols-2 gap-2 md:gap-6">
@@ -129,7 +138,7 @@ const ContactForm: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="Full Name"
                 required
               />
@@ -147,7 +156,7 @@ const ContactForm: React.FC = () => {
                 name="organization"
                 value={formData.organization}
                 onChange={handleChange}
-                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="Your Company"
                 required
               />
@@ -165,7 +174,7 @@ const ContactForm: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="example@mail.com"
                 required
               />
@@ -183,7 +192,7 @@ const ContactForm: React.FC = () => {
                 name="contact"
                 value={formData.contact}
                 onChange={handleChange}
-                className="w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="LinkedIn, Google, Instagram,..."
                 required
               />
@@ -231,7 +240,7 @@ const ContactForm: React.FC = () => {
                 name="help"
                 value={formData.help}
                 onChange={handleChange}
-                className="no-scrollbar w-full placeholder:text-lg md:placeholder:text-2xl font-neuehaasroman placeholder:text-gray-400 py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="no-scrollbar w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="Tell us how we can help. It could be the project summary or brief."
                 required
               />
@@ -239,13 +248,13 @@ const ContactForm: React.FC = () => {
             <div className="w-full mx-auto mt-8">
               <Button
                 text={isSubmitting ? "Sending..." : "Send the message"}
-                className="px-12 py-8 text-sm md:text-lg font-medium rounded-full whitespace-nowrap font-neuehaaslight w-44 md:w-52"
+                className="px-12 py-8 text-base md:text-lg font-medium rounded-full whitespace-nowrap font-neuehaaslight w-44 md:w-52"
                 variant="outline"
                 disabled={isSubmitting}
               />
             </div>
           </form>
-          <div className="p-4">
+          <div className="p-4 hidden md:inline-block">
             <Image
               src="/assets/phone.svg"
               alt="phone"

@@ -14,11 +14,11 @@ const Footer = () => {
           </div> */}
           <Image src="/assets/imagine-more.gif" alt="imagine more" width={400} height={400}/>
         </div>
-        <div className="flex gap-10 align-top items-start">
-          <h4 className="text-[#0C0C0CB0] font-medium text-lg font-neuehaaslight">
+        <div className="flex gap-16 align-top items-start">
+          <h4 className="text-[#0C0C0CB0] font-medium text-base font-neuehaaslight">
             Contact
           </h4>
-          <div className="flex flex-col gap-5 items-start font-neuehaasroman">
+          <div className="flex flex-col gap-5 items-start font-neuehaaslight">
             <div className="flex flex-col gap-2 items-start font-medium">
               <CustomLink
                 href="tel:+2349063288657"
@@ -32,7 +32,7 @@ const Footer = () => {
                 className="border-b-[0.2px] border-[#919191b0] text-[#0C0C0CB0]"
               />
             </div>
-            <div className="max-w-sm text-start font-neuehaasroman">
+            <div className="max-w-sm text-start font-neuehaaslight">
               <p>44 Okumagba Avenue, </p>
               <p>Opposite FCMB Bank, Estate,</p>
               <p>Warri, 332213, Delta State,</p>
@@ -40,10 +40,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-14 align-top items-start">
-          <h4 className="text-[#0C0C0CA3] text-lg font-neuehaaslight">Links</h4>
+        <div className="flex gap-20 align-top items-start">
+          <h4 className="text-[#0C0C0CA3] text-base font-neuehaaslight">Links</h4>
           <div className="flex flex-col gap-5 items-start">
-            <div className="flex flex-col gap-2 items-start font-neuehaasroman">
+            <div className="flex flex-col gap-2 items-start font-neuehaaslight">
               <CustomLink
                 href="linkedin.com"
                 animate={true}
@@ -84,12 +84,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="text-gray-400" />
-      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full pt-8 font-neuehaasroman tracking-wide">
-        <div className="flex flex-col  md:flex-row items-center gap-5 text-gray-500">
+      <hr className="text-[#0C0C0CB0]" />
+      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full pt-8 font-neuehaaslight tracking-wide">
+        <div className="flex flex-col  md:flex-row items-center gap-5 text-[#0C0C0CB0]">
           <p>&copy; {year} South Circle LLC, All right reserved.</p>
         </div>
-        <div className="flex items-center gap-6 text-gray-500">
+        <div className="flex items-center gap-6 text-[#0C0C0CB0]">
           <CustomLink href="/privacy" animate={true} text="Privacy" />
           <CustomLink href="/terms" animate={true} text="Terms of use" />
         </div>

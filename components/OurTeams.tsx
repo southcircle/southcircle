@@ -60,7 +60,7 @@ const OurTeams = () => {
                 alt={team.title || ""}
                 width={1000}
                 height={240}
-                className="object-cover rounded-3xl"
+                className="object-cover rounded-2xl"
               />
               <div className="my-3">
                 <h3 className="text-lg font-semibold truncate font-neuehaasroman">

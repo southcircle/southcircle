@@ -217,7 +217,7 @@ const WhatWeDo = () => {
         <div className="mt-10 w-full grid grid-cols-1">
           {/* Left Column - Title and Button */}
           <div className="max-w-md space-y-6">
-            <h2 className="text-4xl font-semibold max-w-md mb-6 font-neuehaasroman">
+            <h2 className="text-3xl md:text-4xl font-semibold max-w-md mb-6 font-neuehaasroman">
               Building a strong brand with our expertise.
             </h2>
           </div>
@@ -227,18 +227,18 @@ const WhatWeDo = () => {
             {services.map((service, idx) => (
               <div className="mt-8 md:mt-4" key={idx}>
                 <div
-                  className={`w-full flex flex-col items-start justify-center p-20 rounded-2xl ${service.serviceStyle}`}
+                  className={`w-full flex flex-col items-start justify-center p-10 rounded-2xl border-[1px] border-[#0C0C0C1A] ${service.serviceStyle}`}
                 >
                   <Image
                     src={service.serviceImg || ""}
                     width={80}
                     height={80}
                     alt={service.title || "Service image"}
-                    className="grayscale "
+                    className="grayscale"
                   />
                 
-                <div className="flex flex-col gap-8 mt-6 md:mt-0 w-full items-start justify-between py-4 md:pt-0">
-                  <h3 className="text-lg font-semibold tracking-[1px] font-neuehaasroman md:mt-6">
+                <div className="flex flex-col gap-8 mt-4 md:mt-0 w-full items-start justify-between py-4 md:pt-0">
+                  <h3 className="text-2xl font-semibold tracking-[1px] font-neuehaasroman md:mt-6">
                     {service.title}
                   </h3>
                   <div className="space-y-2 w-full md:max-w-3xl md:w-[820px]">
@@ -246,7 +246,7 @@ const WhatWeDo = () => {
                       service?.services.map((faq, index) => (
                         <div key={index} className="">
                           <div
-                            className="flex justify-between items-center w-full text-left text-xl font-medium py-2 font-neuehaaslight"
+                            className="flex justify-between items-center w-full text-left text-[#0C0C0CB0] text-xl font-medium font-neuehaaslight"
                           >
                             {faq.question}
                           </div>

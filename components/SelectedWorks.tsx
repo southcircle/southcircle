@@ -50,7 +50,7 @@ const works: SelectedWorks[] = [
 
 const SelectedWorks = () => {
   return (
-    <section className="pt-20 md:mt-20 mx-auto px-4 md:px-10">
+    <section className="pt-24 md:mt-24 mx-auto px-4 md:px-10">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-[#0C0C0CB0] tracking-[2px] uppercase font-neuehaaslight">
@@ -77,7 +77,7 @@ const SelectedWorks = () => {
           {works.map((work, index) => (
             <Link key={index} href={`${work.slug || "/"}`}>
               <div className="w-full">
-                <div className="relative rounded-3xl w-full md:h-[460px] overflow-hidden">
+                <div className="relative rounded-2xl w-full md:h-[460px] overflow-hidden">
                   <Image
                     src={work.imageSrc}
                     alt={work.title}
@@ -102,7 +102,7 @@ const SelectedWorks = () => {
                       ))}
                   </div>
                 </div>
-                <p className="leading-7 text-[#0C0C0CB0] text-lg font-medium font-neuehaaslight">
+                <p className="leading-7 text-[#0C0C0CB0] text-base md:text-lg font-medium font-neuehaaslight">
                   {work.description}
                 </p>
                 <div className="flex items-center gap-1 md:hidden mt-1">
@@ -122,8 +122,8 @@ const SelectedWorks = () => {
         </div>
         <Link href="/works" className="py-10 flex items-center justify-center md:hidden">
           <Button
-            text="See works"
-            className="w-44 h-12 py-2 text-center text-sm md:text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight"
+            text="See all works"
+            className="w-44 h-12 py-2 text-center text-base md:text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight"
             variant="outline"
           />
         </Link>

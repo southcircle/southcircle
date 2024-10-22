@@ -12,7 +12,7 @@ const OurProcess = () => {
         </div>
         <div className="space-y-10 mt-12">
           <div className="mb-20">
-            <h1 className="text-5xl max-w-3xl font-neuehaasroman font-semibold text-start">
+            <h1 className="text-3xl md:text-5xl max-w-3xl font-neuehaasroman font-semibold text-start">
               We approach every project with a collaborative process that drives
               alignment and lays the foundation for long-term success.
             </h1>
@@ -20,8 +20,8 @@ const OurProcess = () => {
           {/* Process Grid */}
           <div className="w-full grid grid-cols-1 gap-6">
             <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="p-12 flex flex-col items-start gap-3 bg-[#0C0C0C05] rounded-3xl">
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+              <div className="p-10 flex flex-col items-start gap-3  rounded-2xl border-[1px] border-[#0C0C0C1A] bg-[#0C0C0C05]">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-tight">
                   Research
                 </h4>
                 <p className="text-[#0C0C0CA3] text-lg font-normal font-neuehaaslight">
@@ -31,11 +31,11 @@ const OurProcess = () => {
                   a successful project.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
-                  <p className="font-baseneue text-5xl text-gray-400">01</p>
+                  <p className="font-neuehaasroman text-5xl text-[#0C0C0C1A]">01</p>
                 </div>
               </div>
-              <div className="p-12 flex flex-col items-start gap-3 bg-[#0C0C0C05] rounded-3xl">
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+              <div className="p-10 flex flex-col items-start gap-3  rounded-2xl border-[1px] border-[#0C0C0C1A] bg-[#0C0C0C05]">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-tight">
                   Definition
                 </h4>
                 <p className="text-[#0C0C0CA3] text-lg font-normal font-neuehaaslight">
@@ -46,11 +46,11 @@ const OurProcess = () => {
                   creating.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
-                  <p className="font-baseneue text-5xl text-gray-400">02</p>
+                  <p className="font-neuehaasroman text-5xl text-[#0C0C0C1A]">02</p>
                 </div>
               </div>
-              <div className="p-12 flex flex-col items-start gap-3 bg-[#0C0C0C05] rounded-3xl">
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+              <div className="p-10 flex flex-col items-start gap-3  rounded-2xl border-[1px] border-[#0C0C0C1A] bg-[#0C0C0C05]">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-tight">
                   Conceptualization
                 </h4>
                 <p className="text-[#0C0C0CA3] text-lg font-normal font-neuehaaslight">
@@ -60,11 +60,11 @@ const OurProcess = () => {
                   crafted, setting the stage for impactful results.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
-                  <p className="font-baseneue text-5xl text-gray-400">03</p>
+                  <p className="font-neuehaasroman text-5xl text-[#0C0C0C1A]">03</p>
                 </div>
               </div>
-              <div className="hidden lg:hidden p-12 md:flex flex-col items-start gap-3 bg-[#0C0C0C05] rounded-3xl">
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+              <div className="hidden lg:hidden p-10 md:flex flex-col items-start gap-3  rounded-2xl border-[1px] border-[#0C0C0C1A] bg-[#0C0C0C05]">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-tight">
                   Delivery & follow-up
                 </h4>
                 <p className="text-[#0C0C0CA3] text-lg font-normal font-neuehaaslight">
@@ -75,13 +75,13 @@ const OurProcess = () => {
                   flawless execution.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
-                  <p className="font-baseneue text-5xl text-gray-400">04</p>
+                  <p className="font-neuehaasroman text-5xl text-[#0C0C0C1A]">04</p>
                 </div>
               </div>
             </div>
             <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="hidden md:hidden p-12 lg:flex flex-col items-start gap-3 bg-[#0C0C0C05] rounded-3xl">
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+              <div className="hidden md:hidden p-10 lg:flex flex-col items-start gap-3  rounded-2xl border-[1px] border-[#0C0C0C1A] bg-[#0C0C0C05]">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-tight">
                   Delivery & follow-up
                 </h4>
                 <p className="text-[#0C0C0CA3] text-lg font-normal font-neuehaaslight">
@@ -92,11 +92,11 @@ const OurProcess = () => {
                   flawless execution.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
-                  <p className="font-baseneue text-5xl text-gray-400">04</p>
+                  <p className="font-neuehaasroman text-5xl text-[#0C0C0C1A]">04</p>
                 </div>
               </div>
-              <div className="p-12 flex flex-col items-start gap-3 bg-[#0C0C0C05] rounded-3xl md:hidden">
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+              <div className="p-10 flex flex-col items-start gap-3  rounded-2xl border-[1px] border-[#0C0C0C1A] md:hidden bg-[#0C0C0C05]">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-tight">
                   Delivery & follow-up
                 </h4>
                 <p className="text-[#0C0C0CA3] text-lg font-normal font-neuehaaslight">
@@ -107,11 +107,11 @@ const OurProcess = () => {
                   flawless execution.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
-                  <p className="font-baseneue text-5xl text-gray-400">04</p>
+                  <p className="font-neuehaasroman text-5xl text-[#0C0C0C1A]">04</p>
                 </div>
               </div>
-              <div className="p-12 flex flex-col items-start gap-3 bg-[#0C0C0C05] rounded-3xl">
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+              <div className="p-10 flex flex-col items-start gap-3  rounded-2xl border-[1px] border-[#0C0C0C1A] bg-[#0C0C0C05]">
+                <h4 className="font-medium font-neuehaasroman text-xl tracking-tight">
                   Continuous partnership
                 </h4>
                 <p className="text-[#0C0C0CA3] text-lg font-normal font-neuehaaslight">
@@ -121,7 +121,7 @@ const OurProcess = () => {
                   of the curve, and achieving sustained success.
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
-                  <p className="font-baseneue text-5xl text-gray-400">05</p>
+                  <p className="font-neuehaasroman text-5xl text-[#0C0C0C1A]">05</p>
                 </div>
               </div>
             </div>
