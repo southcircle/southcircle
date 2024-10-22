@@ -5,7 +5,7 @@ import Button from "./ui/Button";
 
 const Hero = () => {
   return (
-    <section className="pt-16 mt-16 max-w-8xl h-[60vh] px-2">
+    <section className="pt-16 mt-16 mb-16 max-w-8xl h-[60vh] px-2">
       <div className="relative mx-auto w-full flex flex-col justify-center items-center">
         <div className="flex flex-col items-center gap-1 md:gap-4 mb-2 sm:mb-12 sm:justify-center text-5xl md:text-8xl font-bold text-center font-neuehaasroman w-full">
           <h1>Empowering your</h1>
