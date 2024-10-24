@@ -4,6 +4,7 @@ import Meta from "@/components/Meta";
 import Newsletter from "@/components/Newsletter";
 import RecentInsights from "@/components/RecentInsights";
 import Button from "@/components/ui/Button";
+import CustomLink from "@/components/ui/Link";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -57,15 +58,15 @@ const Page = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mx-auto">
         <div className="relative w-full flex flex-col items-center gap-10 justify-center max-w-7xl">
-          <div className="w-full flex flex-col gap-4 md:gap-8 px-4">
-          <h1 className="text-5xl sm:text-8xl font-semibold font-neuehaasroman flex flex-col items-center text-center whitespace-nowrap">
-            <span>Insights from</span>
-            <span>our journey.</span>
-          </h1>
-          <p className="max-w-xl text-base md:text-xl text-center font-neuehaaslight">
-            Explore the narratives that shape our work and reveal the
-            inspiration behind our projects.
-          </p>
+          <div className="w-full flex flex-col items-center gap-4 md:gap-8 px-4">
+            <h1 className="text-5xl sm:text-8xl font-semibold font-neuehaasroman flex flex-col items-center text-center whitespace-nowrap">
+              <span>Insights from</span>
+              <span>our journey.</span>
+            </h1>
+            <p className="max-w-xl text-base md:text-xl text-center font-neuehaaslight">
+              Explore the narratives that shape our work and reveal the
+              inspiration behind our projects.
+            </p>
           </div>
           <div className="max-w-3xl w-full px-2">
             <div>
@@ -143,12 +144,15 @@ const Page = () => {
                       {blog.description}
                     </p>
                   </div>
-                  <a
+
+                  <CustomLink
                     href={`/blog/${blog.slug || "/"}`}
-                    className="text-base font-medium underline font-neuehaaslight"
-                  >
-                    Read blog
-                  </a>
+                    animate={true}
+                    text="Read blog"
+                    className={
+                      "text-base border-b-[0.2px] border-[#919191b0] font-medium font-neuehaaslight"
+                    }
+                  />
                 </div>
               </Link>
             ))
@@ -160,13 +164,13 @@ const Page = () => {
             </div>
           )}
         </div>
-        <div className="py-10 flex items-center justify-center">
+        {/* <div className="py-10 flex items-center justify-center">
           <Button
             text="See all blogs"
             className="px-6 py-5 w-32 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
             variant="outline"
           />
-        </div>
+        </div> */}
       </div>
 
       <Newsletter />

@@ -3,7 +3,7 @@ import Button from "./ui/Button";
 
 const Newsletter = () => {
   return (
-    <section className="pt-32 mt-32 mx-auto px-2 mb-32">
+    <section className="pt-20 mt-20 mx-auto px-2 mb-20">
       <div className="w-full mx-auto p-6 md:p-12 border-[1px] border-gray-300 rounded-b-[60px] md:rounded-b-[100px] space-y-6 md:space-y-8">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-[#0C0C0CB0] tracking-[2px] uppercase font-neuehaaslight">

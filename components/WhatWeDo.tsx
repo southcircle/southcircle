@@ -223,11 +223,11 @@ const WhatWeDo = () => {
           </div>
 
           {/* Services Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
             {services.map((service, idx) => (
               <div className="mt-8 md:mt-4" key={idx}>
                 <div
-                  className={`w-full flex flex-col items-start justify-center p-10 rounded-2xl border-[1px] border-[#0C0C0C1A] ${service.serviceStyle}`}
+                  className={`w-full h-[480px] flex flex-col items-start justify-center p-10 rounded-2xl border-[1px] border-[#0C0C0C1A] ${service.serviceStyle}`}
                 >
                   <Image
                     src={service.serviceImg || ""}

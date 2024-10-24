@@ -83,7 +83,7 @@ const FAQ = () => {
                   >
                     <p className="w-[200px] md:w-full text-xl md:text-2xl font-semibold">{faq.question}</p>
                     {activeIndex === index ? (
-                      <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
+                      <div className="w-14 h-14 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
                         <Image
                           src="/assets/minus.svg"
                           width={20}
@@ -92,7 +92,7 @@ const FAQ = () => {
                         />
                       </div>
                     ) : (
-                      <div className="w-12 h-12 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
+                      <div className="p-4 flex items-center justify-center border-[1px] border-gray-400 rounded-full">
                         <Image
                           src="/assets/plus.svg"
                           width={20}

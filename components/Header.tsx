@@ -122,7 +122,7 @@ const Header = () => {
         <div
           ref={mobileMenuRef}
           onClick={handleMenu}
-          className="absolute top-24 right-0 left-0 px-6 py-10 bg-white shadow-lg z-[9999] flex flex-col gap-6 items-start w-full"
+          className="absolute top-24 right-0 left-0 h-[100vh] px-6 py-10 bg-white shadow-lg z-[9999] flex flex-col gap-6 items-start w-full"
         >
           <div className="border-[1px] border-gray-300 rounded-2xl px-10 pt-10 pb-14 flex flex-col gap-6 items-start w-full">
             {["/works", "/about", "/blog"].map((href, index) => (

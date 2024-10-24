@@ -48,8 +48,8 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     setAlert({
-      message: 'Sending your request...',
-      type: 'success',
+      message: "Sending your request...",
+      type: "success",
     });
 
     try {
@@ -84,7 +84,7 @@ const ContactForm: React.FC = () => {
     <section className="pt-16 md:mt-28 mx-auto px-2">
       <div className="w-full mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
-        <div className="p-2 inline-block md:hidden">
+          <div className="p-2 inline-block md:hidden">
             <Image
               src="/assets/phone.svg"
               alt="phone"
@@ -93,36 +93,40 @@ const ContactForm: React.FC = () => {
               className="object-contain"
             />
           </div>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-8">
             <div className="w-full">
               <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 text-base md:text-xl">
                 What are you looking to do?
               </label>
-              <div className="grid grid-cols-2 gap-2 md:gap-6">
-                <CheckBox
-                  name="service"
-                  value="Branding"
-                  title="Brand Identity"
-                  onChange={handleChange}
-                />
-                <CheckBox
-                  name="service"
-                  value="Development"
-                  title="A Website"
-                  onChange={handleChange}
-                />
-                <CheckBox
-                  name="service"
-                  value="Marketing"
-                  title="Marketing/PR"
-                  onChange={handleChange}
-                />
-                <CheckBox
-                  name="service"
-                  value="App Development"
-                  title="App Development"
-                  onChange={handleChange}
-                />
+              <div className="flex flex-col gap-2 md:gap-6">
+                <div className="flex gap-2 md:gap-6">
+                  <CheckBox
+                    name="service"
+                    value="Branding"
+                    title="Brand Identity"
+                    onChange={handleChange}
+                  />
+                  <CheckBox
+                    name="service"
+                    value="Development"
+                    title="A Website"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="flex gap-2 md:gap-6">
+                  <CheckBox
+                    name="service"
+                    value="Marketing"
+                    title="Marketing/PR"
+                    onChange={handleChange}
+                  />
+                  <CheckBox
+                    name="service"
+                    value="App Development"
+                    title="App Development"
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
             </div>
             <div className="w-full">
@@ -138,7 +142,7 @@ const ContactForm: React.FC = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] pt-6 pb-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="Full Name"
                 required
               />
@@ -156,7 +160,7 @@ const ContactForm: React.FC = () => {
                 name="organization"
                 value={formData.organization}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] pt-6 pb-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="Your Company"
                 required
               />
@@ -174,7 +178,7 @@ const ContactForm: React.FC = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] pt-6 pb-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="example@mail.com"
                 required
               />
@@ -192,7 +196,7 @@ const ContactForm: React.FC = () => {
                 name="contact"
                 value={formData.contact}
                 onChange={handleChange}
-                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] pt-6 pb-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="LinkedIn, Google, Instagram,..."
                 required
               />
@@ -201,31 +205,35 @@ const ContactForm: React.FC = () => {
               <label className="block text-gray-700 font-medium font-neuehaaslight mb-4 md:text-xl">
                 What&apos;s your estimated project budget? *
               </label>
-              <div className="grid grid-cols-2 gap-4 md:gap-6">
-                <CheckBox
-                  name="budget"
-                  value="< $50k"
-                  title="< $50k"
-                  onChange={handleChange}
-                />
-                <CheckBox
-                  name="budget"
-                  value="$50k - $100k"
-                  title="$50k - $100k"
-                  onChange={handleChange}
-                />
-                <CheckBox
-                  name="budget"
-                  value="$100k - $250k"
-                  title="$100k - $250k"
-                  onChange={handleChange}
-                />
-                <CheckBox
-                  name="budget"
-                  value="Greater than $250k"
-                  title="> $250k"
-                  onChange={handleChange}
-                />
+              <div className="grid gap-2 md:gap-6">
+                <div className="flex gap-2 md:gap-6">
+                  <CheckBox
+                    name="budget"
+                    value="< $50k"
+                    title="< $50k"
+                    onChange={handleChange}
+                  />
+                  <CheckBox
+                    name="budget"
+                    value="$50k - $100k"
+                    title="$50k - $100k"
+                    onChange={handleChange}
+                  />
+                </div>
+                <div className="flex gap-2 md:gap-6">
+                  <CheckBox
+                    name="budget"
+                    value="$100k - $250k"
+                    title="$100k - $250k"
+                    onChange={handleChange}
+                  />
+                  <CheckBox
+                    name="budget"
+                    value="Greater than $250k"
+                    title="> $250k"
+                    onChange={handleChange}
+                  />
+                </div>
               </div>
             </div>
             <div className="w-full">
@@ -240,7 +248,7 @@ const ContactForm: React.FC = () => {
                 name="help"
                 value={formData.help}
                 onChange={handleChange}
-                className="no-scrollbar w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] py-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
+                className="no-scrollbar w-full placeholder:text-2xl md:placeholder:font-medium font-neuehaaslight placeholder:text-[#353535b0] pt-6 pb-10 border-b-2 border-gray-200 focus:outline-none focus:border-gray-600"
                 placeholder="Tell us how we can help. It could be the project summary or brief."
                 required
               />

@@ -46,7 +46,7 @@ const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck, onC
 
       {/* Custom square box */}
       <div
-        className={`w-4 h-4 md:w-5 md:h-5 border mr-2 md:mr-4 ${
+        className={`w-4 h-4 md:w-5 md:h-5 border mr-2 md:mr-3 ${
           isChecked ? 'bg-black' : 'bg-white'
         } border-gray-400`}
       ></div>

@@ -11,7 +11,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <main className="pt-10 mt-28 mx-auto px-4 md:px-10 w-full">
+    <main className="pt-10 mt-28 mx-auto px-4 md:px-10 w-full overflow-hidden">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="flex items-center justify-center">

@@ -12,7 +12,7 @@ const Footer = () => {
           {/* <div className="text-[80px] md:text-8xl font-bold uppercase tracking-wide text-center font-baseneue w-full leading-none">
             Imagine More.
           </div> */}
-          <Image src="/assets/imagine-more.gif" alt="imagine more" width={400} height={400}/>
+          <Image className="bg-transparent" src="/assets/imagine-more.gif" alt="imagine more" width={400} height={400}/>
         </div>
         <div className="flex gap-16 align-top items-start">
           <h4 className="text-[#0C0C0CB0] font-medium text-base font-neuehaaslight">

@@ -39,7 +39,7 @@ const teams: Team[] = [
 
 const OurTeams = () => {
   return (
-    <section className="pb-32 pt-20 mb-40 mx-auto px-1">
+    <section className="pb-20 pt-20 mb-20 mx-auto px-1">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
           <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">

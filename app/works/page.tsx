@@ -125,13 +125,13 @@ const Page = () => {
     <section className="pt-10 mt-28 mx-auto px-4 md:px-10 w-full">
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
-        <div className="w-full flex flex-col md:flex-row gap-4 md:gap-28 justify-center max-w-7xl">
-          <h1 className="text-5xl md:text-8xl font-neuehaasroman font-bold flex flex-col items-start text-start w-full">
+        <div className="w-full flex flex-col justify-center gap-10 md:flex-row max-w-7xl mx-auto">
+          <h1 className="text-5xl md:text-8xl font-neuehaasroman font-bold flex flex-col items-start text-start">
             <span>Brands we&apos;ve</span>
             <span>guided toward</span>
             <span>growth.</span>
           </h1>
-          <p className="max-w-sm text-xl text-start font-neuehaaslight font-medium text-[#0C0C0CB0] p-3">
+          <p className="max-w-sm text-xl text-start mt-2 font-neuehaaslight font-medium text-[#0C0C0CB0] p-3">
             Explore our top projects that showcase our creativity and expertise.
             See how we turn bold ideas into impactful results and push the
             boundaries of design.

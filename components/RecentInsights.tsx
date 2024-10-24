@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import CustomLink from "./ui/Link";
 
 const RecentInsights = () => {
   return (
@@ -27,21 +28,26 @@ const RecentInsights = () => {
                   <div className="flex flex-col items-start justify-between gap-6 md:gap-16 md:px-3">
                     <div className="flex flex-col items-start gap-1">
                       <span className="text-sm text-[#0C0C0CB0] font-neuehaaslight uppercase">
-                      September 24, 2024
+                        September 24, 2024
                       </span>
                       <h3 className="text-xl md:text-2xl font-semibold font-neuehaasroman mt-3">
-                        Art Is Dead.
+                        Art is Dead.
                       </h3>
                       <p className="text-base md:text-lg text-[#0C0C0CB0] font-neuehaaslight max-w-2xl">
-                      People often say, &quot;I love what you do, but I&apos;m just not the artsy type&quot; or, &quot;I can&apos;t draw to save my life.&quot; It&apos;s almost like there&apos;s this invisible standard everyone...
+                        People often say, &quot;I love what you do, but I&apos;m
+                        just not the artsy type&quot; or, &quot;I can&apos;t
+                        draw to save my life.&quot; It&apos;s almost like
+                        there&apos;s this invisible standard everyone...
                       </p>
                     </div>
-                    <a
+                    <CustomLink
                       href="/blog/art-is-dead"
-                      className="text-base font-medium underline font-neuehaaslight"
-                    >
-                      Read blog
-                    </a>
+                      animate={true}
+                      text="Read blog"
+                      className={
+                        "text-base border-b-[0.2px] border-[#919191b0] font-medium font-neuehaaslight"
+                      }
+                    />
                   </div>
                 </div>
               </Link>
