@@ -1,13 +1,42 @@
-"use client";
+
 import GetInTouch from "@/components/GetInTouch";
 // import OurJourney from "@/components/OurJourney";
 import OurProcess from "@/components/OurProcess";
 import OurTeams from "@/components/OurTeams";
 import OurValues from "@/components/OurValues";
 import WhatWeDo from "@/components/WhatWeDo";
+import { Metadata } from "next";
 // import WhoWeAre from "@/components/WhoWeAre";
 import Image from "next/image";
 import React from "react";
+
+// app/layout.js or app/page.js
+export const metadata: Metadata = {
+  title: "About Us | World-Class Brand Design Agency",
+  description: "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "About Us | World-Class Brand Design Agency",
+    description: "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
+    url: "https://southcircle.co",  // Replace with your actual URL
+    images: [
+      {
+        url: "https://southcircle.vercel.app/thumbnail.png", // Replace with actual image URL
+        width: 1200,
+        height: 630,
+        alt: "South Circle Brand Design Thumbnail",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Us | World-Class Brand Design Agency",
+    description: "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
+    images: ["https://southcircle.vercel.app/thumbnail.png"], // Replace with actual image URL
+  },
+};
 
 const page = () => {
   return (
