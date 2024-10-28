@@ -1,61 +1,17 @@
 import type { Metadata } from "next";
-// import { Inter } from "next/font/google";
-import "./globals.css";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
 import Footer from "@/components/Footer";
-// import SmoothScroll from "@/components/ui/SmoothScroll";
-// import CustomCusor from "@/components/CustomCusor";
+import "./globals.css";
 
-// const neueHaasRoman = localFont({
-//   src: [
-//     {
-//       path: "../public/fonts/NeueHaasDisplay-Mediu.woff",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "../public/fonts/NeueHaasDisplay-Mediu.ttf",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "../public/fonts/NeueHaasDisplay-Mediu.eot",
-//       weight: "400",
-//       style: "normal",
-//     },
-//   ],
-//   variable: "--font-neuehaasroman",
-// });
-
-// const neueHaasLight = localFont({
-//   src: [
-//     {
-//       path: "../public/fonts/NeueHaasDisplay-Roman.woff",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "../public/fonts/NeueHaasDisplay-Roman.ttf",
-//       weight: "400",
-//       style: "normal",
-//     },
-//     {
-//       path: "../public/fonts/NeueHaasDisplay-Roman.eot",
-//       weight: "400",
-//       style: "normal",
-//     },
-//   ],
-//   variable: "--font-neuehaaslight",
-// });
 
 const neueHaasLight = localFont({
-  src: "../public/fonts/NeueHaasDisplay-Roman.woff",
+  src: "../public/fonts/Helvetica.ttf",
   variable: "--font-neuehaaslight",
 });
 
 const neueHaasRoman = localFont({
-  src: "../public/fonts/NeueHaasDisplay-Mediu.woff",
+  src: "../public/fonts/Helvetica-Bold.ttf",
   variable: "--font-neuehaasroman",
 });
 
