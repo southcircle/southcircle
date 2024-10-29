@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="text-[#0C0C0CB0]" />
-      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full py-4 font-helveticaNowDisplayRegular tracking-wide">
+      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full py-4 pb-12 font-helveticaNowDisplayRegular tracking-wide">
         <div className="flex flex-col  md:flex-row items-center gap-5 text-[#0C0C0CB0]">
           <p>&copy; {year} South Circle LLC, All right reserved.</p>
         </div>
