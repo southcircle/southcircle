@@ -6,12 +6,12 @@ import "./globals.css";
 
 
 const neueHaasLight = localFont({
-  src: "../public/fonts/Helvetica.ttf",
+  src: "../public/fonts/HelveticaNowDisplay-Regular.woff",
   variable: "--font-neuehaaslight",
 });
 
 const neueHaasRoman = localFont({
-  src: "../public/fonts/Helvetica-Bold.ttf",
+  src: "../public/fonts/HelveticaNowDisplay-Bold.woff",
   variable: "--font-neuehaasroman",
 });
 
