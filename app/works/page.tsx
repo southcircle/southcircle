@@ -3,13 +3,13 @@ import WorksHero from "@/components/WorksHero";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Works | World-Class Brand Design Agency",
+  title: "Works | World-Class Brand Design Consultancy",
   description: "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Works | World-Class Brand Design Agency",
+    title: "Works | World-Class Brand Design Consultancy",
     description: "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
     url: "https://southcircle.co",  // Replace with your actual URL
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Works | World-Class Brand Design Agency",
+    title: "Works | World-Class Brand Design Consultancy",
     description: "We're a global brand design company crafting world-class identities that make a profound impact on the way brands are perceived.",
     images: ["https://southcircle.vercel.app/thumbnail.png"], // Replace with actual image URL
   },
