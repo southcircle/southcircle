@@ -107,19 +107,19 @@ const Insights: React.FC = () => {
     <section className="pt-8 md:pt-10 md:mt-10 mx-auto px-4 md:px-10 max-w-full w-full">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-helveticaNowDisplayRegular">
             Insights
           </span>
           <hr />
           <div className="py-2 flex items-center justify-between w-full">
-            <h2 className="text-2xl md:ext-3xl mb-6 w-full md:max-w-sm font-neuehaasroman">
+            <h2 className="text-2xl md:ext-3xl mb-6 w-full md:max-w-sm font-helveticaNowDisplayBold">
               Read through the wonderful insights from our Journey.
             </h2>
             <div>
               <Link href="/blog">
                 <Button
                   text="See insights"
-                  className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+                  className="w-44 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-helveticaNowDisplayRegular hidden md:inline-block"
                   variant="outline"
                 />
               </Link>
@@ -144,18 +144,18 @@ const Insights: React.FC = () => {
                   height={400}
                   className="object-cover  h-[320px]"
                 />
-                <div className="text-sm text-gray-500 my-2 font-neuehaaslight">
+                <div className="text-sm text-gray-500 my-2 font-helveticaNowDisplayRegular">
                   {blog.date}
                 </div>
-                <h3 className="text-lg font-medium truncate font-neuehaasroman">
+                <h3 className="text-lg font-medium truncate font-helveticaNowDisplayBold">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 max-w-[340px] font-neuehaaslight">
+                <p className="text-gray-600 max-w-[340px] font-helveticaNowDisplayRegular">
                   {blog.description}
                 </p>
                 <a
                   href="#"
-                  className="text-black underline my-5 inline-block text-[15px] font-neuehaasroman"
+                  className="text-black underline my-5 inline-block text-[15px] font-helveticaNowDisplayBold"
                 >
                   Read blog
                 </a>
@@ -191,7 +191,7 @@ const Insights: React.FC = () => {
         <Link href="/blog" className="py-10 flex items-center justify-center md:hidden">
           <Button
             text="See insights"
-            className="w-44 h-12 py-4 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+            className="w-44 h-12 py-4 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-helveticaNowDisplayRegular hidden md:inline-block"
             variant="outline"
           />
         </Link>

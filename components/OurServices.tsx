@@ -49,8 +49,8 @@ const OurServices = () => {
   return (
     <section className="pt-14 md:pt-14 md:mt-14 mx-auto px-4 md:px-10">
       <div className="max-w-8xl w-full">
-        <div className="flex flex-col gap-4 w-full font-neuehaaslight">
-          <span className="text-sm text-gray-400 tracking-[2px] font-neuehaaslight uppercase">
+        <div className="flex flex-col gap-4 w-full font-helveticaNowDisplayRegular">
+          <span className="text-sm text-gray-400 tracking-[2px] font-helveticaNowDisplayRegular uppercase">
             Our Services
           </span>
           <hr className="text-gray-400 bg-gray-400" />
@@ -58,12 +58,12 @@ const OurServices = () => {
         <div className="w-full flex flex-col md:flex-row align-top md:gap-40 mt-10">
           <div className="flex flex-col items-start gap-6">
             <div className="space-y-4 max-w-lg">
-              <p className="text-[#0C0C0C] font-normal font-neuehaaslight text-2xl text-start">
+              <p className="text-[#0C0C0C] font-normal font-helveticaNowDisplayRegular text-2xl text-start">
                 We&apos;re all about flipping the script <br />
                 and making brands that don&apos;t just <br />
                 show up.
               </p>
-              <p className="text-[#0C0C0C] font-normal font-neuehaaslight text-2xl text-start">
+              <p className="text-[#0C0C0C] font-normal font-helveticaNowDisplayRegular text-2xl text-start">
                 We mix strategy with creativity to <br />
                 make sure your brand hits different <br />
                 and stays unforgettable.
@@ -73,7 +73,7 @@ const OurServices = () => {
               <Link href="/services">
                 <Button
                   text="See our services"
-                  className="w-40 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-neuehaaslight hidden md:inline-block"
+                  className="w-40 h-12 py-2 text-center text-lg font-medium rounded-full whitespace-nowrap tracking-tight font-helveticaNowDisplayRegular hidden md:inline-block"
                   variant="outline"
                 />
               </Link>
@@ -82,10 +82,10 @@ const OurServices = () => {
           <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.map((service, idx) => (
               <div className={service.style} key={idx}>
-                <h4 className="font-medium font-neuehaasroman text-lg tracking-tight">
+                <h4 className="font-medium font-helveticaNowDisplayBold text-lg tracking-tight">
                   {service.title}
                 </h4>
-                <p className="text-[#0C0C0CA3] text-base font-normal font-neuehaaslight">
+                <p className="text-[#0C0C0CA3] text-base font-normal font-helveticaNowDisplayRegular">
                   {service.desc}
                 </p>
                 <div className="w-full flex justify-end py-4 pt-6">
@@ -107,7 +107,7 @@ const OurServices = () => {
         >
           <Button
             text="See our services"
-            className="w-40 h-12 py-4 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="w-40 h-12 py-4 text-sm font-medium rounded-full whitespace-nowrap font-helveticaNowDisplayRegular md:hidden"
             variant="outline"
           />
         </Link>

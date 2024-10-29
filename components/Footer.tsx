@@ -6,7 +6,7 @@ import Image from "next/image";
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="space-y-8 py-20 bg-white w-full px-4 md:px-10">
+    <footer className="space-y-8 pt-20 bg-white w-full px-4 md:px-10">
       <div className="flex flex-col md:flex-row gap-10 items-start md:items-center justify-between w-full">
         <div className="md:-ml-20">
           {/* <div className="text-[80px] md:text-8xl font-bold uppercase tracking-wide text-center font-baseneue w-full leading-none">
@@ -15,10 +15,10 @@ const Footer = () => {
           <Image className="bg-transparent" src="/assets/imagine-more.gif" alt="imagine more" width={400} height={400}/>
         </div>
         <div className="flex gap-16 align-top items-start">
-          <h4 className="text-[#0C0C0CB0] font-medium text-base font-neuehaaslight">
+          <h4 className="text-[#0C0C0CB0] font-medium text-base font-helveticaNowDisplayRegular">
             Contact
           </h4>
-          <div className="flex flex-col gap-5 items-start font-neuehaaslight">
+          <div className="flex flex-col gap-5 items-start font-helveticaNowDisplayRegular">
             <div className="flex flex-col gap-2 items-start font-medium">
               <CustomLink
                 href="tel:+2349063288657"
@@ -32,7 +32,7 @@ const Footer = () => {
                 className="border-b-[0.2px] border-[#919191b0] text-[#0C0C0CB0]"
               />
             </div>
-            <div className="max-w-sm text-start font-neuehaaslight">
+            <div className="max-w-sm text-start font-helveticaNowDisplayRegular">
               <p>44 Okumagba Avenue, </p>
               <p>Opposite FCMB Bank, Estate,</p>
               <p>Warri, 332213, Delta State,</p>
@@ -41,9 +41,9 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-20 align-top items-start">
-          <h4 className="text-[#0C0C0CA3] text-base font-neuehaaslight">Links</h4>
+          <h4 className="text-[#0C0C0CA3] text-base font-helveticaNowDisplayRegular">Links</h4>
           <div className="flex flex-col gap-5 items-start">
-            <div className="flex flex-col gap-2 items-start font-neuehaaslight">
+            <div className="flex flex-col gap-2 items-start font-helveticaNowDisplayRegular">
               <CustomLink
                 href="linkedin.com"
                 animate={true}
@@ -85,7 +85,7 @@ const Footer = () => {
         </div>
       </div>
       <hr className="text-[#0C0C0CB0]" />
-      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full pt-8 font-neuehaaslight tracking-wide">
+      <div className="flex flex-col-reverse md:flex-row gap-6 items-center justify-between w-full py-4 font-helveticaNowDisplayRegular tracking-wide">
         <div className="flex flex-col  md:flex-row items-center gap-5 text-[#0C0C0CB0]">
           <p>&copy; {year} South Circle LLC, All right reserved.</p>
         </div>

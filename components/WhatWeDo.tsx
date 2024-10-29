@@ -209,7 +209,7 @@ const WhatWeDo = () => {
     <section className="pt-32 mt-32 mx-auto w-full">
       <div className="w-full mx-auto">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 uppercase font-neuehaaslight tracking-[2px]">
+          <span className="text-sm text-gray-400 uppercase font-helveticaNowDisplayRegular tracking-[2px]">
             What We Do
           </span>
           <hr className="text-gray-400 bg-gray-400" />
@@ -217,7 +217,7 @@ const WhatWeDo = () => {
         <div className="mt-10 w-full grid grid-cols-1">
           {/* Left Column - Title and Button */}
           <div className="max-w-md space-y-6">
-            <h2 className="text-3xl md:text-4xl font-semibold max-w-md mb-6 font-neuehaasroman">
+            <h2 className="text-3xl md:text-4xl font-semibold max-w-md mb-6 font-helveticaNowDisplayBold">
               Building a strong brand with our expertise.
             </h2>
           </div>
@@ -238,7 +238,7 @@ const WhatWeDo = () => {
                   />
                 
                 <div className="flex flex-col gap-8 mt-4 md:mt-0 w-full items-start justify-between py-4 md:pt-0">
-                  <h3 className="text-2xl font-semibold tracking-[1px] font-neuehaasroman md:mt-6">
+                  <h3 className="text-2xl font-semibold tracking-[1px] font-helveticaNowDisplayBold md:mt-6">
                     {service.title}
                   </h3>
                   <div className="space-y-2 w-full md:max-w-3xl md:w-[820px]">
@@ -246,7 +246,7 @@ const WhatWeDo = () => {
                       service?.services.map((faq, index) => (
                         <div key={index} className="">
                           <div
-                            className="flex justify-between items-center w-full text-left text-[#0C0C0CB0] text-xl font-medium font-neuehaaslight"
+                            className="flex justify-between items-center w-full text-left text-[#0C0C0CB0] text-xl font-medium font-helveticaNowDisplayRegular"
                           >
                             {faq.question}
                           </div>

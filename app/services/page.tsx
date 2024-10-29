@@ -92,7 +92,7 @@ const page = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mx-auto w-full">
         <div className="relative w-full flex flex-col items-center gap-10 md:gap-20 justify-center max-w-7xl">
-          <p className="absolute max-w-xs text-2xl text-start font-neuehaaslight left-10 top-20 hidden md:inline-block">
+          <p className="absolute max-w-xs text-2xl text-start font-helveticaNowDisplayRegular left-10 top-20 hidden md:inline-block">
             From innovative strategies to striking designs, we turn your vision
             into.
           </p>
@@ -101,7 +101,7 @@ const page = () => {
             <span>your brand&apos;s next</span>
             <span>big move.</span>
           </h1>
-          <p className="max-w-sm text-2xl text-center font-neuehaaslight md:hidden">
+          <p className="max-w-sm text-2xl text-center font-helveticaNowDisplayRegular md:hidden">
             From innovative strategies to striking designs, we turn your vision
             into a powerful reality. Explore how our expertise drives your
             brand&apos;s success.
@@ -115,12 +115,12 @@ const page = () => {
               className="object-contain animate-bounce"
             />
           </div>
-          <p className="absolute max-w-sm text-2xl text-start font-neuehaaslight right-4 bottom-40 hidden md:inline-block">
+          <p className="absolute max-w-sm text-2xl text-start font-helveticaNowDisplayRegular right-4 bottom-40 hidden md:inline-block">
             From innovative strategies to striking designs, we turn your vision
             into a powerful reality. Explore how our expertise drives your
             brand&apos;s success.
           </p>
-          <p className="max-w-sm text-2xl text-center font-neuehaaslight md:hidden">
+          <p className="max-w-sm text-2xl text-center font-helveticaNowDisplayRegular md:hidden">
             From innovative strategies to striking designs, we turn your vision
             into.
           </p>

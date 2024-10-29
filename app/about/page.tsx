@@ -44,7 +44,7 @@ const page = () => {
       {/* Hero Section */}
       <div className="flex flex-col items-center justify-center text-center mb-20 mx-auto">
         <div className="flex items-center justify-center">
-          <h1 className="w-full mx-auto text-4xl text-start items-start md:text-6xl font-neuehaasroman font-semibold flex flex-col md:items-center md:text-center">
+          <h1 className="w-full mx-auto text-4xl text-start items-start md:text-6xl font-helveticaNowDisplayBold font-semibold flex flex-col md:items-center md:text-center">
             <span>Curious about us?</span>
             <span>Here&apos;s the inside scoop.</span>
           </h1>
@@ -57,7 +57,7 @@ const page = () => {
           className="object-contain mt-8"
         />
         <div className="py-24 flex items-end justify-center">
-          <p className="font-medium text-start font-neuehaaslight max-w-xl text-2xl md:text-5xl">
+          <p className="font-medium text-start font-helveticaNowDisplayRegular max-w-xl text-2xl md:text-5xl">
             We are not content with just blending in - we are on a mission to
             stand out, with vision to become one of the leading agencies in
             Southern Nigeria.

@@ -42,12 +42,12 @@ const OurTeams = () => {
     <section className="pb-20 pt-20 mb-20 mx-auto px-1">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
+          <span className="text-sm text-gray-400 tracking-[2px] uppercase font-helveticaNowDisplayRegular">
             Our Team
           </span>
           <hr />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-3xl font-semibold mb-6 max-w-sm font-neuehaasroman">
+            <h2 className="text-3xl font-semibold mb-6 max-w-sm font-helveticaNowDisplayBold">
               Your go-to crew for getting things done.
             </h2>
           </div>
@@ -63,10 +63,10 @@ const OurTeams = () => {
                 className="object-cover rounded-2xl"
               />
               <div className="my-3">
-                <h3 className="text-lg font-semibold truncate font-neuehaasroman">
+                <h3 className="text-lg font-semibold truncate font-helveticaNowDisplayBold">
                   {team.fullname}
                 </h3>
-                <p className="text-gray-600 w-full font-neuehaaslight">
+                <p className="text-gray-600 w-full font-helveticaNowDisplayRegular">
                   {team.title}
                 </p>
               </div>

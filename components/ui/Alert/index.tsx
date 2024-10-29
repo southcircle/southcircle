@@ -20,7 +20,7 @@ const AlertComponent: React.FC<AlertComponentProps> = ({ message, type, onClose 
     >
       <div className="flex justify-between items-center">
         <span className='font-baseneue'>{message}</span>
-        <button onClick={onClose} className="ml-4 font-bold text-2xl font-neuehaaslight">X</button>
+        <button onClick={onClose} className="ml-4 font-bold text-2xl font-helveticaNowDisplayRegular">X</button>
       </div>
     </div>
   );

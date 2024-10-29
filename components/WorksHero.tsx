@@ -131,7 +131,7 @@ const WorksHero = () => {
                 ref={(el) => {
                   categoryRefs.current[index] = el;
                 }}
-                className={`relative py-4 text-sm hover:border-b-[1px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaaslight transition-all duration-300 ease-in-out ${
+                className={`relative py-4 text-sm hover:border-b-[1px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-helveticaNowDisplayRegular transition-all duration-300 ease-in-out ${
                   selectedCategory === category
                     ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                     : "text-[#0C0C0CB0]"
@@ -165,7 +165,7 @@ const WorksHero = () => {
                       />
                     </div>
                     <div className="flex items-center justify-between pt-3">
-                      <h3 className="text-2xl font-semibold font-neuehaasroman tracking-wide">
+                      <h3 className="text-2xl font-semibold font-helveticaNowDisplayBold tracking-wide">
                         {work.title}
                       </h3>
                       <div className="md:flex items-center gap-1 hidden mt-2">
@@ -173,14 +173,14 @@ const WorksHero = () => {
                           work?.category.map((cat, index) => (
                             <span
                               key={index}
-                              className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                              className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-helveticaNowDisplayRegular"
                             >
                               {cat}
                             </span>
                           ))}
                       </div>
                     </div>
-                    <p className="leading-7 text-[#0C0C0CB0] text-base md:text-lg font-medium font-neuehaaslight">
+                    <p className="leading-7 text-[#0C0C0CB0] text-base md:text-lg font-medium font-helveticaNowDisplayRegular">
                       {work.description}
                     </p>
                     <div className="flex items-center gap-1 md:hidden mt-2">
@@ -188,7 +188,7 @@ const WorksHero = () => {
                         work?.category.map((cat, index) => (
                           <span
                             key={index}
-                            className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-neuehaaslight"
+                            className="border-[0.8px] text-sm border-gray-200 px-4 py-1 whitespace-nowrap rounded-full inline-block font-helveticaNowDisplayRegular"
                           >
                             {cat}
                           </span>
@@ -199,7 +199,7 @@ const WorksHero = () => {
               ))
           ) : (
             <div className="text-center w-full col-span-full py-10">
-              <p className="text-6xl font-neuehaaslight font-medium text-gray-500">
+              <p className="text-6xl font-helveticaNowDisplayRegular font-medium text-gray-500">
                 Nothing Here Yet
               </p>
             </div>
@@ -211,7 +211,7 @@ const WorksHero = () => {
         >
           <Button
             text="See more works"
-            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-4 w-28 text-sm font-medium rounded-full whitespace-nowrap font-helveticaNowDisplayRegular md:hidden"
             variant="outline"
           />
         </Link> */}

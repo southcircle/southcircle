@@ -96,12 +96,12 @@ const MoreInsights: React.FC = () => {
     <section className="pt-16 md:pt-32 md:mt-32 mx-auto px-2">
       <div className="max-w-8xl w-full">
         <div className="flex flex-col gap-4 w-full font-neuehasslight">
-          <span className="text-base text-gray-400 tracking-[2px] uppercase font-neuehaaslight">
+          <span className="text-base text-gray-400 tracking-[2px] uppercase font-helveticaNowDisplayRegular">
             More Insights
           </span>
           <hr />
           <div className="py-2 flex items-center justify-between">
-            <h2 className="text-2xl md:text-4xl mb-6 w-full max-w-md font-semibold font-neuehaasroman">
+            <h2 className="text-2xl md:text-4xl mb-6 w-full max-w-md font-semibold font-helveticaNowDisplayBold">
               If you enjoyed the previous news, check these out.
             </h2>
           </div>
@@ -124,18 +124,18 @@ const MoreInsights: React.FC = () => {
                   height={400}
                   className="object-cover rounded-3xl h-[320px]"
                 />
-                <div className="text-sm text-gray-500 my-2 font-neuehaaslight leading-relaxed uppercase">
+                <div className="text-sm text-gray-500 my-2 font-helveticaNowDisplayRegular leading-relaxed uppercase">
                   {blog.date}
                 </div>
-                <h3 className="text-lg font-semibold truncate font-neuehaasroman leading-relaxed">
+                <h3 className="text-lg font-semibold truncate font-helveticaNowDisplayBold leading-relaxed">
                   {blog.title}
                 </h3>
-                <p className="text-gray-600 max-w-[340px] font-neuehaaslight">
+                <p className="text-gray-600 max-w-[340px] font-helveticaNowDisplayRegular">
                   {blog.description}
                 </p>
                 <a
                   href="#"
-                  className="text-black font-medium underline my-5 inline-block text-[15px] font-neuehaaslight"
+                  className="text-black font-medium underline my-5 inline-block text-[15px] font-helveticaNowDisplayRegular"
                 >
                   Read blog
                 </a>
@@ -171,7 +171,7 @@ const MoreInsights: React.FC = () => {
         <Link href="/blogs" className="py-10 flex items-center justify-center">
           <Button
             text="See all blogs"
-            className="px-6 py-4 w-32 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-4 w-32 text-sm font-medium rounded-full whitespace-nowrap font-helveticaNowDisplayRegular md:hidden"
             variant="outline"
           />
         </Link>

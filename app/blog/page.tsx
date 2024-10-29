@@ -59,11 +59,11 @@ const Page = () => {
       <div className="flex flex-col items-center justify-center text-center mx-auto">
         <div className="relative w-full flex flex-col items-center gap-10 justify-center max-w-7xl">
           <div className="w-full flex flex-col items-center gap-4 md:gap-8 px-4">
-            <h1 className="text-5xl sm:text-8xl font-semibold font-neuehaasroman flex flex-col items-center text-center whitespace-nowrap">
+            <h1 className="text-5xl sm:text-8xl font-semibold font-helveticaNowDisplayBold flex flex-col items-center text-center whitespace-nowrap">
               <span>Insights from</span>
               <span>our journey.</span>
             </h1>
-            <p className="max-w-xl text-base md:text-xl text-center font-neuehaaslight">
+            <p className="max-w-xl text-base md:text-xl text-center font-helveticaNowDisplayRegular">
               Explore the narratives that shape our work and reveal the
               inspiration behind our projects.
             </p>
@@ -74,12 +74,12 @@ const Page = () => {
                 <input
                   type="text"
                   name="search"
-                  className="bg-transparent border-none focus:border-none outline-none w-full h-full md:py-6 placeholder:font-neuehaaslight placeholder:text-sm md:placeholder:text-lg text-[#0C0C0CB0] placeholder:text-[#0C0C0CB0] font-neuehaaslight pl-4"
+                  className="bg-transparent border-none focus:border-none outline-none w-full h-full md:py-6 placeholder:font-helveticaNowDisplayRegular placeholder:text-sm md:placeholder:text-lg text-[#0C0C0CB0] placeholder:text-[#0C0C0CB0] font-helveticaNowDisplayRegular pl-4"
                   placeholder="Search for any insight..."
                 />
                 <Button
                   text="Search now"
-                  className="md:px-16 py-6 md:py-10 w-48 rounded-full font-normal font-neuehaaslight text-[#1F1F1F] text-sm sm:text-base md:text-lg flex justify-center border-[#1F1F1F] whitespace-nowrap"
+                  className="md:px-16 py-6 md:py-10 w-48 rounded-full font-normal font-helveticaNowDisplayRegular text-[#1F1F1F] text-sm sm:text-base md:text-lg flex justify-center border-[#1F1F1F] whitespace-nowrap"
                   variant="outline"
                 />
               </label>
@@ -100,7 +100,7 @@ const Page = () => {
           {categories.map((category, index) => (
             <div key={index} className="flex items-center gap-6 md:gap-10">
               <button
-                className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-neuehaaslight transition-all duration-300 ease-in-out ${
+                className={`relative py-4 text-sm hover:border-b-[2px] hover:border-black hover:text-black uppercase whitespace-nowrap font-medium tracking-[2px] font-helveticaNowDisplayRegular transition-all duration-300 ease-in-out ${
                   selectedCategory === category
                     ? "text-black border-b-[2px] border-black transition-all duration-500 ease-in-out"
                     : "text-gray-400"
@@ -134,13 +134,13 @@ const Page = () => {
                     />
                   </div>
                   <div className="flex flex-col gap-1 items-start py-4">
-                    <span className="text-sm text-[#0C0C0CB0] font-neuehaaslight uppercase">
+                    <span className="text-sm text-[#0C0C0CB0] font-helveticaNowDisplayRegular uppercase">
                       {blog.date}
                     </span>
-                    <h3 className="text-xl md:text-2xl font-semibold leading-relaxed font-neuehaasroman mt-3">
+                    <h3 className="text-xl md:text-2xl font-semibold leading-relaxed font-helveticaNowDisplayBold mt-3">
                       {blog.title}
                     </h3>
-                    <p className="text-base md:text-lg text-[#0C0C0CB0] font-neuehaaslight">
+                    <p className="text-base md:text-lg text-[#0C0C0CB0] font-helveticaNowDisplayRegular">
                       {blog.description}
                     </p>
                   </div>
@@ -150,7 +150,7 @@ const Page = () => {
                     animate={true}
                     text="Read blog"
                     className={
-                      "text-base border-b-[0.2px] border-[#919191b0] font-medium font-neuehaaslight"
+                      "text-base border-b-[0.2px] border-[#919191b0] font-medium font-helveticaNowDisplayRegular"
                     }
                   />
                 </div>
@@ -158,7 +158,7 @@ const Page = () => {
             ))
           ) : (
             <div className="text-center w-full col-span-full py-10">
-              <p className="text-6xl font-neuehaaslight font-medium text-gray-500">
+              <p className="text-6xl font-helveticaNowDisplayRegular font-medium text-gray-500">
                 No blog in here
               </p>
             </div>
@@ -167,7 +167,7 @@ const Page = () => {
         {/* <div className="py-10 flex items-center justify-center">
           <Button
             text="See all blogs"
-            className="px-6 py-5 w-32 text-sm font-medium rounded-full whitespace-nowrap font-neuehaaslight md:hidden"
+            className="px-6 py-5 w-32 text-sm font-medium rounded-full whitespace-nowrap font-helveticaNowDisplayRegular md:hidden"
             variant="outline"
           />
         </div> */}

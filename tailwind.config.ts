@@ -24,8 +24,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        neuehaaslight: 'var(--font-neuehaaslight)',
-        neuehaasroman: 'var(--font-neuehaasroman)',
+        helveticaNowDisplayRegular: 'var(--font-helveticaNowDisplayRegular)',
+        helveticaNowDisplayBold: 'var(--font-helveticaNowDisplayBold)',
       },
       fontSmoothing: {
         antialiased: {

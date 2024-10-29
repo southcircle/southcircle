@@ -5,14 +5,14 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 
-const neueHaasLight = localFont({
+const HelveticaNowDisplayRegular = localFont({
   src: "../public/fonts/HelveticaNowDisplay-Regular.woff",
-  variable: "--font-neuehaaslight",
+  variable: "--font-helveticaNowDisplayRegular",
 });
 
-const neueHaasRoman = localFont({
+const HelveticaNowDisplayBold = localFont({
   src: "../public/fonts/HelveticaNowDisplay-Bold.woff",
-  variable: "--font-neuehaasroman",
+  variable: "--font-helveticaNowDisplayBold",
 });
 
 // app/layout.js or app/page.js
@@ -52,7 +52,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${neueHaasLight.variable} ${neueHaasRoman.variable} antialiased`}
+        className={`${HelveticaNowDisplayRegular.variable} ${HelveticaNowDisplayBold.variable} antialiased`}
       >
         <Header />
         {/* <SmoothScroll> */}

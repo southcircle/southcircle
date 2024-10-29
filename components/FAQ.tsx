@@ -62,10 +62,10 @@ const FAQ = () => {
       <div className="max-w-8xl w-full flex items-center justify-center mx-auto">
         <div className="w-full grid grid-cols-1 md:grid-cols-2 mx-auto">
           <div className="flex flex-col gap-5">
-            <p className="font-neuehaaslight text-gray-400 tracking-[2px] text-lg">
+            <p className="font-helveticaNowDisplayRegular text-gray-400 tracking-[2px] text-lg">
               FAQ
             </p>
-            <h1 className="font-neuehaasroman text-4xl sm:text-7xl md:text-[82px] font-bold tracking-wide text-start">
+            <h1 className="font-helveticaNowDisplayBold text-4xl sm:text-7xl md:text-[82px] font-bold tracking-wide text-start">
               Find the{" "}
               <br className="hidden md:inline-block"/>
               clarity you
@@ -79,7 +79,7 @@ const FAQ = () => {
                 <div key={index} className="w-full">
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-neuehaasroman"
+                    className="flex justify-between items-center w-full text-left text-lg font-medium py-4 font-helveticaNowDisplayBold"
                   >
                     <p className="w-[200px] md:w-full text-xl md:text-2xl font-semibold">{faq.question}</p>
                     {activeIndex === index ? (
@@ -103,7 +103,7 @@ const FAQ = () => {
                     )}
                   </button>
                   {activeIndex === index && (
-                    <p className="mt-2 text-base md:text-lg font-medium text-[#0C0C0CB0] font-neuehaaslight">
+                    <p className="mt-2 text-base md:text-lg font-medium text-[#0C0C0CB0] font-helveticaNowDisplayRegular">
                       {faq.answer}
                     </p>
                   )}

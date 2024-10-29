@@ -52,7 +52,7 @@ const CheckBox: React.FC<CheckButtonProps> = ({ title, name, value, onCheck, onC
       ></div>
       
       {/* Title */}
-      <span className="text-gray-800 font-neuehaaslight font-medium text-start leading-5 text-sm md:text-base">{title}</span>
+      <span className="text-gray-800 font-helveticaNowDisplayRegular font-medium text-start leading-5 text-sm md:text-base">{title}</span>
     </label>
   );
 };

@@ -69,7 +69,7 @@ const Header = () => {
           className="w-10 h-auto"
         />
       </Link>
-      <div className="md:flex flex-row items-center gap-6 relative font-neuehaaslight hidden">
+      <div className="md:flex flex-row items-center gap-6 relative font-helveticaNowDisplayRegular hidden">
         {/* Add active class based on the current route */}
         <CustomLink
           href="/works"
@@ -98,7 +98,7 @@ const Header = () => {
         <Link href="/contact" className="font-normal flex items-center">
           <Button
             text="Contact us"
-            className={`w-[120px] h-10 rounded-full font-neuehaaslight whitespace-nowrap ${
+            className={`w-[120px] h-10 rounded-full font-helveticaNowDisplayRegular whitespace-nowrap ${
               isActive("/contact") ? "" : ""
             }`}
             variant="outline"
@@ -130,7 +130,7 @@ const Header = () => {
                 key={index}
                 href={href}
                 onClick={handleMenu}
-                className={`font-neuehaasroman uppercase text-5xl text-black w-full pb-5 border-b-[1px] border-gray-300 ${isActive(href) ? "text-gray-400" : ""}`}
+                className={`font-helveticaNowDisplayBold uppercase text-5xl text-black w-full pb-5 border-b-[1px] border-gray-300 ${isActive(href) ? "text-gray-400" : ""}`}
                 style={{
                   opacity: 100,
                   transform: `translateY(${index * 10}px)`,
@@ -142,7 +142,7 @@ const Header = () => {
             <Link href="/contact" className="text-center flex items-center">
             <Button
               text="Contact us"
-              className={`w-[180px] h-20 rounded-full font-neuehaaslight text-lg whitespace-nowrap mt-6 ${
+              className={`w-[180px] h-20 rounded-full font-helveticaNowDisplayRegular text-lg whitespace-nowrap mt-6 ${
                 isActive("/contact") ? "" : ""
               }`}
               variant="outline"
