@@ -28,7 +28,7 @@ const Custom404Hero = () => {
           </div>
           <Image
             src="/assets/out-the-box.svg"
-            width={620}
+            width={600}
             height={440}
             alt="about-down"
             className="object-contain mt-4"
